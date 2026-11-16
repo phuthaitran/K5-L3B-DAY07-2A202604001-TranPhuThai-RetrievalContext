@@ -1,0 +1,12 @@
+{
+  "strategy": "tfidf",
+  "split": "dev",
+  "n": 15,
+  "hit1": 9,
+  "hit3": 11,
+  "context_hit": 2,
+  "avg_context_chars": 271.6666666666667,
+  "median_ms": 0.611100003879983,
+  "index_seconds": 0.016456899997137953,
+  "service_cost_usd": 0
+}

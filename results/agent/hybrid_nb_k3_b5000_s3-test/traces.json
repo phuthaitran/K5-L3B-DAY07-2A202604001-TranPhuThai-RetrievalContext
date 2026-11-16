@@ -1,0 +1,1434 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "question": "Why can hashing not guarantee a unique hash value for every object?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Hashing cannot guarantee a unique hash value for every object because there is a combinatorial explosion of possibilities for unique strings or collections of complex data, while integers in a computer can typically only represent a fixed range of numbers [e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51]. As a result, collisions—where multiple objects hash to the same integer index value—are inevitable [e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51].",
+    "citations": [
+      "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "unique hash value collision object"
+        },
+        "usage": {
+          "prompt_tokens": 547,
+          "output_tokens": 18,
+          "thinking_tokens": 38
+        },
+        "latency_ms": 3421.1,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "unique hash value collision object",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 50.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+            "alias": "c2",
+            "score": 0.016133,
+            "page": 31,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+            "alias": "c3",
+            "score": 0.01564,
+            "page": 45,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 1,
+            "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+            "alias": "c4",
+            "score": 0.016261,
+            "page": 31,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 1,
+            "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+            "alias": "c5",
+            "score": 0.016261,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+            "alias": "c6",
+            "score": 0.016133,
+            "page": 31,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "84a9116185e917ed5e809f2ed043ca01b9a9fca29a0dad8929e65ac7d5f1f216",
+            "alias": "c7",
+            "score": 0.01564,
+            "page": 45,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "5535c3d40666acd4b409141b910326dda747b559cdb6d83b31f0adec8a44478d",
+            "alias": "c8",
+            "score": 0.01564,
+            "page": 45,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+          "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+          "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22"
+        ],
+        "context_chars": 4653
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "Hashing cannot guarantee a unique hash value for every object because there is a combinatorial explosion of possibilities for unique strings or collections of complex data, while integers in a computer can typically only represent a fixed range of numbers [c1]. As a result, collisions—where multiple objects hash to the same integer index value—are inevitable [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 1458,
+          "output_tokens": 88,
+          "thinking_tokens": 259
+        },
+        "latency_ms": 4048.9,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 2005,
+      "output_tokens": 106,
+      "thinking_tokens": 297,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 32 | 3.5 Sample Algorithms by Problem]\n120 3 • Data Structures and Algorithms\n\nFigure 3.25 Hash tables data structures apply hashing to implement abstract data types such as sets and maps, but must handle collisions between elements that share the same hash value. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nHashing search algorithms are often preferred over binary search algorithms for their runtime benefits, but they come with unique drawbacks. Ideally, different objects would hash to different hash values. But the combinatorial explosion of possibilities for unique strings or collections of complex data means that a collision, or a situation in which multiple objects hash to the same integer index value, is inevitable since integers in a computer can typically only represent a certain, fixed range of integer numbers. Combinatorial explosion is not only a problem for the design of efficient algorithms, but also the design of efficient data structures too.\n\nGraph Problems\n\n[c2 | DSA.pdf | page 31 | 3.5 Sample Algorithms by Problem]\nnot all) objects will be assigned distinct integers. Although hashing algorithms are often specific to each data type, there exist some general approaches for designing hashing algorithms. The hash value of a simple data type such as an integer can just be the value of the integer itself. The hash value of a string of text can be some mathematical combination of the numeric value of each character in the string. Likewise, the hash value of a collection such as a list can be some combination of the underlying numeric data within each element in the collection.\n\n[c3 | DSA.pdf | page 45 | Chapter Review]\n• Hashing is the problem of assigning a meaningful integer index (hash value) for each object. Hash tables are a data structure for implementing sets and maps by applying the concept of hashing.\n\n• Graph problems include a wide variety of problems involving the graph data type. Graph problems include traversal, minimum spanning trees, and shortest paths.\n\n• Traversal is the problem of exploring all the vertices in a graph. Depth-first search and breadth-first search are both graph traversal algorithms that expand outward from a start vertex, ultimately visiting every reachable vertex.\n\n• Minimum spanning trees is the problem of finding a lowest-cost way to connect all the vertices to each other, where cost is the sum of the selected edge weights. The two canonical greedy algorithms for finding a minimum spanning tree in a graph are Kruskal’s algorithm and Prim’s algorithm.\n\n[c4 | DSA.pdf | page 31 | 3.5 Sample Algorithms by Problem]\nHashing has a variety of applications spanning computer systems, database systems, computer security, and searching algorithms. For example, hashing algorithms are often used designing secure systems for protecting stored passwords even after a security breach occurs. In the context of data structure problems, hashing offers a different approach than binary search. Instead of relying on pairwise comparisons to narrow down the expected location of an element in a sorted list in logarithmic time, hashing search algorithms can instead directly index an element by hash value in constant time. If binary search trees implement sets and maps by applying the concept of binary search, a hash table implements sets and maps by applying the concept of hashing (Figure 3.25). Rather than organize elements in sorted order from left to right as in a binary search tree, hash tables store and retrieve elements in an array indexed by hash value.\n\n[c5 | DSA.pdf | page 32 | 3.5 Sample Algorithms by Problem]\nWhile data structure problems focus primarily on storage and retrieval of elements in a collection, graph problems include a wide variety of computing problems involving the graph data structure. Unlike other data structures, graphs include not only elements (vertices) but also relationships between elements (edges). Graph problems often ask algorithm designers to explore the graph in order to answer questions about elements and the relationships between elements.\n\nTraversal\n\nTraversal is the problem of exploring all the vertices in a graph. Graph data structures differ from tree data structures in that there is no explicit root node to begin the traversal and edges can connect back to other parts of the graph. In general, there is no guarantee of hierarchy in a graph. Graph traversal algorithms such as depth-first search and breadth-first search begin at an arbitrary start vertex and explore outwards from the start vertex while keeping track of a set of explored vertices.",
+    "final_context_ids": [
+      "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+      "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+      "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+      "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+      "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22"
+    ],
+    "final_context_chars": 4653,
+    "latency_ms": 7549.0,
+    "raw_answer": "Hashing cannot guarantee a unique hash value for every object because there is a combinatorial explosion of possibilities for unique strings or collections of complex data, while integers in a computer can typically only represent a fixed range of numbers [c1]. As a result, collisions—where multiple objects hash to the same integer index value—are inevitable [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "question": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Within Section 3.5, breadth-first search expands the graph **level-by-level breadth-first** (expanding outward from the start vertex, exploring vertices closer to the start before those further away) [6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022][6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7]. \n\nIt ensures that each vertex is explored only once by adding explored vertices to a **global set** [6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022].",
+    "citations": [
+      "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+      "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "breadth-first search expand order explored only once"
+        },
+        "usage": {
+          "prompt_tokens": 566,
+          "output_tokens": 23,
+          "thinking_tokens": 65
+        },
+        "latency_ms": 2903.9,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "breadth-first search expand order explored only once",
+        "filter": {
+          "section": "3.5 Sample Algorithms by Problem"
+        },
+        "top_k": 3,
+        "latency_ms": 27.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 33,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+            "alias": "c2",
+            "score": 0.016129,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+            "alias": "c3",
+            "score": 0.015749,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 1,
+            "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+            "alias": "c4",
+            "score": 0.016393,
+            "page": 33,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+            "alias": "c5",
+            "score": 0.015749,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+        ],
+        "context_chars": 4412
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1",
+            "c4"
+          ],
+          "answer": "Within Section 3.5, breadth-first search expands the graph **level-by-level breadth-first** (expanding outward from the start vertex, exploring vertices closer to the start before those further away) [c1, c4]. \n\nIt ensures that each vertex is explored only once by adding explored vertices to a **global set** [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 1504,
+          "output_tokens": 100,
+          "thinking_tokens": 361
+        },
+        "latency_ms": 5416.5,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1",
+          "c4"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 2070,
+      "output_tokens": 123,
+      "thinking_tokens": 426,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 33 | 3.5 Sample Algorithms by Problem]\n3.5 • Sample Algorithms by Problem 121\n\nFigure 3.26 Depth-first search is a graph traversal algorithm that continues as far down a path as possible from a start vertex before backtracking. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBreadth-First Search\n\nA breadth-first search iteratively explores each neighbor, expanding the search level-by-level breadth-first (Figure 3.27). Explored vertices are also added to a global set to ensure that the algorithm explores each vertex once and in the correct level-order. The runtime of breadth-first search is also in O(|V| + |E|) with respect to |V|, the number of vertices, and |E|, the number of edges.\n\n[c2 | DSA.pdf | page 32 | 3.5 Sample Algorithms by Problem]\nDepth-First Search\n\nA depth-first search is a graph traversal algorithm that recursively explores each neighbor, continuing as far possible along each subproblem depth-first (Figure 3.26). Explored vertices are added to a global set to ensure that the algorithm only explores each vertex once. The runtime of depth-first search is in O(|V| + |E|) with respect to |V|, the number of vertices, and |E|, the number of edges.\n\nAccess for free at openstax.org\n\n[c3 | DSA.pdf | page 32 | 3.5 Sample Algorithms by Problem]\nWhile data structure problems focus primarily on storage and retrieval of elements in a collection, graph problems include a wide variety of computing problems involving the graph data structure. Unlike other data structures, graphs include not only elements (vertices) but also relationships between elements (edges). Graph problems often ask algorithm designers to explore the graph in order to answer questions about elements and the relationships between elements.\n\nTraversal\n\nTraversal is the problem of exploring all the vertices in a graph. Graph data structures differ from tree data structures in that there is no explicit root node to begin the traversal and edges can connect back to other parts of the graph. In general, there is no guarantee of hierarchy in a graph. Graph traversal algorithms such as depth-first search and breadth-first search begin at an arbitrary start vertex and explore outwards from the start vertex while keeping track of a set of explored vertices.\n\n[c4 | DSA.pdf | page 33 | 3.5 Sample Algorithms by Problem]\nGraph traversal algorithms are the foundational algorithm design patterns for most graph processing algorithms. Many algorithms require some amount of exploration, and that exploration typically starts at some vertex and continues processing each reachable vertex at most once. A reachable vertex can be reached if a path or sequence of edges from the start vertex exists. As opposed to depth-first search, breadth-first search has the benefit of exploring vertices closer to the start before exploring vertices further from the start, which can be useful for solving problems such as unweighted shortest paths.\n\nFigure 3.27 Depth-first search is a graph traversal algorithm that continues as far down a path as possible from a start vertex before backtracking. Breadth-first search is a graph traversal algorithm that explores level by level expanding outward from the start vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nMinimum Spanning Trees\n\n[c5 | DSA.pdf | page 32 | 3.5 Sample Algorithms by Problem]\n120 3 • Data Structures and Algorithms\n\nFigure 3.25 Hash tables data structures apply hashing to implement abstract data types such as sets and maps, but must handle collisions between elements that share the same hash value. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nHashing search algorithms are often preferred over binary search algorithms for their runtime benefits, but they come with unique drawbacks. Ideally, different objects would hash to different hash values. But the combinatorial explosion of possibilities for unique strings or collections of complex data means that a collision, or a situation in which multiple objects hash to the same integer index value, is inevitable since integers in a computer can typically only represent a certain, fixed range of integer numbers. Combinatorial explosion is not only a problem for the design of efficient algorithms, but also the design of efficient data structures too.\n\nGraph Problems",
+    "final_context_ids": [
+      "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+      "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+      "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+      "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+      "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+    ],
+    "final_context_chars": 4412,
+    "latency_ms": 8349.0,
+    "raw_answer": "Within Section 3.5, breadth-first search expands the graph **level-by-level breadth-first** (expanding outward from the start vertex, exploring vertices closer to the start before those further away) [c1][c4]. \n\nIt ensures that each vertex is explored only once by adding explored vertices to a **global set** [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "question": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm [630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855].",
+    "citations": [
+      "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "Turing machine execution assumption"
+        },
+        "usage": {
+          "prompt_tokens": 551,
+          "output_tokens": 18,
+          "thinking_tokens": 54
+        },
+        "latency_ms": 2624.0,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "Turing machine execution assumption",
+        "filter": {
+          "section": "3.6 Computer Science Theory"
+        },
+        "top_k": 3,
+        "latency_ms": 16.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+            "alias": "c2",
+            "score": 0.015757,
+            "page": 36,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+            "alias": "c3",
+            "score": 0.015757,
+            "page": 36,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 1,
+            "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+            "alias": "c4",
+            "score": 0.016393,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 1,
+            "id": "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb",
+            "alias": "c5",
+            "score": 0.016393,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+            "alias": "c6",
+            "score": 0.015757,
+            "page": 36,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3",
+            "alias": "c7",
+            "score": 0.015757,
+            "page": 36,
+            "section": "3.6 Computer Science Theory"
+          }
+        ],
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+          "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb",
+          "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6"
+        ],
+        "context_chars": 4545
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 1517,
+          "output_tokens": 43,
+          "thinking_tokens": 166
+        },
+        "latency_ms": 2587.7,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 2068,
+      "output_tokens": 61,
+      "thinking_tokens": 220,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 37 | 3.6 Computer Science Theory]\nThe Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm. Although today’s computers are much more efficient than the first computers that realized the Turing machine, most computers still rely on the same fundamental assumptions about how to execute algorithms. The O(N)-time sequential search algorithm, though it might execute 1,000 times faster on today’s computers, still grows linearly with respect to the size of the input. An O(2N)-time brute-force algorithm, though it might execute 1,000 times faster on today’s computers, still grows exponentially with respect to the size of the input. Even as computers become faster over time, inefficient algorithms still cannot be used to solve any problems larger than a few thousand elements.\n\nComplexity Classes\n\n[c2 | DSA.pdf | page 36 | 3.6 Computer Science Theory]\nc. perform a basic operation on a value. d. set which instruction will be executed next by modifying the program counter.\n\n3. a program counter that keeps track of the current instruction in the instruction table.\n\nA Turing machine executes a computer algorithm by following each instruction specified by the program counter. An algorithm can use these basic operations to compute the sum of 1 and 1.\n\n1. Store the value 1 to address A in the memory bank.\n\n2. Store the value 1 to address B in the memory bank.\n\n3. Add the values at addresses A and B and then store the result at address A.\n\nWhat makes computers useful is not just the fact that they can calculate numbers, but that they can encode logic in the instructions. Instead of just computing the sum of 1 and 1, this program continues adding 1 to a growing sum stored at address A.\n\n1. Store the value 1 to address A in the memory bank.\n\nAccess for free at openstax.org\n\n[c3 | DSA.pdf | page 36 | 3.6 Computer Science Theory]\nCombinatorial explosion poses a problem for computer algorithms because our model of computation assumes computers only have a single thread of execution and only execute one basic operation on each step. If we overturn some part of this assumption, either by creating computers with multiple processors or by creating more sophisticated operations, then it might be possible to deal with combinatorial explosion. Almost all of today’s computer hardware, ranging from massive supercomputers to handheld smartphones, rely at least to some degree on expanding the model of computation to compute solutions to problems more efficiently. Even so, much of today’s computer hardware still relies on the same fundamental programming assumptions: that there are variables to represent data and arithmetic or logical operations.\n\nTuring Machines\n\n[c4 | DSA.pdf | page 37 | 3.6 Computer Science Theory]\n3.6 • Computer Science Theory 125\n\n2. Store the value 1 to address B in the memory bank.\n\n3. Add the values at addresses A and B and then store the result at address A.\n\n4. Set the program counter to execute step 3 next.\n\n[c5 | DSA.pdf | page 37 | 3.6 Computer Science Theory]\nOne subfield of computer science is theoretical computer science, which studies models of computation, their application to algorithms, and the complexity of problems. The complexity of a problem is the complexity (in terms of time or memory resources required) of the most efficient algorithms for solving the problem. Theoretical computer scientists are interested in understanding the difficulty of a problem in terms of time complexity, space complexity, and some other complexity measures.\n\n[c6 | DSA.pdf | page 36 | 3.6 Computer Science Theory]\nIn the 1800s, Charles Babbage imagined a mechanical machine—the Analytical Engine—that could automatically calculate mathematical formulas. Ada Lovelace then extrapolated that the Analytical Engine could solve more general algorithms by using loops to repeat processes and variables to represent data. Lovelace’s vision of algorithms represented a synthesis between human intuition and mathematical reasoning. In the mid-1900s, Lovelace’s ideas inspired Alan Turing to imagine a more general notion of algorithms and machines that could run those algorithms. A Turing machine is an abstract model of computation for executing any computer algorithm. A Turing machine describes computers in terms of three key ideas:\n\n1. a memory bank for storing data.\n\n2. an instruction table, where each instruction can either: a. store a value to the memory bank. b. retrieve a value from the memory bank.",
+    "final_context_ids": [
+      "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+      "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+      "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+      "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+      "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb",
+      "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6"
+    ],
+    "final_context_chars": 4545,
+    "latency_ms": 5228.6,
+    "raw_answer": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "The key difference is that Dijkstra’s algorithm processes shortest paths (sequences of edges), whereas Prim’s algorithm processes individual edges [be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe]. Dijkstra’s algorithm selects the next shortest path to an unexplored vertex, while Prim's algorithm selects individual lowest-weight edges [be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe][64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821].",
+    "citations": [
+      "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+      "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "Prim Dijkstra difference elements"
+        },
+        "usage": {
+          "prompt_tokens": 553,
+          "output_tokens": 17,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 3166.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "Prim Dijkstra difference elements",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 30.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 35,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+            "alias": "c2",
+            "score": 0.015749,
+            "page": 34,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+            "alias": "c3",
+            "score": 0.015659,
+            "page": 49,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 1,
+            "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+            "alias": "c4",
+            "score": 0.016133,
+            "page": 35,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 1,
+            "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+            "alias": "c5",
+            "score": 0.016133,
+            "page": 35,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+            "alias": "c6",
+            "score": 0.015749,
+            "page": 34,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+            "alias": "c7",
+            "score": 0.015749,
+            "page": 34,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "58d798d4d95e701776aac78a5fb33d6d3485f141f153f4327b30611e04aad6e1",
+            "alias": "c8",
+            "score": 0.015659,
+            "page": 48,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "bb8bfc58cb9695a7fd53228d164030d85413c98c021d0b6a318857d5420d0913",
+            "alias": "c9",
+            "score": 0.015659,
+            "page": 49,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+          "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878"
+        ],
+        "context_chars": 4475
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "The key difference is that Dijkstra’s algorithm processes shortest paths (sequences of edges), whereas Prim’s algorithm processes individual edges [c1]. Dijkstra’s algorithm selects the next shortest path to an unexplored vertex, while Prim's algorithm selects individual lowest-weight edges [c1][c2].",
+          "citations": [
+            "c1",
+            "c2"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1566,
+          "output_tokens": 86,
+          "thinking_tokens": 502
+        },
+        "latency_ms": 5862.3,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 2119,
+      "output_tokens": 103,
+      "thinking_tokens": 546,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 35 | 3.6 Computer Science Theory]\nDijkstra’s Algorithm\n\nDijkstra’s algorithm maintains a priority queue of vertices in the graph ordered by distance from the start and repeatedly selects the next shortest path to an unconnected part of the graph. Dijkstra’s algorithm is almost identical to Prim’s algorithm except processing shortest paths (sequences of edges) rather than individual edges. Dijkstra’s algorithm grows a shortest paths tree one shortest path at a time by selecting the next shortest path to an unexplored vertex. The runtime of Dijkstra’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.31).\n\nFigure 3.31 Dijkstra’s algorithm expands outward from the start vertex by repeatedly selecting the next lowest-cost path to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n3.6 Computer Science Theory\n\nLearning Objectives By the end of this section, you will be able to:\n\n[c2 | DSA.pdf | page 34 | 3.5 Sample Algorithms by Problem]\nFigure 3.28 Kruskal’s algorithm repeatedly selects the next lightest edge that connects two independent \"islands.\" (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nPrim’s Algorithm\n\nPrim’s algorithm grows a minimum spanning tree one edge at a time by selecting the lowest-weight edge to an unexplored vertex. The runtime of Prim’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.29).\n\nFigure 3.29 Prim’s algorithm expands outward from the start vertex by repeatedly selecting the next lightest edge to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nShortest Paths\n\n[c3 | DSA.pdf | page 49 | Chapter Review]\n3 • Chapter Review 137\n\nprimarily contributes to this linearithmic order of growth?\n\n15 . Both Prim’s algorithm and Dijkstra’s algorithm are greedy algorithms that organize vertices in a priority queue data structure. What is the difference between the ordering of vertices in the priority queue for Prim’s algorithm and Dijkstra’s algorithm?\n\n16 . What is the relationship between models of computation and algorithms?\n\n17 . What is the common difficulty preventing us from designing an efficient algorithm for solving NP- complete problems?\n\n18 . What are the consequences of P = NP?\n\nPractice Exercises\n\n1 . Binary search trees organize elements in ascending sorted order within the tree. However, binary search trees can become unbalanced. In the worst-case, a binary search tree can look exactly like a linked list. Give an order for inserting the following numbers into a binary search tree such that the resulting tree appears like a linked list: 7, 3, 8, 1, 2, 5, 6, 4.\n\n[c4 | DSA.pdf | page 35 | 3.6 Computer Science Theory]\n3.6 • Computer Science Theory 123\n\nWeighted Shortest Path\n\nA weighted shortest path is the problem of finding the shortest paths in terms of the sum of the edge weights. Earlier, we introduced Prim’s algorithm, a minimum spanning tree algorithm that maintains a priority queue of edges in the graph ordered by weight and repeatedly selects the next lowest-cost edge to an unconnected part of the graph.\n\nTHINK IT THROUGH\n\nWeighted Shortest Paths for Navigation Directions\n\nOne of the most direct applications of the shortest paths problem is to provide recommended routes for navigation directions in real-world mapping. Many applications use distance as the metric for edge weight, so the shortest path between two points represents the real-world route with the smallest distance between the two places.\n\nWhat does a distance metric not consider when providing a recommended route? What values are centered and emphasized by even using a shortest paths algorithm for recommending routes?\n\n[c5 | DSA.pdf | page 35 | 3.6 Computer Science Theory]\n• Understand the models and limits of computing\n\n• Relate Turing machines to algorithms\n\n• Describe complexity classes\n\n• Interpret NP-completeness\n\n• Differentiate between P and NP\n\nThroughout this chapter, we have introduced several techniques and canonical case studies for the design and analysis of algorithms—oftentimes focusing on the ideas and details behind individual algorithms. But the study of algorithms is more than just the study of individual algorithms, algorithm design, or even algorithm analysis.",
+    "final_context_ids": [
+      "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+      "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+      "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+      "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+      "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878"
+    ],
+    "final_context_chars": 4475,
+    "latency_ms": 9060.1,
+    "raw_answer": "The key difference is that Dijkstra’s algorithm processes shortest paths (sequences of edges), whereas Prim’s algorithm processes individual edges [c1]. Dijkstra’s algorithm selects the next shortest path to an unexplored vertex, while Prim's algorithm selects individual lowest-weight edges [c1][c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In the reduction example, both the longest paths problem (LPT) and the traveling salesperson problem (TS) reduce to Hamiltonian paths (HP) [1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d]. \n\nIn the subsequent reduction chain, Hamiltonian paths (HP) reduce to vertex cover (VC), which then reduces to 3-satisfiability (3-SAT) [1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d].",
+    "citations": [
+      "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "longest-paths traveling-salesperson reduction"
+        },
+        "usage": {
+          "prompt_tokens": 563,
+          "output_tokens": 21,
+          "thinking_tokens": 61
+        },
+        "latency_ms": 3068.8,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "longest-paths traveling-salesperson reduction",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 24.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+            "alias": "c2",
+            "score": 0.016133,
+            "page": 39,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+            "alias": "c3",
+            "score": 0.015629,
+            "page": 46,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 1,
+            "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+            "alias": "c4",
+            "score": 0.016261,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 1,
+            "id": "1cd3fda4916fecf7976dc985ce10dd0fe86e65b66caf1a8e30b94b5d057f4e49",
+            "alias": "c5",
+            "score": 0.016261,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+            "alias": "c6",
+            "score": 0.016133,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "e2dc448b27c11d9dcf9762b88709816645268face69b553be59696f8b3374663",
+            "alias": "c7",
+            "score": 0.016133,
+            "page": 39,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "2fe9eaaa88d44c97011cc0f96090d47879e389bd2252604c35bbdfeb99199d4d",
+            "alias": "c8",
+            "score": 0.015629,
+            "page": 46,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "5fb48e64370778d5fb320ae2266ebf27fa3cfcb0297f089432f8e8a059013ec5",
+            "alias": "c9",
+            "score": 0.015629,
+            "page": 46,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+          "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+          "1cd3fda4916fecf7976dc985ce10dd0fe86e65b66caf1a8e30b94b5d057f4e49",
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483"
+        ],
+        "context_chars": 4763
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c2"
+          ],
+          "answer": "In the reduction example, both the longest paths problem (LPT) and the traveling salesperson problem (TS) reduce to Hamiltonian paths (HP) [c2]. \n\nIn the subsequent reduction chain, Hamiltonian paths (HP) reduce to vertex cover (VC), which then reduces to 3-satisfiability (3-SAT) [c2]."
+        },
+        "usage": {
+          "prompt_tokens": 1606,
+          "output_tokens": 92,
+          "thinking_tokens": 174
+        },
+        "latency_ms": 3501.8,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c2"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 2169,
+      "output_tokens": 113,
+      "thinking_tokens": 235,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\nRelated to the problem of longest paths is the traveling salesperson problem (TSP), which is the problem of, given the path cost of every pair of vertices, finding the lowest-cost tour, or path from a start vertex visiting every vertex in the graph once including a return to the start vertex. Compared to the TSP, which is finding the lowest-cost tour, the longest paths problem is like finding the highest-cost tour. What makes both these problems difficult is that we do not have a simple rule for selecting the next element to include in the solution. Unless we have the special power of nondeterminism, it is hard to tell from the beginning which edge is the right one to include in the final solution. Applying a simple rule like, “Select the edge with the lowest cost,” might not necessarily lead to the overall lowest-cost tour.\n\n[c2 | DSA.pdf | page 39 | 3.6 Computer Science Theory]\n3.6 • Computer Science Theory 127\n\nNP-complete problem.\n\nLINK TO LEARNING\n\nThe longest paths problem and the traveling salesperson problem are just two examples of NP-complete problems. Visit A Graph of NP-Complete Reductions (https://openstax.org/r/76NPCompReuct) to visualize many NP-complete problems and their relationships to each other. For example, the longest paths problem (LPT) and the traveling salesperson problem (TS) both reduce to Hamiltonian paths (HP). In turn, Hamiltonian paths (HP) reduce to vertex cover (VC) which reduces to 3-satisfiability (3-SAT).\n\nP versus NP\n\nLongest paths and TSP are just two among thousands of NP-complete problems for which we do not have efficient algorithms. The question of P versus NP asks whether it is possible to design a deterministic polynomial-time algorithm for solving any—and therefore all—of NP-complete problems. There are two possible answers to the question of P versus NP:\n\n[c3 | DSA.pdf | page 46 | Chapter Review]\n• Nondeterministic polynomial (NP) time complexity class refers to all problems that can be solved in polynomial time by a nondeterministic algorithm. A nondeterministic algorithm is a kind of algorithm that can rely on the special power of exploring infinitely many possible “alternate universes” in order to complete a computation.\n\n• Technically, all P problems are also NP problems because we already have deterministic algorithms for\n\nsolving them and therefore do not need to rely on the special power of nondeterminism. NP-complete refers to all the hardest NP problems—the combinatorial problems for which we do not have deterministic polynomial-time algorithms.\n\n• Longest paths and the traveling salesperson problem (TSP) are two well-known examples of NP-complete problems. What makes both these problems difficult is that we do not have a simple rule for selecting the next element to include in the solution.\n\n[c4 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\n126 3 • Data Structures and Algorithms\n\nshortest paths tree to inform the solution. But in longest paths, the goal is to wander around the graph. The longest path between any two vertices will probably involve traversing as many edges as possible to maximize distance, visiting many vertices along the way. For some graphs, the longest paths might even visit all the vertices in the graph. In this situation, the longest paths do not form a tree and instead involve ordering all the vertices in the graph for each longest path. Identifying the correct longest path then requires listing out all the possible paths in the graph—a combinatorial explosion in the combinations of edges and vertices that can be selected to form a solution.\n\nFigure 3.32 The longest path in a graph maximizes the distance, which often (but not always) involves visiting many vertices along the way. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n[c5 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\nEven though this simple rule worked for the problem of minimum spanning trees, the additional restriction of a tour rather than a tree makes the TSP a much harder problem to solve efficiently. Although we have efficient algorithms for shortest paths, we do not have efficient algorithms for the shortest tour (TSP).\n\n[c6 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\nHow do we know if a problem is NP-complete? Earlier, we introduced reduction as an algorithm paradigm that is not only useful for solving problems, but also for relating the difficulty of problems. A reduction from a difficult problem A to another problem B proves that B is as difficult as A. It turns out that all NP-complete problems can be reduced to all the others, so an algorithm for solving any NP-complete problem solves every\n\nAccess for free at openstax.org",
+    "final_context_ids": [
+      "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+      "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+      "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+      "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+      "1cd3fda4916fecf7976dc985ce10dd0fe86e65b66caf1a8e30b94b5d057f4e49",
+      "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483"
+    ],
+    "final_context_chars": 4763,
+    "latency_ms": 6595.6,
+    "raw_answer": "In the reduction example, both the longest paths problem (LPT) and the traveling salesperson problem (TS) reduce to Hamiltonian paths (HP) [c2]. \n\nIn the subsequent reduction chain, Hamiltonian paths (HP) reduce to vertex cover (VC), which then reduces to 3-satisfiability (3-SAT) [c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q_test_unabs_01",
+    "split": "test",
+    "question": "Within Section 3.6, how does the text prove that the halting problem is undecidable?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "citations": [],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "halting problem undecidable"
+        },
+        "usage": {
+          "prompt_tokens": 554,
+          "output_tokens": 18,
+          "thinking_tokens": 49
+        },
+        "latency_ms": 3274.6,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "halting problem undecidable",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 12.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+            "alias": "c1",
+            "score": 0.015155,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+            "alias": "c2",
+            "score": 0.014493,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+            "alias": "c3",
+            "score": 0.008197,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 1,
+            "id": "3642998025d30f9ef0c7761c293ca4e7bad2c55b71dbf9f46a68fb78770822b3",
+            "alias": "c4",
+            "score": 0.015155,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 1,
+            "id": "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+            "alias": "c5",
+            "score": 0.015155,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+            "alias": "c6",
+            "score": 0.014493,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+            "alias": "c7",
+            "score": 0.014493,
+            "page": 39,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "5c39c55cc0e6be281570ea14d26096dde7ba7d834a69f05d34983a0d9d4a50c0",
+            "alias": "c8",
+            "score": 0.008197,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+          "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+          "3642998025d30f9ef0c7761c293ca4e7bad2c55b71dbf9f46a68fb78770822b3",
+          "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+          "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+          "5c39c55cc0e6be281570ea14d26096dde7ba7d834a69f05d34983a0d9d4a50c0"
+        ],
+        "context_chars": 4684
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "halting"
+        },
+        "usage": {
+          "prompt_tokens": 1529,
+          "output_tokens": 15,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 2446.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "halting",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 21.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+            "alias": "c9",
+            "score": 0.008197,
+            "page": 17,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "7f13fe7e772ce9ae2b50f48f4410beac0b0077aaac3ce657309f041d5234ed7a",
+            "alias": "c10",
+            "score": 0.008065,
+            "page": 53,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "2fe9eaaa88d44c97011cc0f96090d47879e389bd2252604c35bbdfeb99199d4d",
+            "alias": "c11",
+            "score": 0.007937,
+            "page": 46,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 1,
+            "id": "110b26ff30885a9f0538bac1beeaf7540933236aa8691ee4dd46a109b0e1c03e",
+            "alias": "c12",
+            "score": 0.008197,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 1,
+            "id": "1351fec94a14a98d967515c6111d3c43a5345957fec1c12f04f4082c8a60871b",
+            "alias": "c13",
+            "score": 0.008197,
+            "page": 17,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "a9b0e9f37bbfce3b6f1c8879c5b361b8cce466741283546a7da1e7b38cccedad",
+            "alias": "c14",
+            "score": 0.008065,
+            "page": 53,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "5535c3d40666acd4b409141b910326dda747b559cdb6d83b31f0adec8a44478d",
+            "alias": "c15",
+            "score": 0.007937,
+            "page": 45,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+            "alias": "c16",
+            "score": 0.007937,
+            "page": 46,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+          "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+          "3642998025d30f9ef0c7761c293ca4e7bad2c55b71dbf9f46a68fb78770822b3",
+          "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+          "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+          "5c39c55cc0e6be281570ea14d26096dde7ba7d834a69f05d34983a0d9d4a50c0",
+          "110b26ff30885a9f0538bac1beeaf7540933236aa8691ee4dd46a109b0e1c03e"
+        ],
+        "context_chars": 4781
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "undecidable undecidability 3.6"
+        },
+        "usage": {
+          "prompt_tokens": 1567,
+          "output_tokens": 23,
+          "thinking_tokens": 156
+        },
+        "latency_ms": 4584.8,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "undecidable undecidability 3.6",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 14.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "1b0f5a47d5450e3a6ecd2f2dd0b1a3c481e5a0340d824d09131a425c8294bb3a",
+            "alias": "c17",
+            "score": 0.014389,
+            "page": 47,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 2,
+            "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+            "alias": "c18",
+            "score": 0.008197,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+            "alias": "c19",
+            "score": 0.008197,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 1,
+            "id": "7a77f53fdce602a7da97bc48a377a5fe24b81f33f08bb0417955cbc51ec58839",
+            "alias": "c20",
+            "score": 0.014389,
+            "page": 46,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 1,
+            "id": "f1b43eaa303a97688af865f744851991943fd14833c171dfb2aa6d6b8a47addf",
+            "alias": "c21",
+            "score": 0.014389,
+            "page": 47,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 2,
+            "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+            "alias": "c22",
+            "score": 0.008197,
+            "page": 36,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+            "alias": "c23",
+            "score": 0.008197,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "448a9e06a7eafc3581191d3d0c6fbf33b02b14e1d7f49bce1d045fa93c7ca7f5",
+            "alias": "c24",
+            "score": 0.008197,
+            "page": 14,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 3,
+            "id": "f9c199b87e89812a1bf286b6a37793ac88461adf92e2b04f03b1d1018f5045df",
+            "alias": "c25",
+            "score": 0.008197,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+          "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+          "3642998025d30f9ef0c7761c293ca4e7bad2c55b71dbf9f46a68fb78770822b3",
+          "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+          "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+          "5c39c55cc0e6be281570ea14d26096dde7ba7d834a69f05d34983a0d9d4a50c0",
+          "110b26ff30885a9f0538bac1beeaf7540933236aa8691ee4dd46a109b0e1c03e"
+        ],
+        "context_chars": 4781
+      },
+      {
+        "event": "llm_decision",
+        "action": "abstain",
+        "args": {
+          "reason": "The provided context does not contain information about the halting problem or a proof of its undecidability in Section 3.6."
+        },
+        "usage": {
+          "prompt_tokens": 1584,
+          "output_tokens": 40,
+          "thinking_tokens": 233
+        },
+        "latency_ms": 3467.9,
+        "attempts": 1
+      },
+      {
+        "event": "abstain",
+        "reason": "The provided context does not contain information about the halting problem or a proof of its undecidability in Section 3.6."
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 5234,
+      "output_tokens": 96,
+      "thinking_tokens": 482,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nAn algorithm is a sequence of precise instructions that takes any input and computes the corresponding output, while algorithmic problem-solving refers to a particular set of approaches and methods for designing algorithms that draws on computing’s historical connections to the study of mathematical problem solving. Early computer scientists were influenced by mathematical formalism and mathematical problem solving. George Pólya’s 1945 book, How to Solve It, outlines a process for solving problems that begins with a formal understanding of the problem and ends with a solution to the problem. As an algorithm's input size is always finite, finding a solution to an algorithmic problem can always be accomplished by exhaustive search. Therefore, the goal of algorithmic problem-solving, as opposed to mathematical problem solving, is to find an “efficient” solution, either in terms of execution time (e.g., number of computer instructions) or space used (e.g., computer memory size).\n\n[c2 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\nHow do we know if a problem is NP-complete? Earlier, we introduced reduction as an algorithm paradigm that is not only useful for solving problems, but also for relating the difficulty of problems. A reduction from a difficult problem A to another problem B proves that B is as difficult as A. It turns out that all NP-complete problems can be reduced to all the others, so an algorithm for solving any NP-complete problem solves every\n\nAccess for free at openstax.org\n\n[c3 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nA data structure problem is a computational problem involving the storage and retrieval of elements for implementing abstract data types such as lists, sets, maps, and priority queues. These include:\n\n• searching, or the problem of retrieving a target element from a collection of elements\n\n• sorting, or the problem of rearranging elements into a logical order\n\n• hashing, or the problem of assigning a meaningful integer index for each object\n\nA graph problem is a computational problem involving graphs that represent relationships between data. These include:\n\n• traversal, or the problem of exploring all the vertices in a graph\n\n• minimum spanning tree is the problem of finding a lowest-cost way to connect all the vertices to each other\n\n• shortest path is the problem of finding the lowest-cost way to get from one vertex to another\n\nA string problem is a computational problem involving text or information represented as a sequence of characters. Examples include:\n\n[c4 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\n98 3 • Data Structures and Algorithms\n\ncan represent the same abstract data type, many different solutions exist to solve the same problem.\n\nAlgorithmic Problem Solving\n\n[c5 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nConsequently, the study of algorithmic problem-solving emphasizes the formal problem or task, with specific input data and output data corresponding to each input. There are many other ways to solve problems with computers, but this mathematical approach remains the dominant approach in the field. Here are a few well-known problems in computer science that we will explore later in this chapter.\n\n[c6 | DSA.pdf | page 38 | 3.6 Computer Science Theory]\nINDUSTRY SPOTLIGHT\n\nDelivery Logistics\n\nCompanies such as Amazon, FedEx, UPS, and others that rely on logistics to deliver goods to various locations seek to optimize the sequence of stops to save costs. The only way to achieve this would be to rely on an optimal algorithm for the traveling salesperson problem. The TSP aims to find the minimum distance tour that visits all the vertices such that no vertex is visited more than once. But this is not a perfect match for real-world delivery logistics. Fuel or battery efficiency, for example, is not just about distance traveled, but also the speed of travel, the time spent idling, and even the way that the route is organized. In the United States, where vehicles drive on the right side of the road, safety can be improved by reducing the number of left-hand turns across the divider. Drivers might also want to take breaks during a trip. Modeling all these factors requires carefully formulating the problem and considering the limits of TSP.\n\n[c8 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\n• matching, or the problem of searching for a text pattern within a document\n\n• compression, or the problem of representing information using less data storage\n\n• cryptography, or the problem of masking or obfuscating text to make it unintelligible\n\nModeling\n\n[c12 | DSA.pdf | page 16 | 3.3 Formal Properties of Algorithms]\nAccess for free at openstax.org",
+    "final_context_ids": [
+      "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+      "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+      "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+      "3642998025d30f9ef0c7761c293ca4e7bad2c55b71dbf9f46a68fb78770822b3",
+      "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+      "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+      "5c39c55cc0e6be281570ea14d26096dde7ba7d834a69f05d34983a0d9d4a50c0",
+      "110b26ff30885a9f0538bac1beeaf7540933236aa8691ee4dd46a109b0e1c03e"
+    ],
+    "final_context_chars": 4781,
+    "latency_ms": 13822.9,
+    "abstain_reason": "The provided context does not contain information about the halting problem or a proof of its undecidability in Section 3.6."
+  },
+  {
+    "query_id": "q_test_unabs_02",
+    "split": "test",
+    "question": "According to the text, is merge sort a stable sorting algorithm, and why does stability matter?",
+    "config": "hybrid_nb_k3_b5000_s3",
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "citations": [],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "merge sort stable stability"
+        },
+        "usage": {
+          "prompt_tokens": 553,
+          "output_tokens": 17,
+          "thinking_tokens": 36
+        },
+        "latency_ms": 2409.9,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "merge sort stable stability",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 14.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+            "alias": "c2",
+            "score": 0.016129,
+            "page": 23,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "d03a07cc0afb589329b2a67ce58e731ee87662910d54607b7245bcf7b8e25bc9",
+            "alias": "c3",
+            "score": 0.015443,
+            "page": 23,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 1,
+            "id": "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+            "alias": "c4",
+            "score": 0.016133,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 1,
+            "id": "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb",
+            "alias": "c5",
+            "score": 0.016133,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "dccf77e9ac2adf0a9a804d1f811630459e8e970fcdf788d5a079ed01c5b4b9d3",
+            "alias": "c6",
+            "score": 0.016129,
+            "page": 24,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "c771803ec02407054663671907feeaffefe3872d9d60f29956512c05c61c2d54",
+            "alias": "c7",
+            "score": 0.015443,
+            "page": 23,
+            "section": "3.4 Algorithmic Paradigms"
+          }
+        ],
+        "context_ids": [
+          "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+          "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+          "d03a07cc0afb589329b2a67ce58e731ee87662910d54607b7245bcf7b8e25bc9",
+          "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+          "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb"
+        ],
+        "context_chars": 4379
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "stable stability"
+        },
+        "usage": {
+          "prompt_tokens": 1458,
+          "output_tokens": 15,
+          "thinking_tokens": 72
+        },
+        "latency_ms": 2469.0,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "stable stability",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 15.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "b957254a5ecaac1b7af71b2af233fb1a69e3b6b7db84ffde7ef4f0af2f829d5c",
+            "alias": "c8",
+            "score": 0.008197,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "840ed4af2f59e62ad1532e21951690251211da2127dd9e37f0a3dcf90eaf65e2",
+            "alias": "c9",
+            "score": 0.008065,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+            "alias": "c10",
+            "score": 0.007937,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 1,
+            "id": "a8cf6da3d6929ba990cc161e649b966ad6f515da01adb9ffec49ca0285352257",
+            "alias": "c11",
+            "score": 0.008197,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "a6ae4ef4eb472ed75f71ac8746cb54d90f8edd6136debef7f72d1f93a475eb7f",
+            "alias": "c12",
+            "score": 0.008065,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 3,
+            "id": "448a9e06a7eafc3581191d3d0c6fbf33b02b14e1d7f49bce1d045fa93c7ca7f5",
+            "alias": "c13",
+            "score": 0.007937,
+            "page": 14,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 3,
+            "id": "f9c199b87e89812a1bf286b6a37793ac88461adf92e2b04f03b1d1018f5045df",
+            "alias": "c14",
+            "score": 0.007937,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+          "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+          "d03a07cc0afb589329b2a67ce58e731ee87662910d54607b7245bcf7b8e25bc9",
+          "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+          "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb"
+        ],
+        "context_chars": 4379
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "stable"
+        },
+        "usage": {
+          "prompt_tokens": 1463,
+          "output_tokens": 14,
+          "thinking_tokens": 66
+        },
+        "latency_ms": 2121.8,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_nb",
+        "query": "stable",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 39.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "840ed4af2f59e62ad1532e21951690251211da2127dd9e37f0a3dcf90eaf65e2",
+            "alias": "c9",
+            "score": 0.008197,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "b957254a5ecaac1b7af71b2af233fb1a69e3b6b7db84ffde7ef4f0af2f829d5c",
+            "alias": "c8",
+            "score": 0.008065,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e",
+            "alias": "c15",
+            "score": 0.007937,
+            "page": 6,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 1,
+            "id": "a6ae4ef4eb472ed75f71ac8746cb54d90f8edd6136debef7f72d1f93a475eb7f",
+            "alias": "c12",
+            "score": 0.008197,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "a8cf6da3d6929ba990cc161e649b966ad6f515da01adb9ffec49ca0285352257",
+            "alias": "c11",
+            "score": 0.008065,
+            "page": 16,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "ed8ecee8643554fc57664220c7a21b64a5e84f3d16dc8c95322880c51701a0c0",
+            "alias": "c16",
+            "score": 0.007937,
+            "page": 6,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064",
+            "alias": "c17",
+            "score": 0.007937,
+            "page": 7,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          }
+        ],
+        "context_ids": [
+          "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+          "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+          "d03a07cc0afb589329b2a67ce58e731ee87662910d54607b7245bcf7b8e25bc9",
+          "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+          "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb",
+          "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064"
+        ],
+        "context_chars": 4996
+      },
+      {
+        "event": "llm_decision",
+        "action": "abstain",
+        "args": {
+          "reason": "The provided text does not mention whether merge sort is a stable sorting algorithm or why stability matters."
+        },
+        "usage": {
+          "prompt_tokens": 1598,
+          "output_tokens": 33,
+          "thinking_tokens": 91
+        },
+        "latency_ms": 2283.1,
+        "attempts": 1
+      },
+      {
+        "event": "abstain",
+        "reason": "The provided text does not mention whether merge sort is a stable sorting algorithm or why stability matters."
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 5072,
+      "output_tokens": 79,
+      "thinking_tokens": 265,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 30 | 3.5 Sample Algorithms by Problem]\n118 3 • Data Structures and Algorithms\n\nMerge Sort Algorithm\n\nA merge sort algorithm recursively divides the data into sublists until sublists are one element long—which we know are sorted—and then merges adjacent sorted sublists to eventually return the sorted list. The merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order. The actual rearranging of elements occurs by repeatedly applying the merge operation on pairs of adjacent sorted sublists, starting with the smallest single-element sublists, to larger two-element sublists, and eventually reaching the two halves of the entire list of elements. The runtime of merge sort is in O(N log N) with respect to N, the number of elements (see Figure 3.17).\n\nQuicksort Algorithm\n\n[c2 | DSA.pdf | page 23 | 3.4 Algorithmic Paradigms]\n1. The problem of sorting the list is broken down (divided) into two subproblems: the subproblem of sorting the left half and the subproblem of sorting the right half.\n\n2. Merge sort is repeated to sort each half (conquer). This process continues recursively until the sublists are one element long. To sort a one-element list, the algorithm does not need to do anything, since the elements in the list are already arranged in a logical order.\n\n3. To solve the original problem of sorting the entire list, combine adjacent sorted sublists by merging them while maintaining sorted order. Merging each pair of adjacent sorted sublists repeats to form larger and larger sorted sublists until the entire list is fully sorted.\n\n[c3 | DSA.pdf | page 23 | 3.4 Algorithmic Paradigms]\nGiven a list of elements in an unknown order, a sorting algorithm should return a new list containing the same elements rearranged into a logical order, such as least to greatest. One canonical divide and conquer algorithm for comparison sorting is called merge sort. The problem of comparison sorting is grounded in the comparison operation. The comparison operation is like a traditional weighing scale that tells whether one element is heavier, lighter, or the same weight as another element, but provides no information about the exact weight or value of the element. Though this might seem like a serious restriction, comparison sorting is actually a very rich problem in computer science—it is perhaps the most deeply studied problem in computer science. Choosing comparison as the fundamental operation is also practical for complex data, where it might be hard (or even impossible) to assign an exact numeric ranking (Figure 3.17).\n\n[c4 | DSA.pdf | page 29 | 3.5 Sample Algorithms by Problem]\nSorting is the problem of rearranging elements into a logical order, typically from least-valued (smallest) to greatest-valued (largest). Sorting is a fundamental problem not only because of the tasks that it directly solves, but also because it is a foundation for many other algorithms such as the binary search algorithm or Kruskal’s algorithm for the minimum spanning tree problem.\n\nThe most common type of sorting algorithm solves the problem of comparison sorting, or sorting a list of elements where elements are not assigned numeric values but rather defined in relation to other elements. For simplicity, the data are typically assumed to be stored in an array list for indexed access, and the sorting algorithm can either return a new sorted list or rearrange the elements in the array list so that they appear in sorted order.\n\n[c5 | DSA.pdf | page 30 | 3.5 Sample Algorithms by Problem]\nA quicksort algorithm recursively sorts data by applying the binary search tree algorithm design pattern to partition data around pivot elements. Whereas the merge sort algorithm rearranges elements by repeatedly merging sorted sublists after each recursive subproblem, the quicksort algorithm rearranges elements by partitioning data before each recursive subproblem. The partition operation takes a pivot and rearranges the elements into three sections, from left to right: the sublist of all elements less than the pivot, the pivot element, and the sublist of all elements greater than (or equal to) the pivot. Each of the two sublists resulting from the partition operation is a recursive quicksort subproblem; when both of the sublists are sorted, the entire list will be sorted.\n\n[c17 | DSA.pdf | page 7 | 3.1 Introduction to Data Structures and Algorithms]\n3.1 • Introduction to Data Structures and Algorithms 95\n\nBalanced binary search trees such as AVL trees represent just one approach for ensuring that the tree never enters a worst-case situation. There are many other balanced binary search tree data structures in addition to AVL trees. Balanced binary search trees can also be used to implement the priority queue abstract data type if the elements are ordered according to their priority value. But balanced search trees are not the only way to implement priority queues.\n\nBinary Heaps",
+    "final_context_ids": [
+      "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+      "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+      "d03a07cc0afb589329b2a67ce58e731ee87662910d54607b7245bcf7b8e25bc9",
+      "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+      "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb",
+      "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064"
+    ],
+    "final_context_chars": 4996,
+    "latency_ms": 9353.8,
+    "abstain_reason": "The provided text does not mention whether merge sort is a stable sorting algorithm or why stability matters."
+  }
+]

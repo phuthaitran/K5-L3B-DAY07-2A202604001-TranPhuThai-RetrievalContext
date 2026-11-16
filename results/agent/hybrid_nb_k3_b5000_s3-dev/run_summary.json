@@ -1,0 +1,46 @@
+{
+  "config": "hybrid_nb_k3_b5000_s3",
+  "split": "dev",
+  "model": "gemini-3.8-flash",
+  "cases": 17,
+  "errors": 0,
+  "status": {
+    "answered": 15,
+    "abstain": 2
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17
+  },
+  "searches_distribution": {
+    "1": 12,
+    "2": 1,
+    "3": 4
+  },
+  "answerable_answered": {
+    "n": 15,
+    "N": 15
+  },
+  "unanswerable_abstained": {
+    "n": 2,
+    "N": 2
+  },
+  "context_evidence_rate": {
+    "n": 15,
+    "N": 15
+  },
+  "retrieved_evidence_rate": {
+    "n": 15,
+    "N": 15
+  },
+  "avg_final_context_chars": 4724.5,
+  "median_latency_s": 6.4,
+  "total_latency_s": 149.0,
+  "tokens": {
+    "prompt_tokens": 49542,
+    "output_tokens": 1737,
+    "thinking_tokens": 6480,
+    "llm_calls": 43
+  },
+  "estimated_cost_usd": null
+}

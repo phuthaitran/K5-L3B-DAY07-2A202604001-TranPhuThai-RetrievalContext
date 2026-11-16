@@ -1,0 +1,19 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "Reuse + mixed-language characters; p3 chunk contains both claims."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "ADT first by functionality/operations, then data structure by resource constraints (running time); p4."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "Verbatim definition on p5."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true, true], "reason": "Balanced BST/AVL (p7 gold) + worst case like a linked list and AVL balance property (p29 supports)."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "Vertex = person, edge = possible contact; p9."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "reason": "Verbatim definition on p10."},
+  {"query_id": "q07", "answer_grade": 1, "citation_support": [true, true], "reason": "Cited p10/p11 chunks support 'infinite complexity' and 'simplified abstract representation', but the key point 'focus on relevant information rather than detailed representations' (gold chunk b4376d, adjacent on p11) was not in context, so the answer is only partly aligned."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "Outputs consistent with all expected outputs; p15."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "reason": "Measures runtime of implementation; identifies performance bugs even with correct output (p17); p44 summary supports the first claim."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true, true], "reason": "Time vs memory relative to problem size; p18 and p44 summary."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "Best case one repetition, worst case N; p19."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "reason": "Rules out one vs half of remaining elements; p21."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true, true], "reason": "No; only when problem is formulated so the simple rule never makes a mistake (p26); p45 summary supports 'not always guaranteed'."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "Element-by-element, O(N); p29."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "Combines two sorted sublists into larger sorted sublist; p30."},
+  {"query_id": "q_dev_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "Searched 3 times (load factor / resizing), abstained without unsupported claims."},
+  {"query_id": "q_dev_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "Searched 3 times (negative edge weights, Bellman-Ford), abstained without unsupported claims."}
+]

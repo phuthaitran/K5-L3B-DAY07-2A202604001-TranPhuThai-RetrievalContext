@@ -1,0 +1,46 @@
+{
+  "config": "dense_k3_b2500_s3",
+  "split": "dev",
+  "model": "gemini-3.8-flash",
+  "cases": 17,
+  "errors": 0,
+  "status": {
+    "answered": 12,
+    "abstain": 5
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17
+  },
+  "searches_distribution": {
+    "1": 9,
+    "2": 1,
+    "3": 7
+  },
+  "answerable_answered": {
+    "n": 12,
+    "N": 15
+  },
+  "unanswerable_abstained": {
+    "n": 2,
+    "N": 2
+  },
+  "context_evidence_rate": {
+    "n": 10,
+    "N": 15
+  },
+  "retrieved_evidence_rate": {
+    "n": 14,
+    "N": 15
+  },
+  "avg_final_context_chars": 2074.4,
+  "median_latency_s": 6.65,
+  "total_latency_s": 162.4,
+  "tokens": {
+    "prompt_tokens": 41293,
+    "output_tokens": 1630,
+    "thinking_tokens": 7542,
+    "llm_calls": 49
+  },
+  "estimated_cost_usd": null
+}

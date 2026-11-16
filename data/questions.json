@@ -1,0 +1,274 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Why use one general string data structure to represent sentences across languages rather than designing a specialized structure for each language?",
+    "expected_answer": "A universal string structure can represent sentences across languages, including characters from different languages in the same sentence, so it can be reused instead of creating a language-specific structure.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 3,
+        "evidence": "rather than designing a specialized data structure for sentences in every human language, we often use a single, universal string data structure to represent sentences, including characters from different languages in the same sentence."
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "In the top-down approach, what is chosen first, and what criteria guide the choice of a concrete data structure?",
+    "expected_answer": "First choose an abstract data type based on the required functionality and operations. Then choose a data structure based on the resource constraints for each operation, usually running time.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 4,
+        "evidence": "Computer scientists apply a top-down approach.\n\n1. Select an appropriate abstract data type by analyzing the problem to determine the necessary functionality and operations.\n\n2. Select an appropriate data structure by quantifying the resource constraints (usually program running time) for each operation."
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "In Section 3.1, how is a child node defined?",
+    "expected_answer": "A child node is a descendant of another node.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 5,
+        "evidence": "A child node is a descendant of another node."
+      }
+    ],
+    "filter": {
+      "section": "3.1 Introduction to Data Structures and Algorithms"
+    }
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "What approach does the text describe for preventing a binary search tree from entering a worst-case situation, and what does it aim to ensure?",
+    "expected_answer": "Use a balanced binary search tree, such as an AVL tree, to keep the tree from entering a worst-case situation.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 7,
+        "evidence": "Balanced binary search trees such as AVL trees represent just one approach for ensuring that the tree never enters a worst-case situation."
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "In the contact-tracing example, what do the graph's vertices and edges represent?",
+    "expected_answer": "Each vertex represents a person, and each edge between two people represents a possible contact.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 9,
+        "evidence": "Imagine a graph where each vertex in a tracing graph represents a person, and each edge between two people represents a possible contact."
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "How does the text define an algorithm in terms of instructions, input, and output?",
+    "expected_answer": "An algorithm is a sequence of precise instructions that takes any input and computes the corresponding output.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 10,
+        "evidence": "An algorithm is a sequence of precise instructions that takes any input and computes the corresponding output"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Why do algorithm designers use models instead of retaining every detail of the real world?",
+    "expected_answer": "Models let designers focus on relevant information rather than detailed representations of the real world.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 11,
+        "evidence": "In order to design algorithms, we need to be able to focus on relevant information rather than detailed representations of the real world."
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "According to the text, when is an algorithm considered correct?",
+    "expected_answer": "An algorithm is correct only when its computed outputs are consistent with all expected outputs; otherwise, it is incorrect.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 15,
+        "evidence": "An algorithm is considered correct only if its computed outputs are consistent with all the expected outputs; otherwise, the algorithm is considered incorrect."
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What does experimental analysis measure about an implementation, and what can it identify even when the output is correct?",
+    "expected_answer": "It measures runtime by recording how long the implementation takes to run, and it can identify performance bugs or unusually high resource use even when the output is correct.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 17,
+        "evidence": "by recording how long it takes to run a program implementation of it. Experimental analysis is particularly effective for identifying performance bugs or code that consumes unusually large amounts of computation time or system resources, even though it produces the correct output."
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which resources do time complexity and space complexity measure, respectively, in relation to problem size?",
+    "expected_answer": "Time complexity measures the time an algorithm requires during execution; space complexity measures the memory it requires.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 18,
+        "evidence": "time complexity, a formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. In addition to time complexity, computer scientists are also interested in space complexity, the formal measure of how much memory an algorithm requires during its execution as it relates to the size of the problem."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "For sequential search, which case requires the fewest repetitions, and which case can require N repetitions?",
+    "expected_answer": "The best case is when the target is at the start of the list and requires one repetition. The worst case is when it is at the end or absent, and requires N repetitions.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 19,
+        "evidence": "• In the best-case situation (when the target word is at the start of the list), sequential search takes just one repetition to find the word in the list.\n\n• In the worst-case situation (when the target word is either at the end of the list or not in the list at all), sequential search takes N repetitions where N is the number of words in the list."
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the worst case, why is sequential search O(N) while binary search is O(log N)?",
+    "expected_answer": "Each sequential-search repetition rules out one remaining element, while each binary-search repetition rules out half of the remaining elements.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 21,
+        "evidence": "In the worst case, the time complexity of sequential search is in O(N) with respect to N, the number of words in the list, since each repetition of sequential search rules out one remaining element. How about binary search? In the worst case, the time complexity of binary search is in O(log N) with respect to N, the number of words in the list, since each repetition of binary search rules out half the remaining elements."
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Can a greedy algorithm be assumed to always find the best solution? Under what condition can some greedy algorithms guarantee an optimal solution?",
+    "expected_answer": "No. Some greedy algorithms guarantee an optimal solution only when the problem is formulated so that repeatedly applying the simple selection rule never makes a mistake.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 26,
+        "evidence": "The majority of greedy algorithms do not always compute the best solution. But there are also certain scenarios in which cleverly crafted greedy algorithms guarantee finding optimal solutions. The problems they solve are formulated to ensure that the greedy algorithm never makes a mistake when repeatedly applying the simple rule to select the next element."
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Within Section 3.5, how does sequential search examine a collection, and what is its runtime order?",
+    "expected_answer": "It checks the collection elements one by one to find the target; its runtime is O(N), where N is the number of elements.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 29,
+        "evidence": "A sequential search algorithm is a searching algorithm that sequentially checks the collection element-by- element for the target. The runtime of sequential search is in O(N) with respect to N, the number of elements in the list"
+      }
+    ],
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    }
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "In merge sort, what does the merge operation do with two sorted sublists?",
+    "expected_answer": "It combines the two sorted sublists into a larger sublist whose elements remain sorted.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 30,
+        "evidence": "The merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order."
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "Why can hashing not guarantee a unique hash value for every object?",
+    "expected_answer": "The number of possible strings or complex data objects is enormous, while computers can represent only a fixed range of integer values, making collisions inevitable.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 32,
+        "evidence": "the combinatorial explosion of possibilities for unique strings or collections of complex data means that a collision, or a situation in which multiple objects hash to the same integer index value, is inevitable since integers in a computer can typically only represent a certain, fixed range of integer numbers."
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "expected_answer": "BFS expands level by level and adds explored vertices to a global set to avoid revisiting them and preserve level order.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 33,
+        "evidence": "A breadth-first search iteratively explores each neighbor, expanding the search level-by-level breadth-first (Figure 3.27). Explored vertices are also added to a global set to ensure that the algorithm explores each vertex once and in the correct level-order."
+      }
+    ],
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "expected_answer": "It assumes a single thread of execution that follows each instruction in the algorithm.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 37,
+        "evidence": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm."
+      }
+    ],
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    }
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "expected_answer": "Dijkstra processes shortest paths (sequences of edges), whereas Prim processes individual edges.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 35,
+        "evidence": "Dijkstra’s algorithm is almost identical to Prim’s algorithm except processing shortest paths (sequences of edges) rather than individual edges."
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "expected_answer": "Both reduce to Hamiltonian paths; Hamiltonian paths reduce to vertex cover, which reduces to 3-satisfiability.",
+    "gold": [
+      {
+        "source_id": "introduction_to_computer_science_excrept",
+        "page": 39,
+        "evidence": "the longest paths problem (LPT) and the traveling salesperson problem (TS) both reduce to Hamiltonian paths (HP). In turn, Hamiltonian paths (HP) reduce to vertex cover (VC) which reduces to 3-satisfiability (3-SAT)."
+      }
+    ]
+  }
+]

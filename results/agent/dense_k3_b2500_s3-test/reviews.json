@@ -1,0 +1,9 @@
+[
+  {"query_id": "q16", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "Combinatorial explosion vs fixed integer range -> collisions inevitable; gold chunk p32 at rank 1."},
+  {"query_id": "q17", "answer_grade": 2, "context_grade": 2, "citation_support": [true, true], "reason": "Level-by-level + global set (gold p33); second p33 chunk supports 'closer vertices first'."},
+  {"query_id": "q18", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "Single thread of execution; gold p37."},
+  {"query_id": "q19", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "Shortest paths vs individual edges; gold p35."},
+  {"query_id": "q20", "answer_grade": 0, "context_grade": 0, "citation_support": [], "reason": "False abstention. Gold chunk 1525e7 (p39) was retrieved at rank 3 in all three searches, but two p38 chunks filled the 2500-char budget, so the final context had no evidence (same failure as dev q02/q12/q13)."},
+  {"query_id": "q_test_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "Searched 'halting', 'undecidable'; abstained without claims."},
+  {"query_id": "q_test_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "Searched 'stable', 'stability'; abstained without claims."}
+]

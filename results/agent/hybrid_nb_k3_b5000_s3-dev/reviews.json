@@ -1,0 +1,19 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "p3."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "p4."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "p5."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true, true, true, true], "reason": "Balanced BST / AVL (p7 gold + p29); p6 ed8ece supports 'unbalanced -> linked list'; p6 ea2f99 supports AVL balance property and node rotations (Figure 3.7)."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "p9."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "reason": "p10."},
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true, true, true], "reason": "Fixed by neighbour expansion: gold chunk b4376d (next to rank-2 hit 153751 on p11) entered the context and is cited for 'focus on relevant information'; p43 summary supports abstraction/simplification."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "p15."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "reason": "p44 + p17."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true, true], "reason": "p18 + p44."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true, true], "reason": "p19 gold; neighbour p18 chunk supports 'target found early = best case'."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "reason": "p21 gold, including the log2 explanation."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true, true], "reason": "p45 summary + p26 gold."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "p29."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "p30."},
+  {"query_id": "q_dev_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "3 searches with ~16 chunks in context; still abstained, no unsupported claims."},
+  {"query_id": "q_dev_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "3 searches (negative edge, Bellman), abstained."}
+]

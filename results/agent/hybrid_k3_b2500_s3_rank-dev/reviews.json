@@ -1,0 +1,19 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "p3."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "p4."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "p5."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true, true], "reason": "Balanced BST / AVL; p29 + p6 AVL-property chunk. The p6 chunk (rank 1 in search 2) entered the context because of rank ordering; with append order it would not have fit."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "p9."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "reason": "p10."},
+  {"query_id": "q07", "answer_grade": 1, "citation_support": [true, true], "reason": "Same partial answer: supported by p10/p11 but misses 'focus on relevant information' (gold chunk b4376d not retrieved)."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "p15."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "reason": "p17 + p44."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true, true], "reason": "p18 + p44."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "p19."},
+  {"query_id": "q12", "answer_grade": 2, "citation_support": [true], "reason": "p21 gold."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "p26 gold."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "p29."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "p30."},
+  {"query_id": "q_dev_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "3 searches, abstained."},
+  {"query_id": "q_dev_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "3 searches, abstained."}
+]

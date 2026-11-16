@@ -1,0 +1,152 @@
+[
+  {
+    "query_id": "q16",
+    "answerable": true,
+    "question": "Why can hashing not guarantee a unique hash value for every object?",
+    "reference": "The number of possible strings or complex data objects is enormous, while computers can represent only a fixed range of integer values, making collisions inevitable.",
+    "status": "answered",
+    "answer": "Hashing cannot guarantee a unique hash value for every object because there is a combinatorial explosion of possibilities for unique strings or collections of complex data, while integers in a computer can typically only represent a fixed range of numbers [e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51]. As a result, collisions—where multiple objects hash to the same integer index value—are inevitable [e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51].",
+    "raw_answer": "Hashing cannot guarantee a unique hash value for every object because there is a combinatorial explosion of possibilities for unique strings or collections of complex data, while integers in a computer can typically only represent a fixed range of numbers [c1]. As a result, collisions—where multiple objects hash to the same integer index value—are inevitable [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "page": 32,
+        "text": "120 3 • Data Structures and Algorithms\n\nFigure 3.25 Hash tables data structures apply hashing to implement abstract data types such as sets and maps, but must handle collisions between elements that share the same hash value. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nHashing search algorithms are often preferred over binary search algorithms for their runtime benefits, but they come with unique drawbacks. Ideally, different objects would hash to different hash values. But the combinatorial explosion of possibilities for unique strings or collections of complex data means that a collision, or a situation in which multiple objects hash to the same integer index value, is inevitable since integers in a computer can typically only represent a certain, fixed range of integer numbers. Combinatorial explosion is not only a problem for the design of efficient algorithms, but also the design of efficient data structures too.\n\nGraph Problems"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q17",
+    "answerable": true,
+    "question": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "reference": "BFS expands level by level and adds explored vertices to a global set to avoid revisiting them and preserve level order.",
+    "status": "answered",
+    "answer": "Within Section 3.5, breadth-first search expands the graph **level-by-level breadth-first** (expanding outward from the start vertex, exploring vertices closer to the start before those further away) [6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022][6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7]. \n\nIt ensures that each vertex is explored only once by adding explored vertices to a **global set** [6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022].",
+    "raw_answer": "Within Section 3.5, breadth-first search expands the graph **level-by-level breadth-first** (expanding outward from the start vertex, exploring vertices closer to the start before those further away) [c1][c4]. \n\nIt ensures that each vertex is explored only once by adding explored vertices to a **global set** [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "page": 33,
+        "text": "3.5 • Sample Algorithms by Problem 121\n\nFigure 3.26 Depth-first search is a graph traversal algorithm that continues as far down a path as possible from a start vertex before backtracking. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBreadth-First Search\n\nA breadth-first search iteratively explores each neighbor, expanding the search level-by-level breadth-first (Figure 3.27). Explored vertices are also added to a global set to ensure that the algorithm explores each vertex once and in the correct level-order. The runtime of breadth-first search is also in O(|V| + |E|) with respect to |V|, the number of vertices, and |E|, the number of edges."
+      },
+      {
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "page": 33,
+        "text": "Graph traversal algorithms are the foundational algorithm design patterns for most graph processing algorithms. Many algorithms require some amount of exploration, and that exploration typically starts at some vertex and continues processing each reachable vertex at most once. A reachable vertex can be reached if a path or sequence of edges from the start vertex exists. As opposed to depth-first search, breadth-first search has the benefit of exploring vertices closer to the start before exploring vertices further from the start, which can be useful for solving problems such as unweighted shortest paths.\n\nFigure 3.27 Depth-first search is a graph traversal algorithm that continues as far down a path as possible from a start vertex before backtracking. Breadth-first search is a graph traversal algorithm that explores level by level expanding outward from the start vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nMinimum Spanning Trees"
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q18",
+    "answerable": true,
+    "question": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "reference": "It assumes a single thread of execution that follows each instruction in the algorithm.",
+    "status": "answered",
+    "answer": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm [630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855].",
+    "raw_answer": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "page": 37,
+        "text": "The Turing machine abstract model of computation assumes a single thread of execution following each instruction in an algorithm. Although today’s computers are much more efficient than the first computers that realized the Turing machine, most computers still rely on the same fundamental assumptions about how to execute algorithms. The O(N)-time sequential search algorithm, though it might execute 1,000 times faster on today’s computers, still grows linearly with respect to the size of the input. An O(2N)-time brute-force algorithm, though it might execute 1,000 times faster on today’s computers, still grows exponentially with respect to the size of the input. Even as computers become faster over time, inefficient algorithms still cannot be used to solve any problems larger than a few thousand elements.\n\nComplexity Classes"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q19",
+    "answerable": true,
+    "question": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "reference": "Dijkstra processes shortest paths (sequences of edges), whereas Prim processes individual edges.",
+    "status": "answered",
+    "answer": "The key difference is that Dijkstra’s algorithm processes shortest paths (sequences of edges), whereas Prim’s algorithm processes individual edges [be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe]. Dijkstra’s algorithm selects the next shortest path to an unexplored vertex, while Prim's algorithm selects individual lowest-weight edges [be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe][64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821].",
+    "raw_answer": "The key difference is that Dijkstra’s algorithm processes shortest paths (sequences of edges), whereas Prim’s algorithm processes individual edges [c1]. Dijkstra’s algorithm selects the next shortest path to an unexplored vertex, while Prim's algorithm selects individual lowest-weight edges [c1][c2].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "page": 35,
+        "text": "Dijkstra’s Algorithm\n\nDijkstra’s algorithm maintains a priority queue of vertices in the graph ordered by distance from the start and repeatedly selects the next shortest path to an unconnected part of the graph. Dijkstra’s algorithm is almost identical to Prim’s algorithm except processing shortest paths (sequences of edges) rather than individual edges. Dijkstra’s algorithm grows a shortest paths tree one shortest path at a time by selecting the next shortest path to an unexplored vertex. The runtime of Dijkstra’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.31).\n\nFigure 3.31 Dijkstra’s algorithm expands outward from the start vertex by repeatedly selecting the next lowest-cost path to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n3.6 Computer Science Theory\n\nLearning Objectives By the end of this section, you will be able to:"
+      },
+      {
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "page": 34,
+        "text": "Figure 3.28 Kruskal’s algorithm repeatedly selects the next lightest edge that connects two independent \"islands.\" (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nPrim’s Algorithm\n\nPrim’s algorithm grows a minimum spanning tree one edge at a time by selecting the lowest-weight edge to an unexplored vertex. The runtime of Prim’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.29).\n\nFigure 3.29 Prim’s algorithm expands outward from the start vertex by repeatedly selecting the next lightest edge to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nShortest Paths"
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q20",
+    "answerable": true,
+    "question": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "reference": "Both reduce to Hamiltonian paths; Hamiltonian paths reduce to vertex cover, which reduces to 3-satisfiability.",
+    "status": "answered",
+    "answer": "In the reduction example, both the longest paths problem (LPT) and the traveling salesperson problem (TS) reduce to Hamiltonian paths (HP) [1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d]. \n\nIn the subsequent reduction chain, Hamiltonian paths (HP) reduce to vertex cover (VC), which then reduces to 3-satisfiability (3-SAT) [1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d].",
+    "raw_answer": "In the reduction example, both the longest paths problem (LPT) and the traveling salesperson problem (TS) reduce to Hamiltonian paths (HP) [c2]. \n\nIn the subsequent reduction chain, Hamiltonian paths (HP) reduce to vertex cover (VC), which then reduces to 3-satisfiability (3-SAT) [c2].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "page": 39,
+        "text": "3.6 • Computer Science Theory 127\n\nNP-complete problem.\n\nLINK TO LEARNING\n\nThe longest paths problem and the traveling salesperson problem are just two examples of NP-complete problems. Visit A Graph of NP-Complete Reductions (https://openstax.org/r/76NPCompReuct) to visualize many NP-complete problems and their relationships to each other. For example, the longest paths problem (LPT) and the traveling salesperson problem (TS) both reduce to Hamiltonian paths (HP). In turn, Hamiltonian paths (HP) reduce to vertex cover (VC) which reduces to 3-satisfiability (3-SAT).\n\nP versus NP\n\nLongest paths and TSP are just two among thousands of NP-complete problems for which we do not have efficient algorithms. The question of P versus NP asks whether it is possible to design a deterministic polynomial-time algorithm for solving any—and therefore all—of NP-complete problems. There are two possible answers to the question of P versus NP:"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q_test_unabs_01",
+    "answerable": false,
+    "question": "Within Section 3.6, how does the text prove that the halting problem is undecidable?",
+    "reference": "Section 3.6 covers Turing machines and complexity classes (P, NP, NP-complete) but never mentions the halting problem, decidability or undecidability.",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "raw_answer": null,
+    "abstain_reason": "The provided context does not contain information about the halting problem or a proof of its undecidability in Section 3.6.",
+    "cited_chunks": [],
+    "citation_support": [],
+    "notes": "",
+    "abstention_correct": null
+  },
+  {
+    "query_id": "q_test_unabs_02",
+    "answerable": false,
+    "question": "According to the text, is merge sort a stable sorting algorithm, and why does stability matter?",
+    "reference": "Merge sort is described (Section 3.5), but the corpus never discusses sorting stability or the relative order of equal keys.",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "raw_answer": null,
+    "abstain_reason": "The provided text does not mention whether merge sort is a stable sorting algorithm or why stability matters.",
+    "cited_chunks": [],
+    "citation_support": [],
+    "notes": "",
+    "abstention_correct": null
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {"query_id": "q16", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "Gold p32 at rank 1; answer matches reference."},
+  {"query_id": "q17", "answer_grade": 2, "context_grade": 2, "citation_support": [true, true], "reason": "Gold p33 + neighbouring p33 chunk ('closer vertices first')."},
+  {"query_id": "q18", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "Gold p37."},
+  {"query_id": "q19", "answer_grade": 2, "context_grade": 2, "citation_support": [true, true], "reason": "Gold p35; p34 Prim chunk supports 'Prim selects lowest-weight edge'."},
+  {"query_id": "q20", "answer_grade": 2, "context_grade": 2, "citation_support": [true], "reason": "LPT and TS -> HP -> VC -> 3-SAT; gold p39 entered the 5000-char context (rank 2)."},
+  {"query_id": "q_test_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "3 searches (halting / undecidable), ~25 candidate chunks, abstained."},
+  {"query_id": "q_test_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "3 searches (stable / stability), abstained."}
+]

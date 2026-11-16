@@ -1,0 +1,19 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true], "reason": "Reuse + mixed-language characters; p3."},
+  {"query_id": "q02", "answer_grade": 0, "citation_support": [], "reason": "False abstention. Gold chunk d8a551 (p4) was retrieved at rank 3 in search 1 but dropped from context: ranks 1-2 (p43, p2) already used the 2500-char budget. Later searches added nothing that fit."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "Verbatim definition on p5."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "Balanced BSTs such as AVL trees prevent the linked-list worst case; supported by p29 (gold p7 chunk was retrieved in search 2 but did not fit the budget)."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "Vertex = person, edge = possible contact; p9."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "reason": "Verbatim definition on p10."},
+  {"query_id": "q07", "answer_grade": 1, "citation_support": [true, false], "reason": "Main stated reason ('because problem modeling is constrained by the model of computation') misreads p11 chunk 35daee, which does not say this is why models are used; only the last clause about emphasising useful characteristics matches the reference. Gold chunk b4376d not in context."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "p15."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "reason": "p17 + p44 summary."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true], "reason": "p18."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "p19."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [], "reason": "False abstention. Search 3 returned gold chunk 2edc07 (p21) at rank 1, but the context was already full from searches 1-2 (append order), so it never reached the model."},
+  {"query_id": "q13", "answer_grade": 0, "citation_support": [], "reason": "False abstention. Gold chunk 6efd64 (p26) was rank 3 in all three searches and never fit the 2500-char budget after p45 and p25."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "p29."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "p30."},
+  {"query_id": "q_dev_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "3 searches, abstained, no unsupported claims."},
+  {"query_id": "q_dev_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "3 searches (negative, Bellman), abstained."}
+]

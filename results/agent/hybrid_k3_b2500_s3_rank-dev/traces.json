@@ -1,0 +1,2326 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Why use one general string data structure to represent sentences across languages rather than designing a specialized structure for each language?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "A single, universal string data structure is used so that the data structure can be reused across different problems, allowing it to represent sentences that include characters from different languages even within the same sentence [6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1].",
+    "citations": [
+      "6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "general string data structure sentences languages specialized"
+        },
+        "usage": {
+          "prompt_tokens": 556,
+          "output_tokens": 20,
+          "thinking_tokens": 51
+        },
+        "latency_ms": 2706.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "general string data structure sentences languages specialized",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 208.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 3,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "f57b42a0d905f217d94bd7a3830da3445da6434f5991fbbf966e7a92af0efa0a",
+            "alias": "c2",
+            "score": 0.016261,
+            "page": 2,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "04e9896de847f4966334e63ddd2aeb69d4adbd9c437fa893762883d4d39d7d99",
+            "alias": "c3",
+            "score": 0.015385,
+            "page": 43,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1",
+          "f57b42a0d905f217d94bd7a3830da3445da6434f5991fbbf966e7a92af0efa0a",
+          "04e9896de847f4966334e63ddd2aeb69d4adbd9c437fa893762883d4d39d7d99"
+        ],
+        "context_chars": 2165
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "A single, universal string data structure is used so that the data structure can be reused across different problems, allowing it to represent sentences that include characters from different languages even within the same sentence [c1].",
+          "citations": [
+            "c1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 962,
+          "output_tokens": 61,
+          "thinking_tokens": 338
+        },
+        "latency_ms": 4657.0,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1518,
+      "output_tokens": 81,
+      "thinking_tokens": 389,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 3 | 3.1 Introduction to Data Structures and Algorithms]\n3.1 • Introduction to Data Structures and Algorithms 91\n\nAlthough the values for complex data are often diverse, computer scientists have designed data structures so that they can be reused for other problems. For example, rather than designing a specialized data structure for sentences in every human language, we often use a single, universal string data structure to represent sentences, including characters from different languages in the same sentence. (We will later see some drawbacks of generalizing assumptions in the design of data structures and algorithms.) In addition, computers take time to execute algorithms, so computer scientists are concerned about efficiency in terms of how long an algorithm takes to compute a result.\n\n[c2 | DSA.pdf | page 2 | 3.1 Introduction to Data Structures and Algorithms]\nIn our previous example, a string is a data structure for representing sentences as a sequence of characters. It has specific functionality such as character insertion or deletion, string concatenation, and string comparison.\n\nAccess for free at openstax.org\n\n[c3 | DSA.pdf | page 43 | Chapter Review]\n• Data structures represent complex data types for solving real-world problems. Data structures combine specific data representations with specific functionality.\n\n• Abstract data types categorize data structures according to their functionality and ignore differences in data representation. Abstract data types include lists, sets, maps, priority queues, and graphs.\n\n• To select an appropriate data structure, first select an abstract data type according to the problem requirements. Then, select an appropriate data structure implementation for the abstract data type.\n\n• Linear data structures organize elements in a line, ideal for implementing the list abstract data type. Linear data structures include array lists and linked lists.\n\n• Linear data structures can implement any abstract data type. The study of data structures in general focuses on opportunities to improve efficiency (in terms of execution time or memory usage) over linear data structures.",
+    "final_context_ids": [
+      "6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1",
+      "f57b42a0d905f217d94bd7a3830da3445da6434f5991fbbf966e7a92af0efa0a",
+      "04e9896de847f4966334e63ddd2aeb69d4adbd9c437fa893762883d4d39d7d99"
+    ],
+    "final_context_chars": 2165,
+    "latency_ms": 7586.6,
+    "raw_answer": "A single, universal string data structure is used so that the data structure can be reused across different problems, allowing it to represent sentences that include characters from different languages even within the same sentence [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "question": "In the top-down approach, what is chosen first, and what criteria guide the choice of a concrete data structure?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In the top-down approach, an appropriate abstract data type is chosen first by analyzing the problem to determine the necessary functionality and operations [d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb]. The choice of a concrete data structure is then guided by quantifying the resource constraints (usually program running time) for each operation [d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb].",
+    "citations": [
+      "d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "top-down approach concrete data structure"
+        },
+        "usage": {
+          "prompt_tokens": 558,
+          "output_tokens": 20,
+          "thinking_tokens": 49
+        },
+        "latency_ms": 2154.2,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "top-down approach concrete data structure",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 4,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "434dbc3b8d871e09827dab27189b2130d9c56f46766a4a2666fb0afda116dc81",
+            "alias": "c2",
+            "score": 0.015059,
+            "page": 4,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "04e9896de847f4966334e63ddd2aeb69d4adbd9c437fa893762883d4d39d7d99",
+            "alias": "c3",
+            "score": 0.008197,
+            "page": 43,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb",
+          "434dbc3b8d871e09827dab27189b2130d9c56f46766a4a2666fb0afda116dc81"
+        ],
+        "context_chars": 1918
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "In the top-down approach, an appropriate abstract data type is chosen first by analyzing the problem to determine the necessary functionality and operations [c1]. The choice of a concrete data structure is then guided by quantifying the resource constraints (usually program running time) for each operation [c1].",
+          "citations": [
+            "c1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 948,
+          "output_tokens": 78,
+          "thinking_tokens": 199
+        },
+        "latency_ms": 3695.2,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1506,
+      "output_tokens": 98,
+      "thinking_tokens": 248,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 4 | 3.1 Introduction to Data Structures and Algorithms]\n92 3 • Data Structures and Algorithms\n\ndata structures for a particular problem? Computer scientists apply a top-down approach.\n\n1. Select an appropriate abstract data type by analyzing the problem to determine the necessary functionality and operations.\n\n2. Select an appropriate data structure by quantifying the resource constraints (usually program running time) for each operation.\n\nThe primary concern is the data and the operations to be performed on them. Thinking back to simple data types like numbers, we focused on addition, subtraction, multiplication, and division as the basic operations. Likewise, to represent complex data types, we also focus on the operations that will most directly support our algorithms. After deciding on an abstract data type, we then choose a particular data structure that implements the abstract data type.\n\nLinear Data Structures\n\n[c2 | DSA.pdf | page 4 | 3.1 Introduction to Data Structures and Algorithms]\nIf a problem can be solved with an ordered sequence of elements (e.g., numbers, payroll records, or text messages), the simplest approach might be to store them in a list. Some problems require that actions be performed in a strict chronological order, such as processing items in the order that they arrive or in the reverse order. In these situations, a linear data structure, which is a category of data structures where elements are ordered in a line, is appropriate. There are two possible implementations for the list abstract data type. The first, an array list (Figure 3.3), is a data structure that stores list elements next to each other in memory. The other is a linked list (Figure 3.4), which is a list data structure that does not necessarily store list elements next to each other, but instead works by maintaining, for each element, a link to the next element in the list.",
+    "final_context_ids": [
+      "d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb",
+      "434dbc3b8d871e09827dab27189b2130d9c56f46766a4a2666fb0afda116dc81"
+    ],
+    "final_context_chars": 1918,
+    "latency_ms": 5867.4,
+    "raw_answer": "In the top-down approach, an appropriate abstract data type is chosen first by analyzing the problem to determine the necessary functionality and operations [c1]. The choice of a concrete data structure is then guided by quantifying the resource constraints (usually program running time) for each operation [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "question": "In Section 3.1, how is a child node defined?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In Section 3.1, a child node is defined as a descendant of another node [cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f].",
+    "citations": [
+      "cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "child node defined"
+        },
+        "usage": {
+          "prompt_tokens": 548,
+          "output_tokens": 16,
+          "thinking_tokens": 40
+        },
+        "latency_ms": 2125.8,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "child node defined",
+        "filter": {
+          "section": "3.1 Introduction to Data Structures and Algorithms"
+        },
+        "top_k": 3,
+        "latency_ms": 17.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 5,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "e64588720a9fd88eba6099533eec00a784f2135f86dc12c6d9a38c92e9200faa",
+            "alias": "c2",
+            "score": 0.016261,
+            "page": 5,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "47f1ba2d0e66829f098402d0a0ea64a8a6636fea38f88efb0a9182791846ce38",
+            "alias": "c3",
+            "score": 0.015505,
+            "page": 7,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          }
+        ],
+        "context_ids": [
+          "cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f",
+          "e64588720a9fd88eba6099533eec00a784f2135f86dc12c6d9a38c92e9200faa",
+          "47f1ba2d0e66829f098402d0a0ea64a8a6636fea38f88efb0a9182791846ce38"
+        ],
+        "context_chars": 1816
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "In Section 3.1, a child node is defined as a descendant of another node [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 956,
+          "output_tokens": 42,
+          "thinking_tokens": 48
+        },
+        "latency_ms": 2499.4,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1504,
+      "output_tokens": 58,
+      "thinking_tokens": 88,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 5 | 3.1 Introduction to Data Structures and Algorithms]\n3.1 • Introduction to Data Structures and Algorithms 93\n\npriority queues by organizing elements in a hierarchy rather than in a line.\n\nTree Data Structures\n\nA tree is a hierarchical data structure. While there are many kinds of tree data structures, all of them share the same basic organizing structure: a node represents an element in a tree or graph. A node may or may not have a descendant. A child node is a descendant of another node. Often, the primary node is referred to as the “parent node.” Trees maintain a hierarchy through parent-child relationships, which repeat from the root node at the top of the tree down to each leaf node, which is at the bottom of the tree and has no children. The height of a tree corresponds to the depth of the hierarchy of descendants. Figure 3.5 illustrates the structure and elements of a tree.\n\n[c2 | DSA.pdf | page 5 | 3.1 Introduction to Data Structures and Algorithms]\nFigure 3.5 A tree is a hierarchical data structure with nodes where each node can have zero or more descendant child nodes. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBinary Search Trees\n\n[c3 | DSA.pdf | page 7 | 3.1 Introduction to Data Structures and Algorithms]\nFigure 3.8 A binary heap is the most common implementation of the priority queue abstract data type. The priority value of each node in the binary heap is greater than or equal to the priority values of the children. Note that the value stored in the root node of the right subtree can be smaller than the value stored in any node in the left subtree, while not violating the heap property. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nCONCEPTS IN PRACTICE\n\nTracking Earthquakes",
+    "final_context_ids": [
+      "cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f",
+      "e64588720a9fd88eba6099533eec00a784f2135f86dc12c6d9a38c92e9200faa",
+      "47f1ba2d0e66829f098402d0a0ea64a8a6636fea38f88efb0a9182791846ce38"
+    ],
+    "final_context_chars": 1816,
+    "latency_ms": 4642.8,
+    "raw_answer": "In Section 3.1, a child node is defined as a descendant of another node [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "What approach does the text describe for preventing a binary search tree from entering a worst-case situation, and what does it aim to ensure?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "To prevent a binary search tree from degrading into a worst-case scenario, the text describes using balanced binary search trees, such as AVL trees [c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3][ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e]. This approach aims to ensure balance by maintaining the AVL property of balance between left and right subtrees at every node, reorganizing elements as needed to maintain balance [c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3][ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e].",
+    "citations": [
+      "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+      "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "binary search tree worst-case preventing"
+        },
+        "usage": {
+          "prompt_tokens": 562,
+          "output_tokens": 20,
+          "thinking_tokens": 68
+        },
+        "latency_ms": 2282.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "binary search tree worst-case preventing",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 18.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+            "alias": "c2",
+            "score": 0.015659,
+            "page": 49,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064",
+            "alias": "c3",
+            "score": 0.015625,
+            "page": 7,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          }
+        ],
+        "context_ids": [
+          "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6"
+        ],
+        "context_chars": 1959
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "AVL trees balance property"
+        },
+        "usage": {
+          "prompt_tokens": 982,
+          "output_tokens": 17,
+          "thinking_tokens": 115
+        },
+        "latency_ms": 2541.1,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "AVL trees balance property",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 41.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e",
+            "alias": "c4",
+            "score": 0.016393,
+            "page": 6,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "9992ddd4685e54d9dcebf5925ff92cc60c9217ad8c269c36f28dc4bedb824855",
+            "alias": "c5",
+            "score": 0.016129,
+            "page": 40,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064",
+            "alias": "c3",
+            "score": 0.015749,
+            "page": 7,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          }
+        ],
+        "context_ids": [
+          "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+          "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e"
+        ],
+        "context_chars": 1916
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "balanced binary search trees AVL property balance"
+        },
+        "usage": {
+          "prompt_tokens": 986,
+          "output_tokens": 20,
+          "thinking_tokens": 397
+        },
+        "latency_ms": 4669.2,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "balanced binary search trees AVL property balance",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 18.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e",
+            "alias": "c4",
+            "score": 0.016393,
+            "page": 6,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064",
+            "alias": "c3",
+            "score": 0.015877,
+            "page": 7,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+            "alias": "c1",
+            "score": 0.015873,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+          "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e"
+        ],
+        "context_chars": 1916
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "To prevent a binary search tree from degrading into a worst-case scenario, the text describes using balanced binary search trees, such as AVL trees [c1, c4]. This approach aims to ensure balance by maintaining the AVL property of balance between left and right subtrees at every node, reorganizing elements as needed to maintain balance [c1, c4].",
+          "citations": [
+            "c1",
+            "c4"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1001,
+          "output_tokens": 98,
+          "thinking_tokens": 282
+        },
+        "latency_ms": 3976.1,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1",
+          "c4"
+        ]
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 3531,
+      "output_tokens": 155,
+      "thinking_tokens": 862,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 29 | 3.5 Sample Algorithms by Problem]\nBinary search trees represent the concept of binary search in a tree data structure by arranging elements in the tree in sorted order from left to right. Ideally, the root node represents the middle element in the sorted tree and each child roughly divides each subtree in half. But, in the worst case, a binary search tree can look exactly like a linked list where each node contains either zero children or one child. Although such a tree still arranges its elements in sorted order from left to right, comparing the target to each node only reduces the size of the problem by one element rather than ruling out half of the remaining elements—the worst-case binary search tree degrades to sequential search. Balanced binary search trees, such as AVL trees, addressed this worst-case scenario by maintaining the AVL property of balance between left and right subtrees.\n\nSorting\n\n[c4 | DSA.pdf | page 6 | 3.1 Introduction to Data Structures and Algorithms]\nAn AVL tree (named after its inventors, Adelson-Velsky and Landis) is a balanced binary search tree data structure often used to implement sets or maps with one additional tree property: the AVL tree property, which requires the left and right subtrees to be balanced at every node of the tree. AVL trees are just one among many “self-balancing” binary search trees. A balanced binary search tree introduces additional properties that ensure that the tree reorganizes elements to maintain balance (Figure 3.7).\n\nFigure 3.7 An AVL tree rotates nodes in a binary search tree to maintain balance. This sequence of steps illustrates the insertion of numbers 1, 2, 3, 4, 5, 6 into an initially empty AVL tree. (The steps in which rotation occurs are represented by the solid black arrows.) (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nAccess for free at openstax.org",
+    "final_context_ids": [
+      "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+      "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e"
+    ],
+    "final_context_chars": 1916,
+    "latency_ms": 13549.0,
+    "raw_answer": "To prevent a binary search tree from degrading into a worst-case scenario, the text describes using balanced binary search trees, such as AVL trees [c1][c4]. This approach aims to ensure balance by maintaining the AVL property of balance between left and right subtrees at every node, reorganizing elements as needed to maintain balance [c1][c4].",
+    "final_context_evidence_hit": false,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "In the contact-tracing example, what do the graph's vertices and edges represent?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In the contact-tracing example, each vertex represents a person, and each edge between two people represents a possible contact [01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec].",
+    "citations": [
+      "01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "contact-tracing vertices edges"
+        },
+        "usage": {
+          "prompt_tokens": 552,
+          "output_tokens": 18,
+          "thinking_tokens": 39
+        },
+        "latency_ms": 2452.6,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "contact-tracing vertices edges",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 45.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 9,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+            "alias": "c2",
+            "score": 0.015038,
+            "page": 35,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 3,
+            "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+            "alias": "c3",
+            "score": 0.014709,
+            "page": 33,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec",
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe"
+        ],
+        "context_chars": 1887
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "In the contact-tracing example, each vertex represents a person, and each edge between two people represents a possible contact [c1].",
+          "citations": [
+            "c1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 960,
+          "output_tokens": 47,
+          "thinking_tokens": 114
+        },
+        "latency_ms": 3391.5,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1512,
+      "output_tokens": 65,
+      "thinking_tokens": 153,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 9 | 3.2 Algorithm Design and Discovery]\n3.2 • Algorithm Design and Discovery 97\n\nGLOBAL ISSUES IN TECHNOLOGY\n\nContact Tracing\n\nEpidemiology is the study of how infectious diseases spread across the world. Within epidemiology, contact tracing attempts to identify confirmed cases of disease and limit its spread by tracing contacted people and isolating them from further spreading the disease.\n\nGraph data structures can help epidemiologists manage the data and people involved in contact tracing. Imagine a graph where each vertex in a tracing graph represents a person, and each edge between two people represents a possible contact. When a person receives a positive test result for contracting the disease, healthcare professionals can identify all the people that they’ve been in contact with by tracing through the graph.\n\n[c2 | DSA.pdf | page 35 | 3.6 Computer Science Theory]\nDijkstra’s Algorithm\n\nDijkstra’s algorithm maintains a priority queue of vertices in the graph ordered by distance from the start and repeatedly selects the next shortest path to an unconnected part of the graph. Dijkstra’s algorithm is almost identical to Prim’s algorithm except processing shortest paths (sequences of edges) rather than individual edges. Dijkstra’s algorithm grows a shortest paths tree one shortest path at a time by selecting the next shortest path to an unexplored vertex. The runtime of Dijkstra’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.31).\n\nFigure 3.31 Dijkstra’s algorithm expands outward from the start vertex by repeatedly selecting the next lowest-cost path to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n3.6 Computer Science Theory\n\nLearning Objectives By the end of this section, you will be able to:",
+    "final_context_ids": [
+      "01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec",
+      "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe"
+    ],
+    "final_context_chars": 1887,
+    "latency_ms": 5889.8,
+    "raw_answer": "In the contact-tracing example, each vertex represents a person, and each edge between two people represents a possible contact [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "question": "How does the text define an algorithm in terms of instructions, input, and output?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "The text defines an algorithm as \"a sequence of precise instructions that takes any input and computes the corresponding output\" [f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272].",
+    "citations": [
+      "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "algorithm instructions input output"
+        },
+        "usage": {
+          "prompt_tokens": 551,
+          "output_tokens": 17,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 2493.0,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "algorithm instructions input output",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "f0bde99f0f5c769e643c55d23b7ca696fc98982309ed13857c4126b824f1aa34",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 2,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+            "alias": "c2",
+            "score": 0.015772,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 3,
+            "id": "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58",
+            "alias": "c3",
+            "score": 0.015505,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "f0bde99f0f5c769e643c55d23b7ca696fc98982309ed13857c4126b824f1aa34",
+          "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+          "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58"
+        ],
+        "context_chars": 2074
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c2"
+          ],
+          "answer": "The text defines an algorithm as \"a sequence of precise instructions that takes any input and computes the corresponding output\" [c2]."
+        },
+        "usage": {
+          "prompt_tokens": 961,
+          "output_tokens": 46,
+          "thinking_tokens": 143
+        },
+        "latency_ms": 2854.5,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c2"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1512,
+      "output_tokens": 63,
+      "thinking_tokens": 187,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 2 | 3.1 Introduction to Data Structures and Algorithms]\nAn algorithm is a sequence of precise instructions that operate on data. We can think of recipes, plans, or instructions from our daily lives as examples of algorithms. Computers can only execute a finite pre-defined set of instructions exactly as instructed, which is why programming can feel like such a different way of communicating as compared to our natural human languages. A program is an implementation (realization) of an algorithm written in a formal programming language.\n\n[c2 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nAn algorithm is a sequence of precise instructions that takes any input and computes the corresponding output, while algorithmic problem-solving refers to a particular set of approaches and methods for designing algorithms that draws on computing’s historical connections to the study of mathematical problem solving. Early computer scientists were influenced by mathematical formalism and mathematical problem solving. George Pólya’s 1945 book, How to Solve It, outlines a process for solving problems that begins with a formal understanding of the problem and ends with a solution to the problem. As an algorithm's input size is always finite, finding a solution to an algorithmic problem can always be accomplished by exhaustive search. Therefore, the goal of algorithmic problem-solving, as opposed to mathematical problem solving, is to find an “efficient” solution, either in terms of execution time (e.g., number of computer instructions) or space used (e.g., computer memory size).\n\n[c3 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nConsequently, the study of algorithmic problem-solving emphasizes the formal problem or task, with specific input data and output data corresponding to each input. There are many other ways to solve problems with computers, but this mathematical approach remains the dominant approach in the field. Here are a few well-known problems in computer science that we will explore later in this chapter.",
+    "final_context_ids": [
+      "f0bde99f0f5c769e643c55d23b7ca696fc98982309ed13857c4126b824f1aa34",
+      "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+      "7fed6d0748f79ed62c3ea07838f72d188e80819ad94f2c147c60a6e3e5a7fd58"
+    ],
+    "final_context_chars": 2074,
+    "latency_ms": 5364.9,
+    "raw_answer": "The text defines an algorithm as \"a sequence of precise instructions that takes any input and computes the corresponding output\" [c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "question": "Why do algorithm designers use models instead of retaining every detail of the real world?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Algorithm designers use models because without them, they would struggle with the infinite complexity and richness of the real world [153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9]. Retaining every detail—such as modeling a system at the atomic level—is impractical, whereas models provide simplified, abstract representations that emphasize certain relevant details over others, making the process of designing algorithms practical [955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0][153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9].",
+    "citations": [
+      "955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0",
+      "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "models detail real world algorithm designers"
+        },
+        "usage": {
+          "prompt_tokens": 550,
+          "output_tokens": 19,
+          "thinking_tokens": 43
+        },
+        "latency_ms": 2422.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "models detail real world algorithm designers",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 21.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0",
+            "alias": "c1",
+            "score": 0.015889,
+            "page": 10,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "5a8bf9df379f4e92257491f122f5157d06148cfaf7383708fbcca6a8ac6adc83",
+            "alias": "c2",
+            "score": 0.015772,
+            "page": 43,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9",
+            "alias": "c3",
+            "score": 0.015417,
+            "page": 11,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0",
+          "5a8bf9df379f4e92257491f122f5157d06148cfaf7383708fbcca6a8ac6adc83",
+          "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9"
+        ],
+        "context_chars": 2012
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "Without models algorithm designers would struggle"
+        },
+        "usage": {
+          "prompt_tokens": 935,
+          "output_tokens": 19,
+          "thinking_tokens": 270
+        },
+        "latency_ms": 3913.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "Without models algorithm designers would struggle",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9",
+            "alias": "c3",
+            "score": 0.016009,
+            "page": 11,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "d0c912e2073270bd7653843e59c3288a4d0feb4a1cdad9cb756b0e1d5c0a8984",
+            "alias": "c4",
+            "score": 0.015207,
+            "page": 13,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 3,
+            "id": "b4376daef0dc8411adf48f3cb26843485e3773f6c8dbf127d272416587523b66",
+            "alias": "c5",
+            "score": 0.014955,
+            "page": 11,
+            "section": "3.2 Algorithm Design and Discovery"
+          }
+        ],
+        "context_ids": [
+          "955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0",
+          "5a8bf9df379f4e92257491f122f5157d06148cfaf7383708fbcca6a8ac6adc83",
+          "d0c912e2073270bd7653843e59c3288a4d0feb4a1cdad9cb756b0e1d5c0a8984",
+          "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9"
+        ],
+        "context_chars": 2287
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1",
+            "c3"
+          ],
+          "answer": "Algorithm designers use models because without them, they would struggle with the infinite complexity and richness of the real world [c3]. Retaining every detail—such as modeling a system at the atomic level—is impractical, whereas models provide simplified, abstract representations that emphasize certain relevant details over others, making the process of designing algorithms practical [c1, c3]."
+        },
+        "usage": {
+          "prompt_tokens": 1006,
+          "output_tokens": 97,
+          "thinking_tokens": 451
+        },
+        "latency_ms": 5711.6,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1",
+          "c3"
+        ]
+      }
+    ],
+    "searches": 2,
+    "usage": {
+      "prompt_tokens": 2491,
+      "output_tokens": 135,
+      "thinking_tokens": 764,
+      "llm_calls": 3
+    },
+    "final_context": "[c1 | DSA.pdf | page 10 | 3.2 Algorithm Design and Discovery]\nComputer scientists focus on defining a problem model, often simply called a model, which is a simplified, abstract representation of more complex real-world problems. They apply the algorithmic problem-solving process mentioned previously to design algorithms when defining models. Algorithms model phenomena in the same way that data structures implement abstract data types such as lists, sets, maps, priority queues, and graphs. But unlike abstract data types, models are not necessarily purely abstract or mathematical concepts. Models are often linked to humans and social phenomena. A medical system might want to decide which drugs to administer to which patients, so the algorithm designer might decide to model patients as a complex data type consisting of age, sex, weight, or other physical characteristics. Because models represent abstractions, or simplifications of real phenomena, a model must emphasize some details over others.\n\n[c2 | DSA.pdf | page 43 | Chapter Review]\n• To solve real-world problems, computer scientists compose, modify, and apply algorithm design patterns,\n\n[c4 | DSA.pdf | page 13 | 3.2 Algorithm Design and Discovery]\nFor example, suppose we want to design an autocomplete feature, which helps users as they type text into a program by offering word completions for a given prefix query. Algorithm designers begin by modeling the\n\n[c3 | DSA.pdf | page 11 | 3.2 Algorithm Design and Discovery]\n3.2 • Algorithm Design and Discovery 99\n\ndefines the rules and potential outcomes. Without models, algorithm designers would struggle with the infinite complexity and richness of the world. Imagine, for example, designing a medical system that models patients at the level of individual atoms. This model offers a detailed representation of each patient in the most physical or literal sense. But this model is impractical because we do not know how particular configurations and collections of atoms contribute to a person’s overall health. Compared to this atomic-scale model, our former model consisting of age, sex, weight, and other physical characteristics is more practical for designing algorithms, but necessarily involves erasing our individual humanity to draw certain conclusions.",
+    "final_context_ids": [
+      "955a69d7f8e92a4118b71e24f475ebdd35a1272e8f158d75225e5f46a1bbbdf0",
+      "5a8bf9df379f4e92257491f122f5157d06148cfaf7383708fbcca6a8ac6adc83",
+      "d0c912e2073270bd7653843e59c3288a4d0feb4a1cdad9cb756b0e1d5c0a8984",
+      "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9"
+    ],
+    "final_context_chars": 2287,
+    "latency_ms": 12087.2,
+    "raw_answer": "Algorithm designers use models because without them, they would struggle with the infinite complexity and richness of the real world [c3]. Retaining every detail—such as modeling a system at the atomic level—is impractical, whereas models provide simplified, abstract representations that emphasize certain relevant details over others, making the process of designing algorithms practical [c1][c3].",
+    "final_context_evidence_hit": false,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "question": "According to the text, when is an algorithm considered correct?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to the text, an algorithm is considered correct only if its computed outputs are consistent with all the expected outputs across the range of possible inputs [bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e].",
+    "citations": [
+      "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "algorithm correct"
+        },
+        "usage": {
+          "prompt_tokens": 546,
+          "output_tokens": 15,
+          "thinking_tokens": 36
+        },
+        "latency_ms": 2324.9,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "algorithm correct",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 18.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 15,
+            "section": "3.2 Algorithm Design and Discovery"
+          },
+          {
+            "rank": 2,
+            "id": "c3c5926c7bcf82c655ae34bb82394f9eee43e6ec5d1e18739cee9486a7982582",
+            "alias": "c2",
+            "score": 0.014389,
+            "page": 19,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "9c04a2f671c81b244bd7152b21ae28faa242f08f7b9118b957bf9461008ac915",
+            "alias": "c3",
+            "score": 0.008197,
+            "page": 6,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          }
+        ],
+        "context_ids": [
+          "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+          "c3c5926c7bcf82c655ae34bb82394f9eee43e6ec5d1e18739cee9486a7982582",
+          "9c04a2f671c81b244bd7152b21ae28faa242f08f7b9118b957bf9461008ac915"
+        ],
+        "context_chars": 1922
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "According to the text, an algorithm is considered correct only if its computed outputs are consistent with all the expected outputs across the range of possible inputs [c1].",
+          "citations": [
+            "c1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 944,
+          "output_tokens": 52,
+          "thinking_tokens": 107
+        },
+        "latency_ms": 2965.8,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1490,
+      "output_tokens": 67,
+      "thinking_tokens": 143,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 15 | 3.2 Algorithm Design and Discovery]\n3.2 • Algorithm Design and Discovery 103\n\noutputs are then evaluated for correctness, which considers whether the outputs produced by an algorithm match the expected or desired results across the range of possible inputs. An algorithm is considered correct only if its computed outputs are consistent with all the expected outputs; otherwise, the algorithm is considered incorrect.\n\nAlthough this definition might sound simple, verifying an algorithm for correctness is often quite difficult in practice, because algorithms are designed to generalize and automate complex processes. The most direct way to verify correctness is to check that the algorithm computes the correct output for every possible input. This is not only computationally difficult, but even potentially impossible to achieve, since some algorithms can accept an infinite range of inputs.\n\n[c2 | DSA.pdf | page 19 | 3.3 Formal Properties of Algorithms]\nThis prediction is a useful outcome of time complexity analysis. It allows us to estimate the runtime of the sequential search algorithm on a problem of any size, before writing the program or obtaining a dictionary of words that large. Moreover, it helps us decide if we want to use this algorithm or explore other algorithm designs and approaches. We might compare this sequential search algorithm to the binary search algorithm and adjust our algorithm design accordingly.\n\n[c3 | DSA.pdf | page 6 | 3.1 Introduction to Data Structures and Algorithms]\n94 3 • Data Structures and Algorithms\n\nsub-node of D which is at the middle of the list of letters (A, B, C) that is on the right of D and pick F as the right sub-node of D, which is at the middle of the list letters (E, F, G) that is on the left of D. Finally, organize the remaining letters under sub-nodes B and F to ensure that they are least-to-greatest from the left to right.",
+    "final_context_ids": [
+      "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+      "c3c5926c7bcf82c655ae34bb82394f9eee43e6ec5d1e18739cee9486a7982582",
+      "9c04a2f671c81b244bd7152b21ae28faa242f08f7b9118b957bf9461008ac915"
+    ],
+    "final_context_chars": 1922,
+    "latency_ms": 5309.8,
+    "raw_answer": "According to the text, an algorithm is considered correct only if its computed outputs are consistent with all the expected outputs across the range of possible inputs [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "What does experimental analysis measure about an implementation, and what can it identify even when the output is correct?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Experimental analysis measures or evaluates an algorithm's runtime by recording how long it takes to run a program implementation of it [d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9][936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8]. Even when an implementation produces the correct output, it can identify performance bugs—code that consumes unusually large amounts of computation time or system resources [d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9].",
+    "citations": [
+      "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+      "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "experimental analysis"
+        },
+        "usage": {
+          "prompt_tokens": 555,
+          "output_tokens": 15,
+          "thinking_tokens": 40
+        },
+        "latency_ms": 3146.1,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "experimental analysis",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "7f13fe7e772ce9ae2b50f48f4410beac0b0077aaac3ce657309f041d5234ed7a",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 53,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 2,
+            "id": "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+            "alias": "c2",
+            "score": 0.015757,
+            "page": 17,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+            "alias": "c3",
+            "score": 0.015749,
+            "page": 44,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "7f13fe7e772ce9ae2b50f48f4410beac0b0077aaac3ce657309f041d5234ed7a",
+          "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+          "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8"
+        ],
+        "context_chars": 2255
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "Experimental analysis measures or evaluates an algorithm's runtime by recording how long it takes to run a program implementation of it [c2, c3]. Even when an implementation produces the correct output, it can identify performance bugs—code that consumes unusually large amounts of computation time or system resources [c2].",
+          "citations": [
+            "c2",
+            "c3"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1001,
+          "output_tokens": 86,
+          "thinking_tokens": 256
+        },
+        "latency_ms": 3187.0,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c2",
+          "c3"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1556,
+      "output_tokens": 101,
+      "thinking_tokens": 296,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 53 | Chapter Review]\n3 . Experimental analysis: Use a software-based “stopwatch” to compare the time (in microseconds) it takes to run a sequential search versus a binary search for successively larger and larger inputs. Relate experimental analysis to asymptotic analysis. What happens to small arrays? What happens to large-size array inputs? What happens when the target is near the front of the array? What happens when the target is near the end of the array?\n\n[c2 | DSA.pdf | page 17 | 3.3 Formal Properties of Algorithms]\n3.3 • Formal Properties of Algorithms 105\n\ntime exactly how long it takes to run the program with a stopwatch. This approach, known as experimental analysis, evaluates an algorithm’s runtime by recording how long it takes to run a program implementation of it. Experimental analysis is particularly effective for identifying performance bugs or code that consumes unusually large amounts of computation time or system resources, even though it produces the correct output. In e-commerce, for example, performance bugs that result in slow website responsiveness can lead to millions of dollars in lost revenue. In the worst-case scenario, performance bugs can even bring down entire websites and networks when systems are overloaded and cannot handle incoming requests. As the Internet becomes more heavily used for information and services, performance bugs can have direct impacts on health and safety if the computer infrastructure cannot keep up with demand.\n\n[c3 | DSA.pdf | page 44 | Chapter Review]\n• Runtime analysis is a study of how much time it takes to run an algorithm. Experimental analysis is a runtime analysis technique that involves evaluating an algorithm’s runtime by recording how long it takes to run a program implementation of it.\n\n• Time complexity is the formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. The goal of time complexity analysis is to produce a simple and easy-to- compare characterization of the runtime of an algorithm as it relates to the size of the problem.\n\n• Space complexity is the formal measure of how much memory an algorithm requires during execution as it relates to the size of the problem.",
+    "final_context_ids": [
+      "7f13fe7e772ce9ae2b50f48f4410beac0b0077aaac3ce657309f041d5234ed7a",
+      "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+      "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8"
+    ],
+    "final_context_chars": 2255,
+    "latency_ms": 6351.2,
+    "raw_answer": "Experimental analysis measures or evaluates an algorithm's runtime by recording how long it takes to run a program implementation of it [c2][c3]. Even when an implementation produces the correct output, it can identify performance bugs—code that consumes unusually large amounts of computation time or system resources [c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "question": "Which resources do time complexity and space complexity measure, respectively, in relation to problem size?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In relation to problem size, time complexity measures how much time an algorithm requires during execution, while space complexity measures how much memory an algorithm requires [bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4][936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8].",
+    "citations": [
+      "bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4",
+      "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "time complexity space complexity measure"
+        },
+        "usage": {
+          "prompt_tokens": 552,
+          "output_tokens": 18,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 2284.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "time complexity space complexity measure",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 18,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+            "alias": "c2",
+            "score": 0.015877,
+            "page": 44,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb",
+            "alias": "c3",
+            "score": 0.015749,
+            "page": 37,
+            "section": "3.6 Computer Science Theory"
+          }
+        ],
+        "context_ids": [
+          "bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4",
+          "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+          "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb"
+        ],
+        "context_chars": 1833
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "In relation to problem size, time complexity measures how much time an algorithm requires during execution, while space complexity measures how much memory an algorithm requires [c1, c2].",
+          "citations": [
+            "c1",
+            "c2"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 919,
+          "output_tokens": 60,
+          "thinking_tokens": 207
+        },
+        "latency_ms": 3558.6,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1471,
+      "output_tokens": 78,
+      "thinking_tokens": 251,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 18 | 3.3 Formal Properties of Algorithms]\n106 3 • Data Structures and Algorithms\n\nTime and Space Complexity\n\nOne way to measure the efficiency of an algorithm is through time complexity, a formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. In addition to time complexity, computer scientists are also interested in space complexity, the formal measure of how much memory an algorithm requires during its execution as it relates to the size of the problem.\n\n[c2 | DSA.pdf | page 44 | Chapter Review]\n• Runtime analysis is a study of how much time it takes to run an algorithm. Experimental analysis is a runtime analysis technique that involves evaluating an algorithm’s runtime by recording how long it takes to run a program implementation of it.\n\n• Time complexity is the formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. The goal of time complexity analysis is to produce a simple and easy-to- compare characterization of the runtime of an algorithm as it relates to the size of the problem.\n\n• Space complexity is the formal measure of how much memory an algorithm requires during execution as it relates to the size of the problem.\n\n[c3 | DSA.pdf | page 37 | 3.6 Computer Science Theory]\nOne subfield of computer science is theoretical computer science, which studies models of computation, their application to algorithms, and the complexity of problems. The complexity of a problem is the complexity (in terms of time or memory resources required) of the most efficient algorithms for solving the problem. Theoretical computer scientists are interested in understanding the difficulty of a problem in terms of time complexity, space complexity, and some other complexity measures.",
+    "final_context_ids": [
+      "bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4",
+      "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+      "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb"
+    ],
+    "final_context_chars": 1833,
+    "latency_ms": 5861.2,
+    "raw_answer": "In relation to problem size, time complexity measures how much time an algorithm requires during execution, while space complexity measures how much memory an algorithm requires [c1][c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "question": "For sequential search, which case requires the fewest repetitions, and which case can require N repetitions?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "For sequential search, the case that requires the fewest repetitions is the best-case situation (when the target is at the start/top of the list), taking just one repetition [5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3]. The case that can require N repetitions is the worst-case situation (when the target is either at the end/bottom of the list or not in the list at all) [5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3].",
+    "citations": [
+      "5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "sequential search fewest repetitions N repetitions"
+        },
+        "usage": {
+          "prompt_tokens": 553,
+          "output_tokens": 19,
+          "thinking_tokens": 42
+        },
+        "latency_ms": 2433.9,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "sequential search fewest repetitions N repetitions",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 19.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 19,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+            "alias": "c2",
+            "score": 0.01564,
+            "page": 51,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+            "alias": "c3",
+            "score": 0.015625,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3",
+          "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+          "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf"
+        ],
+        "context_chars": 2465
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "For sequential search, the case that requires the fewest repetitions is the best-case situation (when the target is at the start/top of the list), taking just one repetition [c1]. The case that can require N repetitions is the worst-case situation (when the target is either at the end/bottom of the list or not in the list at all) [c1].",
+          "citations": [
+            "c1"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1115,
+          "output_tokens": 98,
+          "thinking_tokens": 213
+        },
+        "latency_ms": 3413.8,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1668,
+      "output_tokens": 117,
+      "thinking_tokens": 255,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 19 | 3.3 Formal Properties of Algorithms]\n3.3 • Formal Properties of Algorithms 107\n\nworst-case complexity. In precise English, we might say that the time complexity for this sequential search algorithm has two cases (Figure 3.13):\n\n• In the best-case situation (when the target word is at the start of the list), sequential search takes just one repetition to find the word in the list.\n\n• In the worst-case situation (when the target word is either at the end of the list or not in the list at all), sequential search takes N repetitions where N is the number of words in the list.\n\nFigure 3.13 The best case for sequential search in a sorted list is to find the word at the top of the list, whereas the worst case is to find the word at the bottom of the list (or not in the list at all). (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n[c2 | DSA.pdf | page 51 | Chapter Review]\n7 . Consider an autocomplete implementation that relies on a sequential search to find all matching terms. What is the worst-case Big O order of growth for computing a single autocomplete query with respect to N, the number of potential terms?\n\n8 . Consider an autocomplete implementation that sorts the list of potential terms and then performs binary search to find the matching terms. If the order of growth of the sorting algorithm is in O(N log N), what is the worst-case Big O order of growth for computing a single autocomplete query with respect to N, the number of potential terms?\n\n9 . Why might algorithm designers prefer to use binary search instead of sequential search for autocomplete?\n\n[c3 | DSA.pdf | page 29 | 3.5 Sample Algorithms by Problem]\n3.5 • Sample Algorithms by Problem 117\n\nSearching\n\nSearching is the problem of retrieving a target element from a collection of elements. Searching in a linear data structure, such as an array list, can be done using either sequential search or binary search.\n\nSequential Search Algorithm\n\nA sequential search algorithm is a searching algorithm that sequentially checks the collection element-by- element for the target. The runtime of sequential search is in O(N) with respect to N, the number of elements in the list (Figure 3.22).\n\nFigure 3.22 Sequential search is a search algorithm that checks the collection element by element to find a target element. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBinary Search Algorithm",
+    "final_context_ids": [
+      "5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3",
+      "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+      "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf"
+    ],
+    "final_context_chars": 2465,
+    "latency_ms": 5867.8,
+    "raw_answer": "For sequential search, the case that requires the fewest repetitions is the best-case situation (when the target is at the start/top of the list), taking just one repetition [c1]. The case that can require N repetitions is the worst-case situation (when the target is either at the end/bottom of the list or not in the list at all) [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "In the worst case, why is sequential search O(N) while binary search is O(log N)?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In the worst case, sequential search is $O(N)$ because each repetition of the search rules out only one remaining element [2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b]. In contrast, binary search is $O(\\log N)$ because each repetition rules out half of the remaining elements [2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b].",
+    "citations": [
+      "2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "sequential search binary search worst case O(N) O(log N)"
+        },
+        "usage": {
+          "prompt_tokens": 556,
+          "output_tokens": 28,
+          "thinking_tokens": 50
+        },
+        "latency_ms": 3732.0,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "sequential search binary search worst case O(N) O(log N)",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 22.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 51,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 2,
+            "id": "2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b",
+            "alias": "c2",
+            "score": 0.015749,
+            "page": 21,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "9bab0686a80f60de2661c02d3b46811b8fd21b63cbcbbdac7007e00af0bd6156",
+            "alias": "c3",
+            "score": 0.014929,
+            "page": 49,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+          "2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b"
+        ],
+        "context_chars": 1795
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "answer": "In the worst case, sequential search is $O(N)$ because each repetition of the search rules out only one remaining element [c2]. In contrast, binary search is $O(\\log N)$ because each repetition rules out half of the remaining elements [c2].",
+          "citations": [
+            "c2"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 959,
+          "output_tokens": 75,
+          "thinking_tokens": 338
+        },
+        "latency_ms": 4902.9,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c2"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1515,
+      "output_tokens": 103,
+      "thinking_tokens": 388,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 51 | Chapter Review]\n7 . Consider an autocomplete implementation that relies on a sequential search to find all matching terms. What is the worst-case Big O order of growth for computing a single autocomplete query with respect to N, the number of potential terms?\n\n8 . Consider an autocomplete implementation that sorts the list of potential terms and then performs binary search to find the matching terms. If the order of growth of the sorting algorithm is in O(N log N), what is the worst-case Big O order of growth for computing a single autocomplete query with respect to N, the number of potential terms?\n\n9 . Why might algorithm designers prefer to use binary search instead of sequential search for autocomplete?\n\n[c2 | DSA.pdf | page 21 | 3.3 Formal Properties of Algorithms]\n3.3 • Formal Properties of Algorithms 109\n\nlarge number tells how many times it needs to be divided by a small number until it reaches 1. The binary logarithm, or log2, tells how many times a large number needs to be divided by 2 until it reaches 1. In the worst case, the time complexity of sequential search is in O(N) with respect to N, the number of words in the list, since each repetition of sequential search rules out one remaining element. How about binary search? In the worst case, the time complexity of binary search is in O(log N) with respect to N, the number of words in the list, since each repetition of binary search rules out half the remaining elements.\n\nAnother way to understand orders of growth is to consider how a change in the size of the problem results in a change to the resource usage. When we double the size of the input problem, algorithms in each order of growth respond differently (Figure 3.15).\n\n• O(1) algorithms will not require any more resources.",
+    "final_context_ids": [
+      "9f3caad67a90494e0e7bb3656047a8bc487516e8c603701e6bd483acef7746ec",
+      "2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b"
+    ],
+    "final_context_chars": 1795,
+    "latency_ms": 8657.5,
+    "raw_answer": "In the worst case, sequential search is $O(N)$ because each repetition of the search rules out only one remaining element [c2]. In contrast, binary search is $O(\\log N)$ because each repetition rules out half of the remaining elements [c2].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "question": "Can a greedy algorithm be assumed to always find the best solution? Under what condition can some greedy algorithms guarantee an optimal solution?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "No, a greedy algorithm cannot be assumed to always find the best solution, as the majority of greedy algorithms do not always compute the best solution [6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c]. Some cleverly crafted greedy algorithms can guarantee an optimal solution under the condition that the problems they solve are formulated to ensure that the algorithm never makes a mistake when repeatedly applying the simple rule to select the next element [6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c].",
+    "citations": [
+      "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "greedy algorithm optimal solution condition best solution"
+        },
+        "usage": {
+          "prompt_tokens": 559,
+          "output_tokens": 20,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 2690.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "greedy algorithm optimal solution condition best solution",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 21.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 26,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 2,
+            "id": "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2",
+            "alias": "c2",
+            "score": 0.016129,
+            "page": 25,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "e375dc7d5c8740bd9547169731e54ce93280283270bbb4c9ead6e979f3617bc1",
+            "alias": "c3",
+            "score": 0.016009,
+            "page": 45,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+          "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2"
+        ],
+        "context_chars": 1690
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "greedy algorithm guarantee finding optimal solutions"
+        },
+        "usage": {
+          "prompt_tokens": 907,
+          "output_tokens": 19,
+          "thinking_tokens": 145
+        },
+        "latency_ms": 3214.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "greedy algorithm guarantee finding optimal solutions",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 20.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2",
+            "alias": "c2",
+            "score": 0.016261,
+            "page": 25,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 2,
+            "id": "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 26,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "e375dc7d5c8740bd9547169731e54ce93280283270bbb4c9ead6e979f3617bc1",
+            "alias": "c3",
+            "score": 0.015877,
+            "page": 45,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+          "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2"
+        ],
+        "context_chars": 1690
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "greedy algorithms guarantee optimal formulated ensure mistake"
+        },
+        "usage": {
+          "prompt_tokens": 916,
+          "output_tokens": 20,
+          "thinking_tokens": 138
+        },
+        "latency_ms": 2846.5,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "greedy algorithms guarantee optimal formulated ensure mistake",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 24.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2",
+            "alias": "c2",
+            "score": 0.016261,
+            "page": 25,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 2,
+            "id": "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+            "alias": "c1",
+            "score": 0.016133,
+            "page": 26,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "e375dc7d5c8740bd9547169731e54ce93280283270bbb4c9ead6e979f3617bc1",
+            "alias": "c3",
+            "score": 0.015877,
+            "page": 45,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+          "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2"
+        ],
+        "context_chars": 1690
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "No, a greedy algorithm cannot be assumed to always find the best solution, as the majority of greedy algorithms do not always compute the best solution [c1]. Some cleverly crafted greedy algorithms can guarantee an optimal solution under the condition that the problems they solve are formulated to ensure that the algorithm never makes a mistake when repeatedly applying the simple rule to select the next element [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 931,
+          "output_tokens": 96,
+          "thinking_tokens": 139
+        },
+        "latency_ms": 3683.8,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 3313,
+      "output_tokens": 155,
+      "thinking_tokens": 466,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 26 | 3.4 Algorithmic Paradigms]\n114 3 • Data Structures and Algorithms\n\nFigure 3.18 Greedy interval scheduling will not work if the simple rule repeatedly selects the shortest interval. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nThe majority of greedy algorithms do not always compute the best solution. But there are also certain scenarios in which cleverly crafted greedy algorithms guarantee finding optimal solutions. The problems they solve are formulated to ensure that the greedy algorithm never makes a mistake when repeatedly applying the simple rule to select the next element.\n\n[c2 | DSA.pdf | page 25 | 3.4 Algorithmic Paradigms]\nA greedy algorithm solves combinatorial problems by repeatedly applying a simple rule to select the next element to include in the solution. Unlike brute-force algorithms that solve combinatorial problems by generating all potential solutions, greedy algorithms instead focus on generating just one solution. These\n\nalgorithms are greedy because they select the next element to include based on the immediate benefit.\n\nFor example, a greedy interval scheduling algorithm might choose to work on the task that takes the least amount of time to complete; in other words, the cheapest way to mark one task as completed (Figure 3.18). If the tasks are scheduled in advance and we can only work on one task at a time, choosing the task that takes the least amount of time to complete might prevent us from completing multiple other (longer) tasks that just so happen to overlap in time. This greedy algorithm does not compute the right output—it finds a solution but not the optimal solution.",
+    "final_context_ids": [
+      "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+      "be3b832a41fa8eff1b2220404ec1537fb2d19ab338de98d7b59a3be3c6787fb2"
+    ],
+    "final_context_chars": 1690,
+    "latency_ms": 12503.2,
+    "raw_answer": "No, a greedy algorithm cannot be assumed to always find the best solution, as the majority of greedy algorithms do not always compute the best solution [c1]. Some cleverly crafted greedy algorithms can guarantee an optimal solution under the condition that the problems they solve are formulated to ensure that the algorithm never makes a mistake when repeatedly applying the simple rule to select the next element [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "Within Section 3.5, how does sequential search examine a collection, and what is its runtime order?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In Section 3.5, sequential search examines a collection by sequentially checking it element-by-element for the target element [855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf]. Its runtime is in $O(N)$ with respect to $N$, the number of elements in the list [855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf].",
+    "citations": [
+      "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "sequential search runtime order"
+        },
+        "usage": {
+          "prompt_tokens": 556,
+          "output_tokens": 17,
+          "thinking_tokens": 44
+        },
+        "latency_ms": 2331.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "sequential search runtime order",
+        "filter": {
+          "section": "3.5 Sample Algorithms by Problem"
+        },
+        "top_k": 3,
+        "latency_ms": 22.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+            "alias": "c1",
+            "score": 0.016393,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "f61afc89336f1dd84bd8e9e50a14df048ca8e2b2326710553defd06e541f4db7",
+            "alias": "c2",
+            "score": 0.015877,
+            "page": 29,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+            "alias": "c3",
+            "score": 0.015873,
+            "page": 33,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+          "f61afc89336f1dd84bd8e9e50a14df048ca8e2b2326710553defd06e541f4db7",
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 2176
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "In Section 3.5, sequential search examines a collection by sequentially checking it element-by-element for the target element [c1]. Its runtime is in $O(N)$ with respect to $N$, the number of elements in the list [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 1053,
+          "output_tokens": 75,
+          "thinking_tokens": 167
+        },
+        "latency_ms": 2945.7,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1609,
+      "output_tokens": 92,
+      "thinking_tokens": 211,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 29 | 3.5 Sample Algorithms by Problem]\n3.5 • Sample Algorithms by Problem 117\n\nSearching\n\nSearching is the problem of retrieving a target element from a collection of elements. Searching in a linear data structure, such as an array list, can be done using either sequential search or binary search.\n\nSequential Search Algorithm\n\nA sequential search algorithm is a searching algorithm that sequentially checks the collection element-by- element for the target. The runtime of sequential search is in O(N) with respect to N, the number of elements in the list (Figure 3.22).\n\nFigure 3.22 Sequential search is a search algorithm that checks the collection element by element to find a target element. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBinary Search Algorithm\n\n[c2 | DSA.pdf | page 29 | 3.5 Sample Algorithms by Problem]\nAlthough the sequential search algorithm works with any collection type such as lists, sets, dictionaries, and priority queues, the binary search algorithm relies on a sorted list with access to elements by index. Consequently, binary search is efficient on array lists that provide constant-time access to the element at any index and inefficient on linked lists, which do not enable constant-time access to elements by index. Binary search relies on the structure of the sorted list to repeatedly rule-out half of the remaining elements.\n\n[c3 | DSA.pdf | page 33 | 3.5 Sample Algorithms by Problem]\n3.5 • Sample Algorithms by Problem 121\n\nFigure 3.26 Depth-first search is a graph traversal algorithm that continues as far down a path as possible from a start vertex before backtracking. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBreadth-First Search\n\nA breadth-first search iteratively explores each neighbor, expanding the search level-by-level breadth-first (Figure 3.27). Explored vertices are also added to a global set to ensure that the algorithm explores each vertex once and in the correct level-order. The runtime of breadth-first search is also in O(|V| + |E|) with respect to |V|, the number of vertices, and |E|, the number of edges.",
+    "final_context_ids": [
+      "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+      "f61afc89336f1dd84bd8e9e50a14df048ca8e2b2326710553defd06e541f4db7",
+      "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+    ],
+    "final_context_chars": 2176,
+    "latency_ms": 5299.9,
+    "raw_answer": "In Section 3.5, sequential search examines a collection by sequentially checking it element-by-element for the target element [c1]. Its runtime is in $O(N)$ with respect to $N$, the number of elements in the list [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "In merge sort, what does the merge operation do with two sorted sublists?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In merge sort, the merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order [16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f].",
+    "citations": [
+      "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f"
+    ],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "merge sort merge operation two sorted sublists"
+        },
+        "usage": {
+          "prompt_tokens": 550,
+          "output_tokens": 21,
+          "thinking_tokens": 36
+        },
+        "latency_ms": 3480.3,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "merge sort merge operation two sorted sublists",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 27.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+            "alias": "c1",
+            "score": 0.016261,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+            "alias": "c2",
+            "score": 0.016133,
+            "page": 23,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb",
+            "alias": "c3",
+            "score": 0.015877,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+          "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+          "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb"
+        ],
+        "context_chars": 2486
+      },
+      {
+        "event": "llm_decision",
+        "action": "answer",
+        "args": {
+          "citations": [
+            "c1"
+          ],
+          "answer": "In merge sort, the merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order [c1]."
+        },
+        "usage": {
+          "prompt_tokens": 1082,
+          "output_tokens": 52,
+          "thinking_tokens": 89
+        },
+        "latency_ms": 2429.9,
+        "attempts": 1
+      },
+      {
+        "event": "answer",
+        "citation_aliases": [
+          "c1"
+        ]
+      }
+    ],
+    "searches": 1,
+    "usage": {
+      "prompt_tokens": 1632,
+      "output_tokens": 73,
+      "thinking_tokens": 125,
+      "llm_calls": 2
+    },
+    "final_context": "[c1 | DSA.pdf | page 30 | 3.5 Sample Algorithms by Problem]\n118 3 • Data Structures and Algorithms\n\nMerge Sort Algorithm\n\nA merge sort algorithm recursively divides the data into sublists until sublists are one element long—which we know are sorted—and then merges adjacent sorted sublists to eventually return the sorted list. The merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order. The actual rearranging of elements occurs by repeatedly applying the merge operation on pairs of adjacent sorted sublists, starting with the smallest single-element sublists, to larger two-element sublists, and eventually reaching the two halves of the entire list of elements. The runtime of merge sort is in O(N log N) with respect to N, the number of elements (see Figure 3.17).\n\nQuicksort Algorithm\n\n[c2 | DSA.pdf | page 23 | 3.4 Algorithmic Paradigms]\n1. The problem of sorting the list is broken down (divided) into two subproblems: the subproblem of sorting the left half and the subproblem of sorting the right half.\n\n2. Merge sort is repeated to sort each half (conquer). This process continues recursively until the sublists are one element long. To sort a one-element list, the algorithm does not need to do anything, since the elements in the list are already arranged in a logical order.\n\n3. To solve the original problem of sorting the entire list, combine adjacent sorted sublists by merging them while maintaining sorted order. Merging each pair of adjacent sorted sublists repeats to form larger and larger sorted sublists until the entire list is fully sorted.\n\n[c3 | DSA.pdf | page 30 | 3.5 Sample Algorithms by Problem]\nA quicksort algorithm recursively sorts data by applying the binary search tree algorithm design pattern to partition data around pivot elements. Whereas the merge sort algorithm rearranges elements by repeatedly merging sorted sublists after each recursive subproblem, the quicksort algorithm rearranges elements by partitioning data before each recursive subproblem. The partition operation takes a pivot and rearranges the elements into three sections, from left to right: the sublist of all elements less than the pivot, the pivot element, and the sublist of all elements greater than (or equal to) the pivot. Each of the two sublists resulting from the partition operation is a recursive quicksort subproblem; when both of the sublists are sorted, the entire list will be sorted.",
+    "final_context_ids": [
+      "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+      "1282a564903b79605be5d1b54890ccc6139822e5b4855467395c90452a5882e5",
+      "68da8584f1a4b831ec84a7e5d3b2c71eba7e1c1ee5d283223e9a48c662cc6feb"
+    ],
+    "final_context_chars": 2486,
+    "latency_ms": 5938.5,
+    "raw_answer": "In merge sort, the merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order [c1].",
+    "final_context_evidence_hit": true,
+    "retrieved_evidence_hit": true
+  },
+  {
+    "query_id": "q_dev_unabs_01",
+    "split": "dev",
+    "question": "What load factor threshold does the text recommend before resizing a hash table to keep collisions rare?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "citations": [],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "load factor resize threshold collisions"
+        },
+        "usage": {
+          "prompt_tokens": 552,
+          "output_tokens": 18,
+          "thinking_tokens": 49
+        },
+        "latency_ms": 2557.1,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "load factor resize threshold collisions",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 23.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+            "alias": "c1",
+            "score": 0.015749,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8",
+            "alias": "c2",
+            "score": 0.015417,
+            "page": 21,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+            "alias": "c3",
+            "score": 0.008197,
+            "page": 48,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+          "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8",
+          "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96"
+        ],
+        "context_chars": 2405
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "load factor"
+        },
+        "usage": {
+          "prompt_tokens": 1100,
+          "output_tokens": 15,
+          "thinking_tokens": 43
+        },
+        "latency_ms": 2433.9,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "load factor",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 14.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "870be3b80cb13c75a64a90ac6c39dbad4efcecd8177e32997da1313a7a8f6e66",
+            "alias": "c4",
+            "score": 0.008197,
+            "page": 17,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8",
+            "alias": "c2",
+            "score": 0.008197,
+            "page": 21,
+            "section": "3.3 Formal Properties of Algorithms"
+          },
+          {
+            "rank": 3,
+            "id": "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+            "alias": "c1",
+            "score": 0.008065,
+            "page": 30,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+          "870be3b80cb13c75a64a90ac6c39dbad4efcecd8177e32997da1313a7a8f6e66",
+          "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8"
+        ],
+        "context_chars": 2231
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "hash table collision"
+        },
+        "usage": {
+          "prompt_tokens": 1051,
+          "output_tokens": 16,
+          "thinking_tokens": 43
+        },
+        "latency_ms": 10654.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "hash table collision",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+            "alias": "c5",
+            "score": 0.016393,
+            "page": 32,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 2,
+            "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+            "alias": "c6",
+            "score": 0.016129,
+            "page": 31,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+            "alias": "c7",
+            "score": 0.015629,
+            "page": 31,
+            "section": "3.5 Sample Algorithms by Problem"
+          }
+        ],
+        "context_ids": [
+          "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+          "870be3b80cb13c75a64a90ac6c39dbad4efcecd8177e32997da1313a7a8f6e66",
+          "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8"
+        ],
+        "context_chars": 2231
+      },
+      {
+        "event": "llm_decision",
+        "action": "abstain",
+        "args": {
+          "reason": "The provided context does not contain information about hash table load factors or recommended thresholds for resizing."
+        },
+        "usage": {
+          "prompt_tokens": 1062,
+          "output_tokens": 32,
+          "thinking_tokens": 97
+        },
+        "latency_ms": 2520.2,
+        "attempts": 1
+      },
+      {
+        "event": "abstain",
+        "reason": "The provided context does not contain information about hash table load factors or recommended thresholds for resizing."
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 3765,
+      "output_tokens": 81,
+      "thinking_tokens": 232,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 30 | 3.5 Sample Algorithms by Problem]\nFigure 3.23 Quicksort is a divide and conquer sorting algorithm that sorts elements by recursively partitioning elements around a pivot. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nHeapsort Algorithm\n\nA heapsort algorithm adds all elements to a binary heap priority queue data structure using the comparison operation to determine priority value, and returns the sorted list by repeatedly removing from the priority queue element by element. The runtime of heapsort is in O(N log N) with respect to N, the number of elements. The logarithmic time factor is due to the time it takes to add or remove each element from the binary heap (Figure 3.24).\n\nAccess for free at openstax.org\n\n[c4 | DSA.pdf | page 17 | 3.3 Formal Properties of Algorithms]\nA profiler is a tool that measures the performance (runtime and memory usage) of a program. Profilers are commonly used to diagnose real-world performance issues by producing graphs of how computational resources are used in a program. A common graph is a flame graph (Figure 3.12) that visualizes resource utilization by each part of a program to help identify the most resource-intensive parts of a program. Saving even a few percentage points of resources can lead to significantly reduced time, money, and energy expenditure. As the global demand for computation continues to increase, performance engineers who know how to leverage profilers to analyze systems and implement resource-saving changes will be key to a green energy future.\n\n[c2 | DSA.pdf | page 21 | 3.3 Formal Properties of Algorithms]\nAs the size of the problem increases, algorithmic complexity becomes a larger and larger factor. For problems dealing with just 1,000 elements, the time it would take to run an exponential-time algorithm on that problem exceeds the current age of the universe. In practice, across applications working with large amounts of data, O(N log N) is often considered the limit for real-world algorithms. Even then, O(N log N) algorithms cannot be run too frequently. For algorithms that need to run frequently on large amounts of data, algorithm designers target O(N), O(log N), or O(1).",
+    "final_context_ids": [
+      "1ec7e89cbeebd20df5e1862617fad9c7f667f91977484a9dc5ee7cce8d3ac6e2",
+      "870be3b80cb13c75a64a90ac6c39dbad4efcecd8177e32997da1313a7a8f6e66",
+      "a50767d72091c8c20d6b977e18c1de17419700e7255224a79a272ce7b4ece8d8"
+    ],
+    "final_context_chars": 2231,
+    "latency_ms": 18222.2,
+    "abstain_reason": "The provided context does not contain information about hash table load factors or recommended thresholds for resizing."
+  },
+  {
+    "query_id": "q_dev_unabs_02",
+    "split": "dev",
+    "question": "Which algorithm does the text recommend instead of Dijkstra's algorithm when a graph has negative edge weights?",
+    "config": "hybrid_k3_b2500_s3_rank",
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "citations": [],
+    "events": [
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "Dijkstra negative edge weights"
+        },
+        "usage": {
+          "prompt_tokens": 554,
+          "output_tokens": 19,
+          "thinking_tokens": 56
+        },
+        "latency_ms": 2415.5,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "Dijkstra negative edge weights",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 17.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+            "alias": "c1",
+            "score": 0.016009,
+            "page": 35,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+            "alias": "c2",
+            "score": 0.015873,
+            "page": 34,
+            "section": "3.5 Sample Algorithms by Problem"
+          },
+          {
+            "rank": 3,
+            "id": "e4a5412c00957a06b6cce9b4543ea75c966ea2b4e2c2c65c97cefe408fac7246",
+            "alias": "c3",
+            "score": 0.015417,
+            "page": 26,
+            "section": "3.4 Algorithmic Paradigms"
+          }
+        ],
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0"
+        ],
+        "context_chars": 2060
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "negative"
+        },
+        "usage": {
+          "prompt_tokens": 1034,
+          "output_tokens": 14,
+          "thinking_tokens": 46
+        },
+        "latency_ms": 2078.5,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "negative",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 14.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "188824bff5005e1d1725b89d4b1838a829176ffa544e3cb73eebe50408f47725",
+            "alias": "c4",
+            "score": 0.008197,
+            "page": 2,
+            "section": "3.1 Introduction to Data Structures and Algorithms"
+          },
+          {
+            "rank": 2,
+            "id": "f588f33f3449d6fa89620cb5f86f807999f4cf5c578ad5a17b230fbaf92d1bca",
+            "alias": "c5",
+            "score": 0.008197,
+            "page": 25,
+            "section": "3.4 Algorithmic Paradigms"
+          },
+          {
+            "rank": 3,
+            "id": "6924411b7c235ba33dbcda6ca8a89ed90bf5c17006139809921ac43ab0563447",
+            "alias": "c6",
+            "score": 0.008065,
+            "page": 50,
+            "section": "Chapter Review"
+          }
+        ],
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "188824bff5005e1d1725b89d4b1838a829176ffa544e3cb73eebe50408f47725",
+          "f588f33f3449d6fa89620cb5f86f807999f4cf5c578ad5a17b230fbaf92d1bca"
+        ],
+        "context_chars": 2442
+      },
+      {
+        "event": "llm_decision",
+        "action": "search",
+        "args": {
+          "query": "Bellman-Ford"
+        },
+        "usage": {
+          "prompt_tokens": 1181,
+          "output_tokens": 17,
+          "thinking_tokens": 89
+        },
+        "latency_ms": 2742.4,
+        "attempts": 1
+      },
+      {
+        "event": "search",
+        "tool": "hybrid",
+        "query": "Bellman-Ford",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 16.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+            "alias": "c7",
+            "score": 0.008197,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          },
+          {
+            "rank": 2,
+            "id": "67f27fd17b3ddd6c07c19e56a075c93ca3eb3939ab14e4c03bf18ddf88f14e73",
+            "alias": "c8",
+            "score": 0.008065,
+            "page": 43,
+            "section": "Chapter Review"
+          },
+          {
+            "rank": 3,
+            "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+            "alias": "c9",
+            "score": 0.007937,
+            "page": 38,
+            "section": "3.6 Computer Science Theory"
+          }
+        ],
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "188824bff5005e1d1725b89d4b1838a829176ffa544e3cb73eebe50408f47725",
+          "f588f33f3449d6fa89620cb5f86f807999f4cf5c578ad5a17b230fbaf92d1bca"
+        ],
+        "context_chars": 2442
+      },
+      {
+        "event": "llm_decision",
+        "action": "abstain",
+        "args": {
+          "reason": "The provided context does not mention negative edge weights in graphs, Dijkstra's algorithm's handling of them, or any recommended alternative algorithm."
+        },
+        "usage": {
+          "prompt_tokens": 1193,
+          "output_tokens": 42,
+          "thinking_tokens": 116
+        },
+        "latency_ms": 6333.2,
+        "attempts": 1
+      },
+      {
+        "event": "abstain",
+        "reason": "The provided context does not mention negative edge weights in graphs, Dijkstra's algorithm's handling of them, or any recommended alternative algorithm."
+      }
+    ],
+    "searches": 3,
+    "usage": {
+      "prompt_tokens": 3962,
+      "output_tokens": 92,
+      "thinking_tokens": 307,
+      "llm_calls": 4
+    },
+    "final_context": "[c1 | DSA.pdf | page 35 | 3.6 Computer Science Theory]\nDijkstra’s Algorithm\n\nDijkstra’s algorithm maintains a priority queue of vertices in the graph ordered by distance from the start and repeatedly selects the next shortest path to an unconnected part of the graph. Dijkstra’s algorithm is almost identical to Prim’s algorithm except processing shortest paths (sequences of edges) rather than individual edges. Dijkstra’s algorithm grows a shortest paths tree one shortest path at a time by selecting the next shortest path to an unexplored vertex. The runtime of Dijkstra’s algorithm is in O(|E| log |V| + |V| log |V|) with respect to |V|, the number of vertices, and |E|, the number of edges (Figure 3.31).\n\nFigure 3.31 Dijkstra’s algorithm expands outward from the start vertex by repeatedly selecting the next lowest-cost path to an unreached vertex. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\n3.6 Computer Science Theory\n\nLearning Objectives By the end of this section, you will be able to:\n\n[c4 | DSA.pdf | page 2 | 3.1 Introduction to Data Structures and Algorithms]\nA data type determines how computers process data by defining the possible values for data and the possible functionality or operations on that data. For example, the integer data type is defined as values from a certain range of positive or negative whole numbers with functionality including addition, subtraction, multiplication, and division. The string data type is defined as a sequence of characters where each character can be a letter, digit, punctuation, or space, with functionalities that include adding or deleting a character from a string, concatenating strings, and comparing two strings based, for example, on their alphabetical order.\n\n[c5 | DSA.pdf | page 25 | 3.4 Algorithmic Paradigms]\n4 W. D. Haven, “DeepMind’s protein-folding AI has solved a 50-year-old grand challenge of biology,” 2020. https://www.technologyreview.com/2020/11/30/1012712/deepmind-protein-folding-ai-solved-biology-science-drugs-disease/ 5 Google DeepMind, “AlphaFold: A solution to a 50-year-old grand challenge in biology,” 2020.\" https://deepmind.com/blog/article/ alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology 6 Google DeepMind, “AlphaFold: Demis Hassabis & John Jumper awarded Nobel Prize in Chemistry,” 2024.\" https://deepmind.google/discover/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/",
+    "final_context_ids": [
+      "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+      "188824bff5005e1d1725b89d4b1838a829176ffa544e3cb73eebe50408f47725",
+      "f588f33f3449d6fa89620cb5f86f807999f4cf5c578ad5a17b230fbaf92d1bca"
+    ],
+    "final_context_chars": 2442,
+    "latency_ms": 13618.1,
+    "abstain_reason": "The provided context does not mention negative edge weights in graphs, Dijkstra's algorithm's handling of them, or any recommended alternative algorithm."
+  }
+]

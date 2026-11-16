@@ -1,0 +1,210 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Why use one general string data structure to represent sentences across languages rather than designing a specialized structure for each language?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "A universal string structure can represent sentences across languages, including characters from different languages in the same sentence, so it can be reused instead of creating a language-specific structure."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "In the top-down approach, what is chosen first, and what criteria guide the choice of a concrete data structure?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "First choose an abstract data type based on the required functionality and operations. Then choose a data structure based on the resource constraints for each operation, usually running time."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "In Section 3.1, how is a child node defined?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "A child node is a descendant of another node.",
+    "filter": {
+      "section": "3.1 Introduction to Data Structures and Algorithms"
+    }
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "What approach does the text describe for preventing a binary search tree from entering a worst-case situation, and what does it aim to ensure?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Use a balanced binary search tree, such as an AVL tree, to keep the tree from entering a worst-case situation."
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "In the contact-tracing example, what do the graph's vertices and edges represent?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Each vertex represents a person, and each edge between two people represents a possible contact."
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "How does the text define an algorithm in terms of instructions, input, and output?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "An algorithm is a sequence of precise instructions that takes any input and computes the corresponding output."
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Why do algorithm designers use models instead of retaining every detail of the real world?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Models let designers focus on relevant information rather than detailed representations of the real world."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "According to the text, when is an algorithm considered correct?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "An algorithm is correct only when its computed outputs are consistent with all expected outputs; otherwise, it is incorrect."
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What does experimental analysis measure about an implementation, and what can it identify even when the output is correct?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "It measures runtime by recording how long the implementation takes to run, and it can identify performance bugs or unusually high resource use even when the output is correct."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which resources do time complexity and space complexity measure, respectively, in relation to problem size?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Time complexity measures the time an algorithm requires during execution; space complexity measures the memory it requires."
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "For sequential search, which case requires the fewest repetitions, and which case can require N repetitions?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "The best case is when the target is at the start of the list and requires one repetition. The worst case is when it is at the end or absent, and requires N repetitions."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the worst case, why is sequential search O(N) while binary search is O(log N)?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Each sequential-search repetition rules out one remaining element, while each binary-search repetition rules out half of the remaining elements."
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Can a greedy algorithm be assumed to always find the best solution? Under what condition can some greedy algorithms guarantee an optimal solution?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "No. Some greedy algorithms guarantee an optimal solution only when the problem is formulated so that repeatedly applying the simple selection rule never makes a mistake."
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Within Section 3.5, how does sequential search examine a collection, and what is its runtime order?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "It checks the collection elements one by one to find the target; its runtime is O(N), where N is the number of elements.",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    }
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "In merge sort, what does the merge operation do with two sorted sublists?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "It combines the two sorted sublists into a larger sublist whose elements remain sorted."
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "Why can hashing not guarantee a unique hash value for every object?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "The number of possible strings or complex data objects is enormous, while computers can represent only a fixed range of integer values, making collisions inevitable."
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "BFS expands level by level and adds explored vertices to a global set to avoid revisiting them and preserve level order.",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "It assumes a single thread of execution that follows each instruction in the algorithm.",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    }
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Dijkstra processes shortest paths (sequences of edges), whereas Prim processes individual edges."
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Both reduce to Hamiltonian paths; Hamiltonian paths reduce to vertex cover, which reduces to 3-satisfiability."
+  },
+  {
+    "id": "q_dev_unabs_01",
+    "split": "dev",
+    "question": "What load factor threshold does the text recommend before resizing a hash table to keep collisions rare?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The hashing section (p.32) only states that hash tables must handle collisions; it never discusses load factor, resizing or rehashing.",
+    "absence_check": "Case-insensitive search over all 238 chunks: 0 matches for ['load factor', 'resiz', 'rehash']"
+  },
+  {
+    "id": "q_dev_unabs_02",
+    "split": "dev",
+    "question": "Which algorithm does the text recommend instead of Dijkstra's algorithm when a graph has negative edge weights?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Dijkstra's algorithm is described (p.35), but the corpus never mentions negative edge weights or Bellman-Ford; the only occurrence of 'negative' is about integer data types (p.2).",
+    "absence_check": "Case-insensitive search over all 238 chunks: 0 matches for ['negative edge', 'negative weight', 'bellman']"
+  },
+  {
+    "id": "q_test_unabs_01",
+    "split": "test",
+    "question": "Within Section 3.6, how does the text prove that the halting problem is undecidable?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Section 3.6 covers Turing machines and complexity classes (P, NP, NP-complete) but never mentions the halting problem, decidability or undecidability.",
+    "absence_check": "Case-insensitive search over all 238 chunks: 0 matches for ['halting', 'undecid', 'decidab']"
+  },
+  {
+    "id": "q_test_unabs_02",
+    "split": "test",
+    "question": "According to the text, is merge sort a stable sorting algorithm, and why does stability matter?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Merge sort is described (Section 3.5), but the corpus never discusses sorting stability or the relative order of equal keys.",
+    "absence_check": "Case-insensitive search over all 238 chunks: 0 matches for ['stable sort', 'stability', 'relative order', 'equal keys']"
+  }
+]

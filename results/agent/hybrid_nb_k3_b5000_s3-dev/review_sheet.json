@@ -1,0 +1,414 @@
+[
+  {
+    "query_id": "q01",
+    "answerable": true,
+    "question": "Why use one general string data structure to represent sentences across languages rather than designing a specialized structure for each language?",
+    "reference": "A universal string structure can represent sentences across languages, including characters from different languages in the same sentence, so it can be reused instead of creating a language-specific structure.",
+    "status": "answered",
+    "answer": "A single, universal string data structure is used so that data structures can be reused across different problems, as well as to allow representing sentences that include characters from different languages within the same sentence [6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1].",
+    "raw_answer": "A single, universal string data structure is used so that data structures can be reused across different problems, as well as to allow representing sentences that include characters from different languages within the same sentence [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "6b1fd8f2e0753766a6110ff62ddbf95fe81ea0a3f92512787baf19665a1562d1",
+        "page": 3,
+        "text": "3.1 • Introduction to Data Structures and Algorithms 91\n\nAlthough the values for complex data are often diverse, computer scientists have designed data structures so that they can be reused for other problems. For example, rather than designing a specialized data structure for sentences in every human language, we often use a single, universal string data structure to represent sentences, including characters from different languages in the same sentence. (We will later see some drawbacks of generalizing assumptions in the design of data structures and algorithms.) In addition, computers take time to execute algorithms, so computer scientists are concerned about efficiency in terms of how long an algorithm takes to compute a result."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q02",
+    "answerable": true,
+    "question": "In the top-down approach, what is chosen first, and what criteria guide the choice of a concrete data structure?",
+    "reference": "First choose an abstract data type based on the required functionality and operations. Then choose a data structure based on the resource constraints for each operation, usually running time.",
+    "status": "answered",
+    "answer": "In the top-down approach, an appropriate **abstract data type** is chosen first by analyzing the problem to determine the necessary functionality and operations [d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb]. \n\nThe choice of a concrete data structure is then guided by **quantifying the resource constraints** (usually program running time) for each operation [d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb].",
+    "raw_answer": "In the top-down approach, an appropriate **abstract data type** is chosen first by analyzing the problem to determine the necessary functionality and operations [c1]. \n\nThe choice of a concrete data structure is then guided by **quantifying the resource constraints** (usually program running time) for each operation [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "d8a5517a58f1d466bac2828e31d548bf294fceceb9c47b5e3630c15006f9c8bb",
+        "page": 4,
+        "text": "92 3 • Data Structures and Algorithms\n\ndata structures for a particular problem? Computer scientists apply a top-down approach.\n\n1. Select an appropriate abstract data type by analyzing the problem to determine the necessary functionality and operations.\n\n2. Select an appropriate data structure by quantifying the resource constraints (usually program running time) for each operation.\n\nThe primary concern is the data and the operations to be performed on them. Thinking back to simple data types like numbers, we focused on addition, subtraction, multiplication, and division as the basic operations. Likewise, to represent complex data types, we also focus on the operations that will most directly support our algorithms. After deciding on an abstract data type, we then choose a particular data structure that implements the abstract data type.\n\nLinear Data Structures"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q03",
+    "answerable": true,
+    "question": "In Section 3.1, how is a child node defined?",
+    "reference": "A child node is a descendant of another node.",
+    "status": "answered",
+    "answer": "In Section 3.1, a child node is defined as a descendant of another node [cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f].",
+    "raw_answer": "In Section 3.1, a child node is defined as a descendant of another node [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "cd3ec306d024480f5e646aee1cbfa6359c2d0e4f37db57ea041552c5127a1c1f",
+        "page": 5,
+        "text": "3.1 • Introduction to Data Structures and Algorithms 93\n\npriority queues by organizing elements in a hierarchy rather than in a line.\n\nTree Data Structures\n\nA tree is a hierarchical data structure. While there are many kinds of tree data structures, all of them share the same basic organizing structure: a node represents an element in a tree or graph. A node may or may not have a descendant. A child node is a descendant of another node. Often, the primary node is referred to as the “parent node.” Trees maintain a hierarchy through parent-child relationships, which repeat from the root node at the top of the tree down to each leaf node, which is at the bottom of the tree and has no children. The height of a tree corresponds to the depth of the hierarchy of descendants. Figure 3.5 illustrates the structure and elements of a tree."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q04",
+    "answerable": true,
+    "question": "What approach does the text describe for preventing a binary search tree from entering a worst-case situation, and what does it aim to ensure?",
+    "reference": "Use a balanced binary search tree, such as an AVL tree, to keep the tree from entering a worst-case situation.",
+    "status": "answered",
+    "answer": "To prevent a binary search tree from entering a worst-case situation, the text describes using **balanced binary search trees**, such as **AVL trees** [c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3][4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064]. This approach introduces additional properties to ensure that the tree reorganizes elements (such as through node rotations) to maintain balance between its left and right subtrees at every node, preventing the tree from becoming unbalanced and degrading into a linked list or sequential search [c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3][ed8ecee8643554fc57664220c7a21b64a5e84f3d16dc8c95322880c51701a0c0][ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e].",
+    "raw_answer": "To prevent a binary search tree from entering a worst-case situation, the text describes using **balanced binary search trees**, such as **AVL trees** [c1][c2]. This approach introduces additional properties to ensure that the tree reorganizes elements (such as through node rotations) to maintain balance between its left and right subtrees at every node, preventing the tree from becoming unbalanced and degrading into a linked list or sequential search [c1][c3][c6].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+        "page": 29,
+        "text": "Binary search trees represent the concept of binary search in a tree data structure by arranging elements in the tree in sorted order from left to right. Ideally, the root node represents the middle element in the sorted tree and each child roughly divides each subtree in half. But, in the worst case, a binary search tree can look exactly like a linked list where each node contains either zero children or one child. Although such a tree still arranges its elements in sorted order from left to right, comparing the target to each node only reduces the size of the problem by one element rather than ruling out half of the remaining elements—the worst-case binary search tree degrades to sequential search. Balanced binary search trees, such as AVL trees, addressed this worst-case scenario by maintaining the AVL property of balance between left and right subtrees.\n\nSorting"
+      },
+      {
+        "id": "4bd6751e0fb3d829d7c36eab73a6f3139678997bc0f36b527fa6b19bb7cc4064",
+        "page": 7,
+        "text": "3.1 • Introduction to Data Structures and Algorithms 95\n\nBalanced binary search trees such as AVL trees represent just one approach for ensuring that the tree never enters a worst-case situation. There are many other balanced binary search tree data structures in addition to AVL trees. Balanced binary search trees can also be used to implement the priority queue abstract data type if the elements are ordered according to their priority value. But balanced search trees are not the only way to implement priority queues.\n\nBinary Heaps"
+      },
+      {
+        "id": "ed8ecee8643554fc57664220c7a21b64a5e84f3d16dc8c95322880c51701a0c0",
+        "page": 6,
+        "text": "Balanced Binary Search Trees\n\nBinary search trees are not as effective as we have described. The dictionary example represents a best-case scenario for binary search trees. We can only rule out half of the remaining elements each time if the binary search tree is perfectly balanced, which means that for every node in the binary search tree, its left and right subtrees contain the same number of elements. This is a strong requirement, since the order in which elements are added to a binary search tree determines the shape of the tree. In other words, binary search trees can easily become unbalanced. It is possible for a binary search tree to look exactly like a linked list, in which each node contains either zero children or one child, which is no more efficient than a linear data structure."
+      },
+      {
+        "id": "ea2f99f2af43ae465fad08ada1dfa0f9a0f75ed4191acb11dad5d3fae72ae48e",
+        "page": 6,
+        "text": "An AVL tree (named after its inventors, Adelson-Velsky and Landis) is a balanced binary search tree data structure often used to implement sets or maps with one additional tree property: the AVL tree property, which requires the left and right subtrees to be balanced at every node of the tree. AVL trees are just one among many “self-balancing” binary search trees. A balanced binary search tree introduces additional properties that ensure that the tree reorganizes elements to maintain balance (Figure 3.7).\n\nFigure 3.7 An AVL tree rotates nodes in a binary search tree to maintain balance. This sequence of steps illustrates the insertion of numbers 1, 2, 3, 4, 5, 6 into an initially empty AVL tree. (The steps in which rotation occurs are represented by the solid black arrows.) (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nAccess for free at openstax.org"
+      }
+    ],
+    "citation_support": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q05",
+    "answerable": true,
+    "question": "In the contact-tracing example, what do the graph's vertices and edges represent?",
+    "reference": "Each vertex represents a person, and each edge between two people represents a possible contact.",
+    "status": "answered",
+    "answer": "In the contact-tracing example, each vertex represents a person, and each edge between two people represents a possible contact [01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec].",
+    "raw_answer": "In the contact-tracing example, each vertex represents a person, and each edge between two people represents a possible contact [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "01320ed8b9152f0b3b6e6360fa700561834e42e1a1dd50a3f8edbdf2e78ed8ec",
+        "page": 9,
+        "text": "3.2 • Algorithm Design and Discovery 97\n\nGLOBAL ISSUES IN TECHNOLOGY\n\nContact Tracing\n\nEpidemiology is the study of how infectious diseases spread across the world. Within epidemiology, contact tracing attempts to identify confirmed cases of disease and limit its spread by tracing contacted people and isolating them from further spreading the disease.\n\nGraph data structures can help epidemiologists manage the data and people involved in contact tracing. Imagine a graph where each vertex in a tracing graph represents a person, and each edge between two people represents a possible contact. When a person receives a positive test result for contracting the disease, healthcare professionals can identify all the people that they’ve been in contact with by tracing through the graph."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q06",
+    "answerable": true,
+    "question": "How does the text define an algorithm in terms of instructions, input, and output?",
+    "reference": "An algorithm is a sequence of precise instructions that takes any input and computes the corresponding output.",
+    "status": "answered",
+    "answer": "The text defines an algorithm as \"a sequence of precise instructions that takes any input and computes the corresponding output\" [f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272].",
+    "raw_answer": "The text defines an algorithm as \"a sequence of precise instructions that takes any input and computes the corresponding output\" [c2].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "f6e6795be10ec1b1554a6a33b44b90e2230eee3bf946d910fb6bb2324e76d272",
+        "page": 10,
+        "text": "An algorithm is a sequence of precise instructions that takes any input and computes the corresponding output, while algorithmic problem-solving refers to a particular set of approaches and methods for designing algorithms that draws on computing’s historical connections to the study of mathematical problem solving. Early computer scientists were influenced by mathematical formalism and mathematical problem solving. George Pólya’s 1945 book, How to Solve It, outlines a process for solving problems that begins with a formal understanding of the problem and ends with a solution to the problem. As an algorithm's input size is always finite, finding a solution to an algorithmic problem can always be accomplished by exhaustive search. Therefore, the goal of algorithmic problem-solving, as opposed to mathematical problem solving, is to find an “efficient” solution, either in terms of execution time (e.g., number of computer instructions) or space used (e.g., computer memory size)."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q07",
+    "answerable": true,
+    "question": "Why do algorithm designers use models instead of retaining every detail of the real world?",
+    "reference": "Models let designers focus on relevant information rather than detailed representations of the real world.",
+    "status": "answered",
+    "answer": "Algorithm designers use models because without them, they would struggle with the infinite complexity and richness of the real world [153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9]. Retaining every detail creates impractical representations with too many details to wade through to build a useful algorithm [153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9][b4376daef0dc8411adf48f3cb26843485e3773f6c8dbf127d272416587523b66]. Abstracting problems into models enables designers to focus on relevant information and underlying regularities while simplifying or erasing unnecessary details so that the problem can be solved by a computer [b4376daef0dc8411adf48f3cb26843485e3773f6c8dbf127d272416587523b66][df16441988e5e7449d58072ba7fa7f20347dd5e57bbaf7fc037a9a3092f6e03c].",
+    "raw_answer": "Algorithm designers use models because without them, they would struggle with the infinite complexity and richness of the real world [c2]. Retaining every detail creates impractical representations with too many details to wade through to build a useful algorithm [c2][c7]. Abstracting problems into models enables designers to focus on relevant information and underlying regularities while simplifying or erasing unnecessary details so that the problem can be solved by a computer [c7][c8].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "153751193fa576f1e30f29d3ed77765057331b50c81750936321d1cba35155e9",
+        "page": 11,
+        "text": "3.2 • Algorithm Design and Discovery 99\n\ndefines the rules and potential outcomes. Without models, algorithm designers would struggle with the infinite complexity and richness of the world. Imagine, for example, designing a medical system that models patients at the level of individual atoms. This model offers a detailed representation of each patient in the most physical or literal sense. But this model is impractical because we do not know how particular configurations and collections of atoms contribute to a person’s overall health. Compared to this atomic-scale model, our former model consisting of age, sex, weight, and other physical characteristics is more practical for designing algorithms, but necessarily involves erasing our individual humanity to draw certain conclusions."
+      },
+      {
+        "id": "b4376daef0dc8411adf48f3cb26843485e3773f6c8dbf127d272416587523b66",
+        "page": 11,
+        "text": "In order to design algorithms, we need to be able to focus on relevant information rather than detailed representations of the real world. Further, computer science requires a philosophical mind to aid in problem solving. According to Brian Cantwell Smith, philosopher and cognitive and computer scientist, “Though this is not the place for metaphysics, it would not be too much to say that every act of conceptualization, analysis, or categorization, does a certain amount of violence to its subject matter, in order to get at the underlying regularities that group things together.”1 Without performing this “violence,” there would be too many details to wade through to create a useful algorithm."
+      },
+      {
+        "id": "df16441988e5e7449d58072ba7fa7f20347dd5e57bbaf7fc037a9a3092f6e03c",
+        "page": 43,
+        "text": "• Just like how many data structures can represent the same abstract data type, many algorithms exist to solve the same problem. In algorithmic problem-solving, computer scientists solve formal problems with specific input data and output data that correspond to each input.\n\n• Modeling is the process of representing a complex phenomenon such as a real-world problem as a formal problem. Modeling is about abstraction: the simplification or erasure of details so that the problem can be solved by a computer.\n\n• Historically, the model of computation emphasized specialized algorithms operating on a modest model of the underlying phenomenon. Modeling is a violent but also necessary act in order to simplify the problem so that it can be solved by a computer.\n\n• Searching is the problem of retrieving a target element from a collection of many elements. Sequential search and binary search are two algorithms for solving the search problem."
+      }
+    ],
+    "citation_support": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q08",
+    "answerable": true,
+    "question": "According to the text, when is an algorithm considered correct?",
+    "reference": "An algorithm is correct only when its computed outputs are consistent with all expected outputs; otherwise, it is incorrect.",
+    "status": "answered",
+    "answer": "According to the text, an algorithm is considered correct only if its computed outputs are consistent with all expected outputs across the range of possible inputs [bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e].",
+    "raw_answer": "According to the text, an algorithm is considered correct only if its computed outputs are consistent with all expected outputs across the range of possible inputs [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "bc218664e7039e265f1dc4ea2d633582266d3e0e7abe8faf5d3dc69555e0175e",
+        "page": 15,
+        "text": "3.2 • Algorithm Design and Discovery 103\n\noutputs are then evaluated for correctness, which considers whether the outputs produced by an algorithm match the expected or desired results across the range of possible inputs. An algorithm is considered correct only if its computed outputs are consistent with all the expected outputs; otherwise, the algorithm is considered incorrect.\n\nAlthough this definition might sound simple, verifying an algorithm for correctness is often quite difficult in practice, because algorithms are designed to generalize and automate complex processes. The most direct way to verify correctness is to check that the algorithm computes the correct output for every possible input. This is not only computationally difficult, but even potentially impossible to achieve, since some algorithms can accept an infinite range of inputs."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q09",
+    "answerable": true,
+    "question": "What does experimental analysis measure about an implementation, and what can it identify even when the output is correct?",
+    "reference": "It measures runtime by recording how long the implementation takes to run, and it can identify performance bugs or unusually high resource use even when the output is correct.",
+    "status": "answered",
+    "answer": "Experimental analysis evaluates an algorithm's runtime by recording how long it takes to run a program implementation of it [936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8][d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9]. Even when the output is correct, it can identify performance bugs—code that consumes unusually large amounts of computation time or system resources [d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9].",
+    "raw_answer": "Experimental analysis evaluates an algorithm's runtime by recording how long it takes to run a program implementation of it [c2][c3]. Even when the output is correct, it can identify performance bugs—code that consumes unusually large amounts of computation time or system resources [c3].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+        "page": 44,
+        "text": "• Runtime analysis is a study of how much time it takes to run an algorithm. Experimental analysis is a runtime analysis technique that involves evaluating an algorithm’s runtime by recording how long it takes to run a program implementation of it.\n\n• Time complexity is the formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. The goal of time complexity analysis is to produce a simple and easy-to- compare characterization of the runtime of an algorithm as it relates to the size of the problem.\n\n• Space complexity is the formal measure of how much memory an algorithm requires during execution as it relates to the size of the problem."
+      },
+      {
+        "id": "d72bdfe96ee626023ab9da27398c7e9dbc5666d02599d8c5049a1c04fa70e4a9",
+        "page": 17,
+        "text": "3.3 • Formal Properties of Algorithms 105\n\ntime exactly how long it takes to run the program with a stopwatch. This approach, known as experimental analysis, evaluates an algorithm’s runtime by recording how long it takes to run a program implementation of it. Experimental analysis is particularly effective for identifying performance bugs or code that consumes unusually large amounts of computation time or system resources, even though it produces the correct output. In e-commerce, for example, performance bugs that result in slow website responsiveness can lead to millions of dollars in lost revenue. In the worst-case scenario, performance bugs can even bring down entire websites and networks when systems are overloaded and cannot handle incoming requests. As the Internet becomes more heavily used for information and services, performance bugs can have direct impacts on health and safety if the computer infrastructure cannot keep up with demand."
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q10",
+    "answerable": true,
+    "question": "Which resources do time complexity and space complexity measure, respectively, in relation to problem size?",
+    "reference": "Time complexity measures the time an algorithm requires during execution; space complexity measures the memory it requires.",
+    "status": "answered",
+    "answer": "In relation to the size of the problem, time complexity measures how much time an algorithm requires during execution, while space complexity measures how much memory it requires [bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4][936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8].",
+    "raw_answer": "In relation to the size of the problem, time complexity measures how much time an algorithm requires during execution, while space complexity measures how much memory it requires [c1][c2].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "bbd80fb1c6421545926aae2035539fba21d5c759c1231ff561c5e3c624a42de4",
+        "page": 18,
+        "text": "106 3 • Data Structures and Algorithms\n\nTime and Space Complexity\n\nOne way to measure the efficiency of an algorithm is through time complexity, a formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. In addition to time complexity, computer scientists are also interested in space complexity, the formal measure of how much memory an algorithm requires during its execution as it relates to the size of the problem."
+      },
+      {
+        "id": "936f1a1364199aa2f2d932219717ca6d356736a5784ff047987bed3b2dd253e8",
+        "page": 44,
+        "text": "• Runtime analysis is a study of how much time it takes to run an algorithm. Experimental analysis is a runtime analysis technique that involves evaluating an algorithm’s runtime by recording how long it takes to run a program implementation of it.\n\n• Time complexity is the formal measure of how much time an algorithm requires during execution as it relates to the size of the problem. The goal of time complexity analysis is to produce a simple and easy-to- compare characterization of the runtime of an algorithm as it relates to the size of the problem.\n\n• Space complexity is the formal measure of how much memory an algorithm requires during execution as it relates to the size of the problem."
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q11",
+    "answerable": true,
+    "question": "For sequential search, which case requires the fewest repetitions, and which case can require N repetitions?",
+    "reference": "The best case is when the target is at the start of the list and requires one repetition. The worst case is when it is at the end or absent, and requires N repetitions.",
+    "status": "answered",
+    "answer": "For sequential search:\n- The **best-case** situation requires the fewest repetitions (just one repetition), which occurs when the target word is at the start (or beginning) of the list [5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3], [a233b9cc27e1c36f5a054199ab9f120712082fcc6d886b3f3c3ce31964af436c].\n- The **worst-case** situation can require $N$ repetitions, which occurs when the target word is either at the end of the list or not in the list at all [5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3].",
+    "raw_answer": "For sequential search:\n- The **best-case** situation requires the fewest repetitions (just one repetition), which occurs when the target word is at the start (or beginning) of the list [c1], [c4].\n- The **worst-case** situation can require $N$ repetitions, which occurs when the target word is either at the end of the list or not in the list at all [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "5c3d335ec181c4be41117471c1a95af4da61d99da98aa462034a3704d96501b3",
+        "page": 19,
+        "text": "3.3 • Formal Properties of Algorithms 107\n\nworst-case complexity. In precise English, we might say that the time complexity for this sequential search algorithm has two cases (Figure 3.13):\n\n• In the best-case situation (when the target word is at the start of the list), sequential search takes just one repetition to find the word in the list.\n\n• In the worst-case situation (when the target word is either at the end of the list or not in the list at all), sequential search takes N repetitions where N is the number of words in the list.\n\nFigure 3.13 The best case for sequential search in a sorted list is to find the word at the top of the list, whereas the worst case is to find the word at the bottom of the list (or not in the list at all). (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)"
+      },
+      {
+        "id": "a233b9cc27e1c36f5a054199ab9f120712082fcc6d886b3f3c3ce31964af436c",
+        "page": 18,
+        "text": "However, this analysis is not quite complete. We might find the target word early in the list even if the list is very large. Although we defined the size of the problem as the number of words in the list, the size of the problem does not account for the exact words and word ordering in the list. Computer scientists say that this algorithm has a best-case situation when the word can be found at the beginning of the list, and a worst-case situation when the word can only be found at the end of the list (or, perhaps, not even in the list at all). One way to account for the variation in runtime is via case analysis, which is based on factors other than the size of the problem.\n\nFinally, we can formalize our description using either precise English or a special mathematical notation called Big O notation, which is the most common type of asymptotic notation in computer science used to measure\n\nAccess for free at openstax.org"
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q12",
+    "answerable": true,
+    "question": "In the worst case, why is sequential search O(N) while binary search is O(log N)?",
+    "reference": "Each sequential-search repetition rules out one remaining element, while each binary-search repetition rules out half of the remaining elements.",
+    "status": "answered",
+    "answer": "In the worst case, sequential search is $O(N)$ because each repetition rules out only one remaining element [2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b]. In contrast, binary search is $O(\\log N)$ because each repetition rules out half of the remaining elements, and the binary logarithm ($\\log_2$) represents the number of times a number must be divided by 2 until it reaches 1 [2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b].",
+    "raw_answer": "In the worst case, sequential search is $O(N)$ because each repetition rules out only one remaining element [c2]. In contrast, binary search is $O(\\log N)$ because each repetition rules out half of the remaining elements, and the binary logarithm ($\\log_2$) represents the number of times a number must be divided by 2 until it reaches 1 [c2].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "2edc07b568409b2d0b433fa0100290f6cc916a1d2c504568c99b426d0b02247b",
+        "page": 21,
+        "text": "3.3 • Formal Properties of Algorithms 109\n\nlarge number tells how many times it needs to be divided by a small number until it reaches 1. The binary logarithm, or log2, tells how many times a large number needs to be divided by 2 until it reaches 1. In the worst case, the time complexity of sequential search is in O(N) with respect to N, the number of words in the list, since each repetition of sequential search rules out one remaining element. How about binary search? In the worst case, the time complexity of binary search is in O(log N) with respect to N, the number of words in the list, since each repetition of binary search rules out half the remaining elements.\n\nAnother way to understand orders of growth is to consider how a change in the size of the problem results in a change to the resource usage. When we double the size of the input problem, algorithms in each order of growth respond differently (Figure 3.15).\n\n• O(1) algorithms will not require any more resources."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q13",
+    "answerable": true,
+    "question": "Can a greedy algorithm be assumed to always find the best solution? Under what condition can some greedy algorithms guarantee an optimal solution?",
+    "reference": "No. Some greedy algorithms guarantee an optimal solution only when the problem is formulated so that repeatedly applying the simple selection rule never makes a mistake.",
+    "status": "answered",
+    "answer": "No, a greedy algorithm cannot be assumed to always find the best solution, as the majority of greedy algorithms do not always compute the optimal result [e375dc7d5c8740bd9547169731e54ce93280283270bbb4c9ead6e979f3617bc1][6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c]. \n\nHowever, some cleverly crafted greedy algorithms can guarantee an optimal solution under the condition that the problems they solve are formulated to ensure that the algorithm never makes a mistake when repeatedly applying the simple rule to select the next element [6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c].",
+    "raw_answer": "No, a greedy algorithm cannot be assumed to always find the best solution, as the majority of greedy algorithms do not always compute the optimal result [c2][c3]. \n\nHowever, some cleverly crafted greedy algorithms can guarantee an optimal solution under the condition that the problems they solve are formulated to ensure that the algorithm never makes a mistake when repeatedly applying the simple rule to select the next element [c3].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "e375dc7d5c8740bd9547169731e54ce93280283270bbb4c9ead6e979f3617bc1",
+        "page": 45,
+        "text": "3 • Chapter Review 133\n\n• Greedy algorithms solve combinatorial problems by repeatedly applying a simple rule to select the next element to include in the solution. Unlike brute-force algorithms that solve combinatorial problems by generating all potential solutions, greedy algorithms instead focus on generating just one solution.\n\n• Greedy algorithms are not always guaranteed to compute the best solution depending on the assumptions and goals of the problem. A greedy algorithm for the interval scheduling problem will not compute the correct result if we choose to complete the shortest tasks.\n\n• Kruskal’s algorithm and Prim’s algorithm are two examples of greedy algorithms for the minimum spanning trees problem. These algorithms are a rare example of a greedy algorithm that is guaranteed to compute the correct result."
+      },
+      {
+        "id": "6efd641cc5333a88586f2e26948aa08a77fe12e65fbff59fc78bc24212b2957c",
+        "page": 26,
+        "text": "114 3 • Data Structures and Algorithms\n\nFigure 3.18 Greedy interval scheduling will not work if the simple rule repeatedly selects the shortest interval. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nThe majority of greedy algorithms do not always compute the best solution. But there are also certain scenarios in which cleverly crafted greedy algorithms guarantee finding optimal solutions. The problems they solve are formulated to ensure that the greedy algorithm never makes a mistake when repeatedly applying the simple rule to select the next element."
+      }
+    ],
+    "citation_support": [
+      null,
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q14",
+    "answerable": true,
+    "question": "Within Section 3.5, how does sequential search examine a collection, and what is its runtime order?",
+    "reference": "It checks the collection elements one by one to find the target; its runtime is O(N), where N is the number of elements.",
+    "status": "answered",
+    "answer": "Within Section 3.5, a sequential search examines a collection by sequentially checking it element-by-element for the target [855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf]. Its runtime is in $O(N)$ with respect to $N$, the number of elements in the list [855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf].",
+    "raw_answer": "Within Section 3.5, a sequential search examines a collection by sequentially checking it element-by-element for the target [c1]. Its runtime is in $O(N)$ with respect to $N$, the number of elements in the list [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+        "page": 29,
+        "text": "3.5 • Sample Algorithms by Problem 117\n\nSearching\n\nSearching is the problem of retrieving a target element from a collection of elements. Searching in a linear data structure, such as an array list, can be done using either sequential search or binary search.\n\nSequential Search Algorithm\n\nA sequential search algorithm is a searching algorithm that sequentially checks the collection element-by- element for the target. The runtime of sequential search is in O(N) with respect to N, the number of elements in the list (Figure 3.22).\n\nFigure 3.22 Sequential search is a search algorithm that checks the collection element by element to find a target element. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license)\n\nBinary Search Algorithm"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q15",
+    "answerable": true,
+    "question": "In merge sort, what does the merge operation do with two sorted sublists?",
+    "reference": "It combines the two sorted sublists into a larger sublist whose elements remain sorted.",
+    "status": "answered",
+    "answer": "In merge sort, the merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order [16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f].",
+    "raw_answer": "In merge sort, the merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order [c1].",
+    "abstain_reason": null,
+    "cited_chunks": [
+      {
+        "id": "16c18893129af06b7b11d5d450d42f14ae51281c7e8fca28d1dec71ea419723f",
+        "page": 30,
+        "text": "118 3 • Data Structures and Algorithms\n\nMerge Sort Algorithm\n\nA merge sort algorithm recursively divides the data into sublists until sublists are one element long—which we know are sorted—and then merges adjacent sorted sublists to eventually return the sorted list. The merge operation combines two sorted sublists to produce a new, larger sorted sublist containing all the elements in sorted order. The actual rearranging of elements occurs by repeatedly applying the merge operation on pairs of adjacent sorted sublists, starting with the smallest single-element sublists, to larger two-element sublists, and eventually reaching the two halves of the entire list of elements. The runtime of merge sort is in O(N log N) with respect to N, the number of elements (see Figure 3.17).\n\nQuicksort Algorithm"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "notes": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q_dev_unabs_01",
+    "answerable": false,
+    "question": "What load factor threshold does the text recommend before resizing a hash table to keep collisions rare?",
+    "reference": "The hashing section (p.32) only states that hash tables must handle collisions; it never discusses load factor, resizing or rehashing.",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "raw_answer": null,
+    "abstain_reason": "The provided context does not mention load factors, resizing hash tables, or any recommended threshold for resizing.",
+    "cited_chunks": [],
+    "citation_support": [],
+    "notes": "",
+    "abstention_correct": null
+  },
+  {
+    "query_id": "q_dev_unabs_02",
+    "answerable": false,
+    "question": "Which algorithm does the text recommend instead of Dijkstra's algorithm when a graph has negative edge weights?",
+    "reference": "Dijkstra's algorithm is described (p.35), but the corpus never mentions negative edge weights or Bellman-Ford; the only occurrence of 'negative' is about integer data types (p.2).",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the retrieved documents to answer this question.",
+    "raw_answer": null,
+    "abstain_reason": "The provided context does not mention negative edge weights or recommend an alternative algorithm to Dijkstra's algorithm.",
+    "cited_chunks": [],
+    "citation_support": [],
+    "notes": "",
+    "abstention_correct": null
+  }
+]

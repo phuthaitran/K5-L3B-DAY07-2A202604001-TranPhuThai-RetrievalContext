@@ -1,0 +1,3610 @@
+[
+  {
+    "query_id": "q16",
+    "method": "dense",
+    "status": "ok",
+    "query": "Why can hashing not guarantee a unique hash value for every object?",
+    "filter": null,
+    "latency_ms": 75.11,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+        "score": 0.667944,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 0.602935,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+        "score": 0.530305,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+        "score": 0.443781,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+        "score": 0.38823,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 0.32359,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.318309,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "de1dd571ceaface3e33ba601ab5a83c6639bc0eea71b0f94a5e054c152cc2ef2",
+        "score": 0.285593,
+        "source": "DSA.pdf",
+        "page": 50,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "400314610930ddc468b3a12e23699d3466f77237bbadf9b6b61ee6af0a581a57",
+        "score": 0.274707,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "f61afc89336f1dd84bd8e9e50a14df048ca8e2b2326710553defd06e541f4db7",
+        "score": 0.264976,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 652,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+        ],
+        "context_chars": 1727,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654"
+        ],
+        "context_chars": 2756,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q17",
+    "method": "dense",
+    "status": "ok",
+    "query": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    },
+    "latency_ms": 22.41,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "score": 0.702894,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "score": 0.667857,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+        "score": 0.600525,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+        "score": 0.540068,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.485224,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "9634bd0cb94f4180c5dcf8b09779932a3290d054598a03dea02d14a714e3574e",
+        "score": 0.406681,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+        "score": 0.401323,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+        "score": 0.374434,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+        "score": 0.362385,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 0.348773,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 775,
+        "context_hit": true
+      },
+      "2500": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q18",
+    "method": "dense",
+    "status": "ok",
+    "query": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    },
+    "latency_ms": 15.77,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "score": 0.432567,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+        "score": 0.422127,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 0.407322,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+        "score": 0.399348,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+        "score": 0.33903,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3",
+        "score": 0.279209,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+        "score": 0.21955,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.217256,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "1401530c71833a1aad62f7decfa83096e0997f627d60fa4cd39efcd78f5568f9",
+        "score": 0.210886,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+        "score": 0.209597,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53"
+        ],
+        "context_chars": 1940,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+          "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6"
+        ],
+        "context_chars": 2920,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q19",
+    "method": "dense",
+    "status": "ok",
+    "query": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "filter": null,
+    "latency_ms": 17.94,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.684075,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+        "score": 0.580969,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.555073,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "5535c3d40666acd4b409141b910326dda747b559cdb6d83b31f0adec8a44478d",
+        "score": 0.543622,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.54137,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+        "score": 0.518437,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+        "score": 0.491242,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "80b626f347e62f9771a46f8b30056c8f4e6f33c2f181f4a7d5de74c739da57a1",
+        "score": 0.442001,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "194ddc225132f555a7350c662f4762d99a89dbc1c09b5c7272946a9887c73584",
+        "score": 0.423063,
+        "source": "DSA.pdf",
+        "page": 42,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+        "score": 0.421526,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e"
+        ],
+        "context_chars": 745,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e"
+        ],
+        "context_chars": 1816,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+          "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821"
+        ],
+        "context_chars": 2640,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q20",
+    "method": "dense",
+    "status": "ok",
+    "query": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "filter": null,
+    "latency_ms": 17.4,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+        "score": 0.619128,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 0.613714,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+        "score": 0.562417,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "67f27fd17b3ddd6c07c19e56a075c93ca3eb3939ab14e4c03bf18ddf88f14e73",
+        "score": 0.559831,
+        "source": "DSA.pdf",
+        "page": 43,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+        "score": 0.520078,
+        "source": "DSA.pdf",
+        "page": 46,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "dccf77e9ac2adf0a9a804d1f811630459e8e970fcdf788d5a079ed01c5b4b9d3",
+        "score": 0.482005,
+        "source": "DSA.pdf",
+        "page": 24,
+        "section": "3.4 Algorithmic Paradigms",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+        "score": 0.481456,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+        "score": 0.458908,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+        "score": 0.443962,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "8f20e60894803aee49dcca3e696190bdb44e118d9e311b7d4d9e64d9cd1cd26d",
+        "score": 0.439112,
+        "source": "DSA.pdf",
+        "page": 27,
+        "section": "3.4 Algorithmic Paradigms",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d"
+        ],
+        "context_chars": 1950,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c"
+        ],
+        "context_chars": 3036,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q16",
+    "method": "hybrid_nb",
+    "status": "ok",
+    "query": "Why can hashing not guarantee a unique hash value for every object?",
+    "filter": null,
+    "latency_ms": 36.32,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 2,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+        "score": 0.015749,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+        "score": 0.015629,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+        "score": 0.015059,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 6,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.015038,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 7,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 0.014929,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "d954d7901af46838045d3f55f0137b01526f3d5ab916afad5ecf54134e32a580",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 9,
+        "id": "497f29fbaab683c7bfeee9cae871b9d1b632776606f66f23c7fc783527d74d48",
+        "score": 0.007463,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "de1dd571ceaface3e33ba601ab5a83c6639bc0eea71b0f94a5e054c152cc2ef2",
+        "score": 0.007353,
+        "source": "DSA.pdf",
+        "page": 50,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 652,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+        ],
+        "context_chars": 1727,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+          "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+          "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22"
+        ],
+        "context_chars": 4674,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q17",
+    "method": "hybrid_nb",
+    "status": "ok",
+    "query": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    },
+    "latency_ms": 39.16,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "score": 0.016393,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+        "score": 0.016001,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "score": 0.016001,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+        "score": 0.015625,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 5,
+        "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+        "score": 0.015155,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 0.014606,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 10,
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 7,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5
+        }
+      },
+      {
+        "rank": 8,
+        "id": "801e00cf50d7d5b612a793ef374dff72da0592082b242167973f157c5adf76c8",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 9,
+        "id": "9634bd0cb94f4180c5dcf8b09779932a3290d054598a03dea02d14a714e3574e",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      },
+      {
+        "rank": 10,
+        "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+        "score": 0.007353,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 775,
+        "context_hit": true
+      },
+      "2500": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+          "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+          "ccea4dc1c30da236f228c6df3c20f212a9232f7933a18a1175d021729f9ce557"
+        ],
+        "context_chars": 3670,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q18",
+    "method": "hybrid_nb",
+    "status": "ok",
+    "query": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    },
+    "latency_ms": 37.64,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 2,
+        "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+        "score": 0.015889,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+        "score": 0.015877,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 0.015873,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+        "score": 0.015059,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 6,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.014929,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 7,
+        "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+        "score": 0.014816,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "1401530c71833a1aad62f7decfa83096e0997f627d60fa4cd39efcd78f5568f9",
+        "score": 0.014709,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 9,
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 9,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 10,
+        "id": "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76"
+        ],
+        "context_chars": 307,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76"
+        ],
+        "context_chars": 2156,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+          "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+          "9449cf7237cb3d3a219d7e4376cb67a03211edcb956bf36d4e84e480074e31fb",
+          "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3"
+        ],
+        "context_chars": 4329,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q19",
+    "method": "hybrid_nb",
+    "status": "ok",
+    "query": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "filter": null,
+    "latency_ms": 41.81,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.016133,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 2,
+        "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+        "score": 0.015772,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+        "score": 0.015527,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.015512,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 5,
+        "id": "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+        "score": 0.015417,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 6,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.014939,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "5535c3d40666acd4b409141b910326dda747b559cdb6d83b31f0adec8a44478d",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4
+        }
+      },
+      {
+        "rank": 8,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 9,
+        "id": "ff761aa3c6c43e7517b5f04831941c69952b49778dcc6f43c4d35e9ab322a3b6",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 10,
+        "id": "ebdc771fd89b6e8b579d14f558ee951d3a2c107058ea585d780dcd87d27ad3f7",
+        "score": 0.007463,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 7
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878"
+        ],
+        "context_chars": 604,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6"
+        ],
+        "context_chars": 2135,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+          "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+          "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878"
+        ],
+        "context_chars": 4822,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q20",
+    "method": "hybrid_nb",
+    "status": "ok",
+    "query": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "filter": null,
+    "latency_ms": 43.17,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+        "score": 0.016133,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+        "score": 0.015505,
+        "source": "DSA.pdf",
+        "page": 46,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+        "score": 0.015417,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 5,
+        "id": "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+        "score": 0.014939,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 9,
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+        "score": 0.014709,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+        "score": 0.007937,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3
+        }
+      },
+      {
+        "rank": 8,
+        "id": "67f27fd17b3ddd6c07c19e56a075c93ca3eb3939ab14e4c03bf18ddf88f14e73",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 43,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4
+        }
+      },
+      {
+        "rank": 9,
+        "id": "c4af4e4c051747d32ecd1df670fdeaf096f6f347402c77d44302f5f3bfe5ad36",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 47,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 10,
+        "id": "dccf77e9ac2adf0a9a804d1f811630459e8e970fcdf788d5a079ed01c5b4b9d3",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 24,
+        "section": "3.4 Algorithmic Paradigms",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483"
+        ],
+        "context_chars": 555,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "1cd3fda4916fecf7976dc985ce10dd0fe86e65b66caf1a8e30b94b5d057f4e49"
+        ],
+        "context_chars": 2354,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+          "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+          "e2dc448b27c11d9dcf9762b88709816645268face69b553be59696f8b3374663",
+          "1cd3fda4916fecf7976dc985ce10dd0fe86e65b66caf1a8e30b94b5d057f4e49"
+        ],
+        "context_chars": 4846,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q16",
+    "method": "tfidf",
+    "status": "ok",
+    "query": "Why can hashing not guarantee a unique hash value for every object?",
+    "filter": null,
+    "latency_ms": 1.42,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 0.31824,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+        "score": 0.305092,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+        "score": 0.288285,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+        "score": 0.222099,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "d954d7901af46838045d3f55f0137b01526f3d5ab916afad5ecf54134e32a580",
+        "score": 0.181551,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 0.177886,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.166692,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "497f29fbaab683c7bfeee9cae871b9d1b632776606f66f23c7fc783527d74d48",
+        "score": 0.128694,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+        "score": 0.116638,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "b33df6ba1feefbe19ea963e2ab787b9091d4d9722073a4bb63bb5b72a588a659",
+        "score": 0.097841,
+        "source": "DSA.pdf",
+        "page": 10,
+        "section": "3.2 Algorithm Design and Discovery",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 652,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 1727,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654"
+        ],
+        "context_chars": 2756,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q17",
+    "method": "tfidf",
+    "status": "ok",
+    "query": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    },
+    "latency_ms": 2.08,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "score": 0.370687,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+        "score": 0.276009,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "score": 0.23074,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+        "score": 0.214122,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+        "score": 0.179087,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "801e00cf50d7d5b612a793ef374dff72da0592082b242167973f157c5adf76c8",
+        "score": 0.148308,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+        "score": 0.105007,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+        "score": 0.102159,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 0.092654,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+        "score": 0.084467,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 775,
+        "context_hit": true
+      },
+      "2500": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q18",
+    "method": "tfidf",
+    "status": "ok",
+    "query": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    },
+    "latency_ms": 1.49,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 3,
+    "results": [
+      {
+        "rank": 1,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 0.147574,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+        "score": 0.136918,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "score": 0.135611,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 4,
+        "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+        "score": 0.084912,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.073685,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+        "score": 0.07106,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.062319,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "1401530c71833a1aad62f7decfa83096e0997f627d60fa4cd39efcd78f5568f9",
+        "score": 0.052362,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+        "score": 0.052301,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3",
+        "score": 0.041617,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081"
+        ],
+        "context_chars": 1903,
+        "context_hit": false
+      },
+      "5000": {
+        "context_ids": [
+          "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855"
+        ],
+        "context_chars": 2827,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q19",
+    "method": "tfidf",
+    "status": "ok",
+    "query": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "filter": null,
+    "latency_ms": 1.36,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+        "score": 0.368837,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.338981,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+        "score": 0.289576,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.236675,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "958b83749690b35e46f996cf0565119ee70037ba707538263bbdae5a620ca4f0",
+        "score": 0.207547,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "ff761aa3c6c43e7517b5f04831941c69952b49778dcc6f43c4d35e9ab322a3b6",
+        "score": 0.205049,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.202752,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "ebdc771fd89b6e8b579d14f558ee951d3a2c107058ea585d780dcd87d27ad3f7",
+        "score": 0.192025,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "58d798d4d95e701776aac78a5fb33d6d3485f141f153f4327b30611e04aad6e1",
+        "score": 0.186576,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+        "score": 0.168769,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe"
+        ],
+        "context_chars": 2135,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c"
+        ],
+        "context_chars": 3138,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q20",
+    "method": "tfidf",
+    "status": "ok",
+    "query": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "filter": null,
+    "latency_ms": 1.57,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 0.357111,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+        "score": 0.315659,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+        "score": 0.297778,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+        "score": 0.290162,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+        "score": 0.284309,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+        "score": 0.244587,
+        "source": "DSA.pdf",
+        "page": 46,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+        "score": 0.209621,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 0.209173,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "8f20e60894803aee49dcca3e696190bdb44e118d9e311b7d4d9e64d9cd1cd26d",
+        "score": 0.208571,
+        "source": "DSA.pdf",
+        "page": 27,
+        "section": "3.4 Algorithmic Paradigms",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 0.206073,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364"
+        ],
+        "context_chars": 1917,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+          "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed"
+        ],
+        "context_chars": 2964,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q16",
+    "method": "bm25",
+    "status": "ok",
+    "query": "Why can hashing not guarantee a unique hash value for every object?",
+    "filter": null,
+    "latency_ms": 1.12,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 18.645994,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+        "score": 17.208823,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+        "score": 16.492846,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+        "score": 15.209834,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "d954d7901af46838045d3f55f0137b01526f3d5ab916afad5ecf54134e32a580",
+        "score": 13.951721,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 13.150005,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "497f29fbaab683c7bfeee9cae871b9d1b632776606f66f23c7fc783527d74d48",
+        "score": 12.747882,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 12.622123,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+        "score": 10.21535,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "2c0fd720180a71856cfb23082eead4dc6dd6fc841cb7e895583d24dcf1e5b214",
+        "score": 8.320955,
+        "source": "DSA.pdf",
+        "page": 4,
+        "section": "3.1 Introduction to Data Structures and Algorithms",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 652,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 1727,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15"
+        ],
+        "context_chars": 2701,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q17",
+    "method": "bm25",
+    "status": "ok",
+    "query": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    },
+    "latency_ms": 0.41,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "score": 34.68849,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+        "score": 28.9802,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "score": 21.470067,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+        "score": 20.870435,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+        "score": 15.435745,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "801e00cf50d7d5b612a793ef374dff72da0592082b242167973f157c5adf76c8",
+        "score": 13.852972,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 10.660374,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "c5b5396fe9d100fd0955da4f41d52080acfd922cf27bbe7945556d418b0873d3",
+        "score": 8.118434,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "57a0fe0c593286ca8cdec75117b9eb6787924f6664ce61cec34adf88d9260159",
+        "score": 7.968653,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 7.880762,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 775,
+        "context_hit": true
+      },
+      "2500": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q18",
+    "method": "bm25",
+    "status": "ok",
+    "query": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    },
+    "latency_ms": 0.32,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+        "score": 13.244419,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "score": 12.841133,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 11.498901,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+        "score": 7.558135,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 7.288096,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 6.157401,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "1401530c71833a1aad62f7decfa83096e0997f627d60fa4cd39efcd78f5568f9",
+        "score": 5.566846,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+        "score": 5.190666,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+        "score": 3.908155,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 3.563674,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855"
+        ],
+        "context_chars": 1847,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6"
+        ],
+        "context_chars": 2827,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q19",
+    "method": "bm25",
+    "status": "ok",
+    "query": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "filter": null,
+    "latency_ms": 1.56,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 3,
+    "results": [
+      {
+        "rank": 1,
+        "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+        "score": 25.973803,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+        "score": 19.917382,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 17.808817,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 4,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 15.010004,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "ff761aa3c6c43e7517b5f04831941c69952b49778dcc6f43c4d35e9ab322a3b6",
+        "score": 14.373785,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 13.479107,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "ebdc771fd89b6e8b579d14f558ee951d3a2c107058ea585d780dcd87d27ad3f7",
+        "score": 12.44783,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+        "score": 12.256851,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 11.86596,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 11.708019,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c"
+        ],
+        "context_chars": 2067,
+        "context_hit": false
+      },
+      "5000": {
+        "context_ids": [
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe"
+        ],
+        "context_chars": 3138,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q20",
+    "method": "bm25",
+    "status": "ok",
+    "query": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "filter": null,
+    "latency_ms": 2.0,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 34.951931,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+        "score": 25.004672,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+        "score": 23.211915,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+        "score": 22.503671,
+        "source": "DSA.pdf",
+        "page": 46,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+        "score": 16.486486,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "c4af4e4c051747d32ecd1df670fdeaf096f6f347402c77d44302f5f3bfe5ad36",
+        "score": 16.156693,
+        "source": "DSA.pdf",
+        "page": 47,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 15.64874,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "1a9ea33195c9d5e12597e6d6ff739dc74a74ce1a65b04e672024378b00bde483",
+        "score": 15.318785,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+        "score": 15.25505,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 13.003856,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c"
+        ],
+        "context_chars": 1873,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b"
+        ],
+        "context_chars": 2798,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q16",
+    "method": "hybrid",
+    "status": "ok",
+    "query": "Why can hashing not guarantee a unique hash value for every object?",
+    "filter": null,
+    "latency_ms": 17.32,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "rank": 1,
+        "id": "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 2,
+        "id": "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654",
+        "score": 0.015749,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "2ab14f0a48eeb16e82b0a324dd8f834555b511b799dc7d5e4ab1c9562062ab15",
+        "score": 0.015629,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "5aca33e06f3d699d48987b2a4173f03a43189fb95d7545f678d87062b3b78d99",
+        "score": 0.015059,
+        "source": "DSA.pdf",
+        "page": 31,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 6,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.015038,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 7,
+        "id": "2ed28372edb7e287139c02f16b111f9be2f1afcb716669999d0140a866abaa96",
+        "score": 0.014929,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "d954d7901af46838045d3f55f0137b01526f3d5ab916afad5ecf54134e32a580",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 9,
+        "id": "497f29fbaab683c7bfeee9cae871b9d1b632776606f66f23c7fc783527d74d48",
+        "score": 0.007463,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "de1dd571ceaface3e33ba601ab5a83c6639bc0eea71b0f94a5e054c152cc2ef2",
+        "score": 0.007353,
+        "source": "DSA.pdf",
+        "page": 50,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5"
+        ],
+        "context_chars": 652,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51"
+        ],
+        "context_chars": 1727,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "3d20850bd1e57a1b4cbc186b7f903c715159f3e853f5c826d2e6eeecaf2779e5",
+          "e6ad8d4af50c0d863e9cbcb263f904912d58dfde10347c90fec17550a5b8ce51",
+          "03bfdd6445b7129240f8ee743ae9c55ccd98ad6ea5d0a2cd05c357c8b167d654"
+        ],
+        "context_chars": 2756,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q17",
+    "method": "hybrid",
+    "status": "ok",
+    "query": "Within Section 3.5, in what order does breadth-first search expand the graph, and how does it ensure that each vertex is explored only once?",
+    "filter": {
+      "section": "3.5 Sample Algorithms by Problem"
+    },
+    "latency_ms": 17.02,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+        "score": 0.016393,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+        "score": 0.016001,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7",
+        "score": 0.016001,
+        "source": "DSA.pdf",
+        "page": 33,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "128e011c3ab93e47fd395907687f46c11d16473c17af9bf0c6c5e3eada145d22",
+        "score": 0.015625,
+        "source": "DSA.pdf",
+        "page": 32,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 5,
+        "id": "6fe83b194daafe1060d27b88e40b9e3169c7b67087449d7482ae43ebd211b1bb",
+        "score": 0.015155,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "83bd5a447b0866cdd3d3c36e394346acb96efe243788946b8c72e2570145df40",
+        "score": 0.014606,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 10,
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 7,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5
+        }
+      },
+      {
+        "rank": 8,
+        "id": "801e00cf50d7d5b612a793ef374dff72da0592082b242167973f157c5adf76c8",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 28,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 9,
+        "id": "9634bd0cb94f4180c5dcf8b09779932a3290d054598a03dea02d14a714e3574e",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      },
+      {
+        "rank": 10,
+        "id": "855ece9d1a4da74cbae8b56ecea4f1bc7541748a1d157191701ba539085d6ccf",
+        "score": 0.007353,
+        "source": "DSA.pdf",
+        "page": 29,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022"
+        ],
+        "context_chars": 775,
+        "context_hit": true
+      },
+      "2500": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "6dbd83bc5fe51f0da01352ef312eccbfbcef2700e3c2ad2fc8ac4ee67f16c022",
+          "01d181441bcf90a2f937bfd412fc20ad8c4b7dac2cdb33719ca406a45a4e364e",
+          "6a5f8b98e71b7b3204933845d0e4ea59d76a000f68ff6bc09d64fa271bc185b7"
+        ],
+        "context_chars": 2396,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q18",
+    "method": "hybrid",
+    "status": "ok",
+    "query": "Within Section 3.6, what execution assumption does the Turing machine model make?",
+    "filter": {
+      "section": "3.6 Computer Science Theory"
+    },
+    "latency_ms": 16.84,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 2,
+        "id": "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+        "score": 0.015889,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53",
+        "score": 0.015877,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "fcbed1d7249f03556d4aae6b683d103663fad74fc978ad15b7cc50fdab9f77d6",
+        "score": 0.015873,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "30e599912cf9187a9b54f159ad24f6c4602175962c673fe14f2604aed2910878",
+        "score": 0.015059,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 6,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.014929,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 7,
+        "id": "0e43e52af5d5eb1813fb0752aa086cde099ff03202858424f83abbbd60f00d76",
+        "score": 0.014816,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "1401530c71833a1aad62f7decfa83096e0997f627d60fa4cd39efcd78f5568f9",
+        "score": 0.014709,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 9,
+          "bm25": 7
+        }
+      },
+      {
+        "rank": 9,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 10,
+        "id": "c1bd5233eebda9a4e9b5a0300b5873065a2e5e90e093f9063ad7de302005e8f3",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 36,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081"
+        ],
+        "context_chars": 1847,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "630f1534120f11f6feb8ffa35673b8a3eaad8ab21a00f11e3900cf48de2a4855",
+          "524685d4b8fadbaa47148d3c3edc169eb32637c399706e209d7105574c026081",
+          "1f644afc7d69dfcab96e432488a02694cec8a6c5e9be2aaf9a9d063b60ceda53"
+        ],
+        "context_chars": 2865,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q19",
+    "method": "hybrid",
+    "status": "ok",
+    "query": "What is the key difference between the elements processed by Prim's and Dijkstra's algorithms?",
+    "filter": null,
+    "latency_ms": 19.94,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+        "score": 0.016133,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 2,
+        "id": "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+        "score": 0.015772,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 3,
+        "id": "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c",
+        "score": 0.015527,
+        "source": "DSA.pdf",
+        "page": 52,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "64ee07f01911cc3ac217b2706790522cb35ec597573380ab7b6f76dc9cd29821",
+        "score": 0.015512,
+        "source": "DSA.pdf",
+        "page": 34,
+        "section": "3.5 Sample Algorithms by Problem",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3,
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 5,
+        "id": "bd03e3272aba4dd3631b072b5cde9069bbb50bbb22ea8008f9ceca18e3c7270e",
+        "score": 0.015417,
+        "source": "DSA.pdf",
+        "page": 41,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 8
+        }
+      },
+      {
+        "rank": 6,
+        "id": "191c4af590e669cf138b9dc874460e8101d7e45cf171fce3e310538fc479ad8a",
+        "score": 0.014939,
+        "source": "DSA.pdf",
+        "page": 35,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "5535c3d40666acd4b409141b910326dda747b559cdb6d83b31f0adec8a44478d",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4
+        }
+      },
+      {
+        "rank": 8,
+        "id": "d903779320ebc50cdec0619704c1548951aba1671596af39187a3c876f40869d",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 51,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 9,
+        "id": "ff761aa3c6c43e7517b5f04831941c69952b49778dcc6f43c4d35e9ab322a3b6",
+        "score": 0.007692,
+        "source": "DSA.pdf",
+        "page": 48,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 10,
+        "id": "ebdc771fd89b6e8b579d14f558ee951d3a2c107058ea585d780dcd87d27ad3f7",
+        "score": 0.007463,
+        "source": "DSA.pdf",
+        "page": 49,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 7
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6"
+        ],
+        "context_chars": 2135,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "be5b5eb9f353afae1325443422e0bb9d095ac6632e77e67fa03c57b2ba1812fe",
+          "a8150ecc42337f7d2966bb6b505cedb06081331f75cb39d492111cb77b6d0fd6",
+          "90b3cf23c6ac71fcd35eeec183232b5a3272fdd924bf63358ea63df427e7b06c"
+        ],
+        "context_chars": 3138,
+        "context_hit": true
+      }
+    }
+  },
+  {
+    "query_id": "q20",
+    "method": "hybrid",
+    "status": "ok",
+    "query": "In the reduction example, which problem do the longest-paths and traveling-salesperson problems reduce to, and what is the subsequent reduction chain?",
+    "filter": null,
+    "latency_ms": 20.83,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "rank": 1,
+        "id": "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+        "score": 0.016261,
+        "source": "DSA.pdf",
+        "page": 39,
+        "section": "3.6 Computer Science Theory",
+        "hit": true,
+        "source_ranks": {
+          "dense": 2,
+          "bm25": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+        "score": 0.016133,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 1,
+          "bm25": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764",
+        "score": 0.015505,
+        "source": "DSA.pdf",
+        "page": 46,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 5,
+          "bm25": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "99fc50a54a9fba6791da5ba2c2b3563a70610abfda605f9f676e34be91e1992c",
+        "score": 0.015417,
+        "source": "DSA.pdf",
+        "page": 37,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 8,
+          "bm25": 2
+        }
+      },
+      {
+        "rank": 5,
+        "id": "787d2d07b0a21178d14ad6498088ec06f5d78fbf4a2df5837de291b9b36e2364",
+        "score": 0.014939,
+        "source": "DSA.pdf",
+        "page": 45,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 9,
+          "bm25": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "953938313f507375f583abfa36521b6a53b7155bbb98bf10aa380d86dd2272ed",
+        "score": 0.014709,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 7,
+          "bm25": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "342b8a494945b5c9dd15f6488e83933c1789b8cda87dec705959bed81371f27c",
+        "score": 0.007937,
+        "source": "DSA.pdf",
+        "page": 38,
+        "section": "3.6 Computer Science Theory",
+        "hit": false,
+        "source_ranks": {
+          "dense": 3
+        }
+      },
+      {
+        "rank": 8,
+        "id": "67f27fd17b3ddd6c07c19e56a075c93ca3eb3939ab14e4c03bf18ddf88f14e73",
+        "score": 0.007812,
+        "source": "DSA.pdf",
+        "page": 43,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "dense": 4
+        }
+      },
+      {
+        "rank": 9,
+        "id": "c4af4e4c051747d32ecd1df670fdeaf096f6f347402c77d44302f5f3bfe5ad36",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 47,
+        "section": "Chapter Review",
+        "hit": false,
+        "source_ranks": {
+          "bm25": 6
+        }
+      },
+      {
+        "rank": 10,
+        "id": "dccf77e9ac2adf0a9a804d1f811630459e8e970fcdf788d5a079ed01c5b4b9d3",
+        "score": 0.007576,
+        "source": "DSA.pdf",
+        "page": 24,
+        "section": "3.4 Algorithmic Paradigms",
+        "hit": false,
+        "source_ranks": {
+          "dense": 6
+        }
+      }
+    ],
+    "contexts": {
+      "800": {
+        "context_ids": [],
+        "context_chars": 0,
+        "context_hit": false
+      },
+      "2500": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b"
+        ],
+        "context_chars": 1950,
+        "context_hit": true
+      },
+      "5000": {
+        "context_ids": [
+          "1525e7abc243b05d2696a4451c1d0e20cf345740ee1670a623a0c11ac9cd8a9d",
+          "7941f512d7970e0960a1fe3b8014de715a1e0cb595a0f6ecb02aa557eed8cb9b",
+          "95f630a27d467f228582232ee30880162041ccd9e7c7b788f488037126ede764"
+        ],
+        "context_chars": 2960,
+        "context_hit": true
+      }
+    }
+  }
+]

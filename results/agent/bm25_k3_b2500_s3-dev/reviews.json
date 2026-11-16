@@ -1,0 +1,19 @@
+[
+  {"query_id": "q01", "answer_grade": 2, "citation_support": [true, false], "reason": "Core answer correct and supported by p3. Second citation (p2, 37f1260a) is about common ideas across programming languages, not human languages, so it does not support 'start from scratch for each language'."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "reason": "p4 gold chunk at rank 1."},
+  {"query_id": "q03", "answer_grade": 2, "citation_support": [true], "reason": "p5."},
+  {"query_id": "q04", "answer_grade": 2, "citation_support": [true], "reason": "Balanced BST / AVL against the worst case; supported by p29 (gold p7 never retrieved by BM25 in 3 searches)."},
+  {"query_id": "q05", "answer_grade": 2, "citation_support": [true], "reason": "p9."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "reason": "p10."},
+  {"query_id": "q07", "answer_grade": 1, "citation_support": [true, true], "reason": "Same partial answer as hybrid: complexity/simplification supported by p10/p11, but 'focus on relevant information' (gold chunk b4376d, adjacent on p11) missing."},
+  {"query_id": "q08", "answer_grade": 2, "citation_support": [true], "reason": "p15."},
+  {"query_id": "q09", "answer_grade": 2, "citation_support": [true, true], "reason": "p44 summary + p17."},
+  {"query_id": "q10", "answer_grade": 2, "citation_support": [true, true], "reason": "p18 + p44."},
+  {"query_id": "q11", "answer_grade": 2, "citation_support": [true], "reason": "p19."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [], "reason": "False abstention. Gold chunk 2edc07 (p21) was rank 3 in every search but p51 + p20 filled the 2500-char budget, so it never entered the context."},
+  {"query_id": "q13", "answer_grade": 2, "citation_support": [true], "reason": "p26 gold at rank 1."},
+  {"query_id": "q14", "answer_grade": 2, "citation_support": [true], "reason": "p29."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "reason": "p30."},
+  {"query_id": "q_dev_unabs_01", "citation_support": [], "abstention_correct": true, "reason": "3 searches, abstained."},
+  {"query_id": "q_dev_unabs_02", "citation_support": [], "abstention_correct": true, "reason": "3 searches ('Bellman-Ford' returns nothing for BM25), abstained."}
+]
